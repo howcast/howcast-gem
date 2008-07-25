@@ -1,3 +1,7 @@
+== 0.3.3 2008-07-25
+
+* Video dimensions
+
 == 0.3.2 2008-06-03
 
 * Clean up with inject
