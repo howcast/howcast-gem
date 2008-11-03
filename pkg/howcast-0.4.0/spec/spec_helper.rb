@@ -87,6 +87,8 @@ Spec::Runner.configure do |config|
         <category-id>2</category-id>
         <duration>22</duration>
         <id>233</id>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
         <title>How To Do a Noble Pose</title>
         <description>
           <![CDATA[You recognize the Noble Pose as the dreaded "sit-and-reach" from your childhood gym class. A sample <a href="howcast.com">link</a>]]>

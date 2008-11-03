@@ -44,6 +44,14 @@ describe Howcast::Client, "video" do
     @hc.video(2).views.should == "38"
   end
   
+  it "should set the badges in the video model response" do
+    @hc.video(2).badges.should == "Howcast Studios"
+  end
+  
+  it "should set the easy_steps boolean in the video model response" do
+    @hc.video(2).easy_steps?.should be_true
+  end
+  
   it "should set the rating attribute in the video model response" do
     @hc.video(2).rating.should == "2.0"
   end

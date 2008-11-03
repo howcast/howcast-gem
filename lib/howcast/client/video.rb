@@ -37,7 +37,8 @@ class Howcast::Client
   class Video
     extend WatchAttrAccessors
     attr_accessor :id, :title, :permalink, :thumbnail_url, :category_id, 
-      :views, :username, :duration, :created_at, :rating, :description, :width, :height
+      :views, :username, :duration, :created_at, :rating, :description, :width, :height,
+      :badges, :easy_steps
     # Creates a new Video object which is used to encapsulate all the attributes available
     # from the Howcast Video API
     #
@@ -53,6 +54,10 @@ class Howcast::Client
       attributes.each do |k, v|
         self.send("#{k}=", v) if self.respond_to?(k)
       end
+    end
+    
+    def easy_steps?
+      easy_steps == "true"
     end
   end
     
