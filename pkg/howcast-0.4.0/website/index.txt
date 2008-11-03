@@ -1,0 +1,58 @@
+
+h2. Howcast API Rubygem
+
+h2. What
+
+Howcast Rubygem is a Ruby library for interacting with the "Howcast API":http://groups.google.com/group/howcast-developers
+
+
+h2. Installing
+
+<pre syntax="ruby">sudo gem install howcast</pre>
+
+After installing you will need to get an API Key from: "http://www.howcast.com/api_keys/new":http://www.howcast.com/api_keys/new
+
+h2. Demonstration of usage
+
+<pre syntax="ruby">
+require 'rubygems'
+require 'howcast'
+
+hc = Howcast::Client.new(:key => "INSERT API KEY HERE")
+# Will print out the video titles of the first page of recent howcast studios videos
+puts "Recent Howcast Studios Videos"
+hc.videos.each do |v|
+  puts v.title
+end
+
+puts "2nd Page of Recent Featured Videos"
+# Will print out the video titles of the 2nd page of recent featured videos
+hc.videos(:page => 2, :sort => "most_recent", :filter => "featured").each do |v|
+  puts v.title
+end
+
+puts "Videos matching 'origami'"
+hc.video_search("origami").each do |v|
+  puts v.title
+end
+
+puts "Video with id 946"
+puts hc.video(946).title
+</pre>
+
+h2. Forum, Support and Questions
+
+"http://groups.google.com/group/howcast-developers":http://groups.google.com/group/howcast-developers
+
+h2. How to check out the code
+
+The trunk repository is <code>svn://rubyforge.org/var/svn/howcast/trunk</code> for anonymous access.
+
+h2. License
+
+This code is free to use under the terms of the MIT license. 
+
+h2. Contact
+
+Comments are welcome. Send an email to "Michael Murray":mailto:michael@howcast.com.
+

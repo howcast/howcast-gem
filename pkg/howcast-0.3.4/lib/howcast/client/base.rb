@@ -79,7 +79,7 @@ class Howcast::Client
     # === Inputs
     #
     # * <tt>xml</tt> -- See below for a sample xml input
-    # * <tt>klass</tt> -- Class to create - Guide | Video supported
+    # * <tt>klass</tt> -- Class to create - Guide | Video | Category supported
     #
     # Sample input xml
     #   <guide>

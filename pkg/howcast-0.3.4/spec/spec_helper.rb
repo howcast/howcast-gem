@@ -48,6 +48,37 @@ Spec::Runner.configure do |config|
     VID
   end
   
+  def category_xml
+    <<-CAT
+    <?xml version="1.0" encoding="UTF-8"?>
+    <howcast version="0.1">
+      <category>
+        <id>1255</id>
+        <name>Travel</name>
+        <parent-id nil="true"></parent-id>
+        <subcategories>
+          <category>
+            <id>1265</id>
+            <name>African Travel</name>
+          </category>
+          <category>
+            <id>1289</id>
+            <name>European Travel</name>
+          </category>
+          <category>
+            <id>1256</id>
+            <name>General Travel</name>
+          </category>
+          <category>
+            <id>1311</id>
+            <name>General U.S. Travel</name>
+          </category>
+        </subcategories>
+      </category>
+    </howcast>
+    CAT
+  end
+  
   def video_xml
     <<-VID
     <?xml version="1.0" encoding="UTF-8"?>
