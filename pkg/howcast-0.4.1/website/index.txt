@@ -38,15 +38,27 @@ end
 
 puts "Video with id 946"
 puts hc.video(946).title
+
+# Category API
+piano = hc.category(1105)
+puts "The parent category of Piano is #{hc.category(piano.parent_id).name}"
+
+ancestors = piano.parents.map{|c| c[:name]}
+# Ancestors will be an array of hash metadata: 
+# => [{:name=>"Performing Arts", :id=>"1048"}, 
+#     {:name=>"Musical Instruments", :id=>"1095"}, 
+#     {:name=>"Keyboards", :id=>"1103"}]
+puts "The ancestors of piano are: #{ancestors.join(" -> ")}"
 </pre>
 
 h2. Forum, Support and Questions
 
-"http://groups.google.com/group/howcast-developers":http://groups.google.com/group/howcast-developers
+* "RDoc":http://howcast.rubyforge.org/rdoc
+* "http://groups.google.com/group/howcast-developers":http://groups.google.com/group/howcast-developers
 
 h2. How to check out the code
 
-The trunk repository is <code>svn://rubyforge.org/var/svn/howcast/trunk</code> for anonymous access.
+The git repository is <code>git://github.com/howcast/howcast-gem.git</code> for anonymous access.
 
 h2. License
 

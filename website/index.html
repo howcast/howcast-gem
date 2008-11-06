@@ -33,7 +33,7 @@
     <h1></h1>
     <div id="version" class="clickable" onclick='document.location = "http://rubyforge.org/projects/howcast"; return false'>
       <p>Get Version</p>
-      <a href="http://rubyforge.org/projects/howcast" class="numbers">0.3.4</a>
+      <a href="http://rubyforge.org/projects/howcast" class="numbers">0.4.1</a>
     </div>
     <h2>Howcast <span class="caps">API</span> Rubygem</h2>
 
@@ -80,19 +80,33 @@
 
 <span class="ident">puts</span> <span class="punct">&quot;</span><span class="string">Video with id 946</span><span class="punct">&quot;</span>
 <span class="ident">puts</span> <span class="ident">hc</span><span class="punct">.</span><span class="ident">video</span><span class="punct">(</span><span class="number">946</span><span class="punct">).</span><span class="ident">title</span>
+
+<span class="comment"># Category API</span>
+<span class="ident">piano</span> <span class="punct">=</span> <span class="ident">hc</span><span class="punct">.</span><span class="ident">category</span><span class="punct">(</span><span class="number">1105</span><span class="punct">)</span>
+<span class="ident">puts</span> <span class="punct">&quot;</span><span class="string">The parent category of Piano is <span class="expr">#{hc.category(piano.parent_id).name}</span></span><span class="punct">&quot;</span>
+
+<span class="ident">ancestors</span> <span class="punct">=</span> <span class="ident">piano</span><span class="punct">.</span><span class="ident">parents</span><span class="punct">.</span><span class="ident">map</span><span class="punct">{|</span><span class="ident">c</span><span class="punct">|</span> <span class="ident">c</span><span class="punct">[</span><span class="symbol">:name</span><span class="punct">]}</span>
+<span class="comment"># Ancestors will be an array of hash metadata: </span>
+<span class="comment"># =&gt; [{:name=&gt;&quot;Performing Arts&quot;, :id=&gt;&quot;1048&quot;}, </span>
+<span class="comment">#     {:name=&gt;&quot;Musical Instruments&quot;, :id=&gt;&quot;1095&quot;}, </span>
+<span class="comment">#     {:name=&gt;&quot;Keyboards&quot;, :id=&gt;&quot;1103&quot;}]</span>
+<span class="ident">puts</span> <span class="punct">&quot;</span><span class="string">The ancestors of piano are: <span class="expr">#{ancestors.join(&quot; -&gt; &quot;)}</span></span><span class="punct">&quot;</span>
 </pre></p>
 
 
 	<h2>Forum, Support and Questions</h2>
 
 
-	<p><a href="http://groups.google.com/group/howcast-developers">http://groups.google.com/group/howcast-developers</a></p>
+	<ul>
+	<li><a href="http://howcast.rubyforge.org/rdoc">RDoc</a></li>
+		<li><a href="http://groups.google.com/group/howcast-developers">http://groups.google.com/group/howcast-developers</a></li>
+	</ul>
 
 
 	<h2>How to check out the code</h2>
 
 
-	<p>The trunk repository is <code>svn://rubyforge.org/var/svn/howcast/trunk</code> for anonymous access.</p>
+	<p>The git repository is <code>git://github.com/howcast/howcast-gem.git</code> for anonymous access.</p>
 
 
 	<h2>License</h2>
@@ -106,7 +120,7 @@
 
 	<p>Comments are welcome. Send an email to <a href="mailto:michael@howcast.com">Michael Murray</a>.</p>
     <p class="coda">
-      <a href="mailto:michael@howcast.com">Michael Murray</a>, 3rd June 2008<br>
+      <a href="mailto:michael@howcast.com">Michael Murray</a>, 6th November 2008<br>
       Theme extended from <a href="http://rb2js.rubyforge.org/">Paul Battley</a>
     </p>
 </div>

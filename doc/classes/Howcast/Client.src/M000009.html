@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
 </head>
 <body class="standalone-code">
-  <pre><span class="ruby-comment cmt"># File lib/howcast/client/guide.rb, line 69</span>
+  <pre><span class="ruby-comment cmt"># File lib/howcast/client/guide.rb, line 68</span>
         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">guides</span>(<span class="ruby-identifier">options</span> = {})
     <span class="ruby-identifier">uri</span> = <span class="ruby-identifier">guides_url</span>(<span class="ruby-identifier">options</span>)
     (<span class="ruby-identifier">establish_connection</span>(<span class="ruby-identifier">uri</span>)<span class="ruby-operator">/</span><span class="ruby-identifier">:guide</span>).<span class="ruby-identifier">inject</span>([]){ <span class="ruby-operator">|</span><span class="ruby-identifier">r</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">parse_single_xml</span>(<span class="ruby-identifier">i</span>, <span class="ruby-constant">Guide</span>)}
