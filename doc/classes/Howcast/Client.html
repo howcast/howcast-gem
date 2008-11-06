@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: Howcast::Client</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">Howcast::Client</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../files/lib/howcast/client_rb.html">
+                lib/howcast/client.rb
+                </a>
+        <br />
+                <a href="../../files/lib/howcast/client/base_rb.html">
+                lib/howcast/client/base.rb
+                </a>
+        <br />
+                <a href="../../files/lib/howcast/client/video_rb.html">
+                lib/howcast/client/video.rb
+                </a>
+        <br />
+                <a href="../../files/lib/howcast/client/guide_rb.html">
+                lib/howcast/client/guide.rb
+                </a>
+        <br />
+                <a href="../../files/lib/howcast/client/search_rb.html">
+                lib/howcast/client/search.rb
+                </a>
+        <br />
+                <a href="../../files/lib/howcast/client/category_rb.html">
+                lib/howcast/client/category.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                Object
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000006">attach_api_key</a>&nbsp;&nbsp;
+      <a href="#M000012">category</a>&nbsp;&nbsp;
+      <a href="#M000003">establish_connection</a>&nbsp;&nbsp;
+      <a href="#M000011">guide_search</a>&nbsp;&nbsp;
+      <a href="#M000009">guides</a>&nbsp;&nbsp;
+      <a href="#M000002">new</a>&nbsp;&nbsp;
+      <a href="#M000004">parse_single_xml</a>&nbsp;&nbsp;
+      <a href="#M000005">uri_suffix</a>&nbsp;&nbsp;
+      <a href="#M000007">video</a>&nbsp;&nbsp;
+      <a href="#M000010">video_search</a>&nbsp;&nbsp;
+      <a href="#M000008">videos</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+    <div id="class-list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Module <a href="Client/WatchAttrAccessors.html" class="link">Howcast::Client::WatchAttrAccessors</a><br />
+Class <a href="Client/Category.html" class="link">Howcast::Client::Category</a><br />
+Class <a href="Client/Guide.html" class="link">Howcast::Client::Guide</a><br />
+Class <a href="Client/Video.html" class="link">Howcast::Client::Video</a><br />
+
+    </div>
+
+
+
+
+    <div id="attribute-list">
+      <h3 class="section-bar">Attributes</h3>
+
+      <div class="name-list">
+        <table>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">key</td>
+          <td class="context-item-value">&nbsp;[RW]&nbsp;</td>
+          <td class="context-item-desc"></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Class methods</h3>
+
+      <div id="method-M000002" class="method-detail">
+        <a name="M000002"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000002.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000002.html');return false;">
+          <span class="method-name">new</span><span class="method-args">(options={})</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Creates a <a href="Client.html#M000002">new</a> howcast client to interact
+with the Howcast API
+</p>
+<h3>Inputs</h3>
+<p>
+Options include:
+</p>
+<ul>
+<li><tt>key</tt> &#8212; REQUIRED - API key: obtainable from <a
+href="http://www.howcast.com/api_keys/new">www.howcast.com/api_keys/new</a>
+
+</li>
+</ul>
+<h3>Exceptions</h3>
+<ul>
+<li><tt><a href="ApiKeyNotFound.html">Howcast::ApiKeyNotFound</a></tt> &#8212;
+raised if the options[:key] value is nil
+
+</li>
+</ul>
+        </div>
+      </div>
+
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000012" class="method-detail">
+        <a name="M000012"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000012.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000012.html');return false;">
+          <span class="method-name">category</span><span class="method-args">(id)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Provides access to the Howcast <a href="Client.html#M000012">category</a>
+API.
+</p>
+<h3>Inputs</h3>
+<ul>
+<li><tt>id</tt> &#8212; The id of the <a
+href="Client.html#M000012">category</a> to lookup
+
+</li>
+</ul>
+<h3>Outputs</h3>
+<p>
+<a href="Client/Category.html">Category</a> object if the id exists or nil
+if the id doesn&#8216;t exist or is malformed
+</p>
+<h3>Exceptions</h3>
+<ul>
+<li><tt><a href="ApiNotFound.html">Howcast::ApiNotFound</a></tt>
+
+</li>
+</ul>
+<h3>Examples</h3>
+<p>
+Get the Howcast <a href="Client.html#M000012">category</a> with id 2
+</p>
+<pre>
+  Howcast::Client.new.category(2)
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000011" class="method-detail">
+        <a name="M000011"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000011.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000011.html');return false;">
+          <span class="method-name">guide_search</span><span class="method-args">(query, options = {})</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Provides access to the Howcast wiki guide search API.
+</p>
+<p>
+See <a href="Client.html#M000010">video_search</a> documentation for
+inputs, outputs and exceptions
+</p>
+<h3>Examples</h3>
+<p>
+Get the first page of howcast wiki <a href="Client.html#M000009">guides</a>
+matching &#8216;poker&#8217;.
+</p>
+<pre>
+  Howcast::Client.new.guide_search(&quot;poker&quot;)
+</pre>
+<p>
+Get the third page of howcast wiki <a href="Client.html#M000009">guides</a>
+matching &#8216;traveling&#8216;
+</p>
+<pre>
+  Howcast::Client.new.guide_search(&quot;traveling&quot;, :page =&gt; 3)
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000009" class="method-detail">
+        <a name="M000009"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000009.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000009.html');return false;">
+          <span class="method-name">guides</span><span class="method-args">(options = {})</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+REFACTOR: Consider combining with <a href="Client.html#M000008">videos</a>
+method Provides access to the Howcast list <a
+href="Client.html#M000009">guides</a> API.
+</p>
+<h3>Inputs</h3>
+<p>
+The options are:
+</p>
+<ul>
+<li><tt>:page</tt> &#8212; The page number to retrieve (defaults to 1). There
+are 16 <a href="Client.html#M000009">guides</a> per page.
+
+</li>
+<li><tt>:sort</tt> &#8212; One of <tt>most_recent</tt> (default) |
+<tt>most_viewed</tt> | <tt>top_rated</tt> | <tt>most_emailed</tt> |
+<tt>most_discussed</tt> | <tt>top_favorites</tt>
+
+</li>
+<li><tt>:filter</tt> &#8212; One of <tt>all</tt> | <tt>featured</tt> |
+<tt>howcast_written</tt> (default) | <tt>community_written</tt>
+
+</li>
+</ul>
+<h3>Outputs</h3>
+<p>
+An array of guide objects
+</p>
+<h3>Exceptions</h3>
+<ul>
+<li><tt><a href="ApiNotFound.html">Howcast::ApiNotFound</a></tt> &#8212; raised
+if the requested sort and filter is malformed or not available (404)
+
+</li>
+</ul>
+<h3>Examples</h3>
+<p>
+Get the first page of most recent howcast written <a
+href="Client.html#M000009">guides</a>.
+</p>
+<pre>
+  Howcast::Client.new.guides
+</pre>
+<p>
+Get the third page of top favorites which are featured
+</p>
+<pre>
+  Howcast::Client.new.guides(:page =&gt; 3, :sort =&gt; &quot;top_favorites&quot;, :filter =&gt; &quot;featured&quot;)
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000007" class="method-detail">
+        <a name="M000007"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000007.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000007.html');return false;">
+          <span class="method-name">video</span><span class="method-args">(id)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Provides access to the Howcast <a href="Client.html#M000007">video</a> API.
+</p>
+<h3>Inputs</h3>
+<ul>
+<li><tt>id</tt> &#8212; The id of the <a href="Client.html#M000007">video</a>
+to lookup
+
+</li>
+</ul>
+<h3>Outputs</h3>
+<p>
+<a href="Client/Video.html">Video</a> object if the id exists or nil if the
+id doesn&#8216;t exist or is malformed
+</p>
+<h3>Exceptions</h3>
+<ul>
+<li><tt><a href="ApiNotFound.html">Howcast::ApiNotFound</a></tt>
+
+</li>
+</ul>
+<h3>Examples</h3>
+<p>
+Get the Howcast <a href="Client.html#M000007">video</a> with id 2
+</p>
+<pre>
+  Howcast::Client.new.video(2)
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000010" class="method-detail">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000010.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000010.html');return false;">
+          <span class="method-name">video_search</span><span class="method-args">(query, options = {})</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Provides access to the Howcast <a href="Client.html#M000007">video</a>
+search API.
+</p>
+<h3>Inputs</h3>
+<ul>
+<li><tt>query</tt> &#8212; The string query which you want to search for
+
+</li>
+</ul>
+<p>
+The options are:
+</p>
+<ul>
+<li><tt>:page</tt> &#8212; The page number to retrieve (defaults to 1). There
+are 10 <a href="Client.html#M000008">videos</a> per page.
+
+</li>
+<li><tt>:mode</tt> &#8212; Mode to search, using :extended will allow
+title:something searches
+
+</li>
+</ul>
+<h3>Outputs</h3>
+<p>
+An array of <a href="Client.html#M000007">video</a> objects
+</p>
+<h3>Exceptions</h3>
+<ul>
+<li><tt><a href="ApiNotFound.html">Howcast::ApiNotFound</a></tt> &#8212; raised
+if the requested sort and filter is malformed or not available (404)
+
+</li>
+<li><tt>ArgumentError</tt> &#8212; raised when the required 1 argument
+isn&#8216;t supplied
+
+</li>
+</ul>
+<h3>Examples</h3>
+<p>
+Get the first page of howcast <a href="Client.html#M000008">videos</a>
+matching &#8216;poker&#8217;.
+</p>
+<pre>
+  Howcast::Client.new.video_search(&quot;poker&quot;)
+</pre>
+<p>
+Get the third page of howcast <a href="Client.html#M000008">videos</a>
+matching &#8216;traveling&#8216;
+</p>
+<pre>
+  Howcast::Client.new.video_search(&quot;traveling&quot;, :page =&gt; 3)
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000008" class="method-detail">
+        <a name="M000008"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000008.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000008.html');return false;">
+          <span class="method-name">videos</span><span class="method-args">(options = {})</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Provides access to the Howcast list <a
+href="Client.html#M000008">videos</a> API.
+</p>
+<h3>Inputs</h3>
+<p>
+The options are:
+</p>
+<ul>
+<li><tt>:page</tt> &#8212; The page number to retrieve (defaults to 1). There
+are 16 <a href="Client.html#M000008">videos</a> per page.
+
+</li>
+<li><tt>:sort</tt> &#8212; One of <tt>most_recent</tt> (default) |
+<tt>most_viewed</tt> | <tt>top_rated</tt> | <tt>most_emailed</tt> |
+<tt>most_discussed</tt> | <tt>top_favorites</tt>
+
+</li>
+<li><tt>:filter</tt> &#8212; One of <tt>all</tt> | <tt>featured</tt> |
+<tt>howcast_studios</tt> (default) | <tt>directors_program</tt> |
+<tt>community</tt>
+
+</li>
+</ul>
+<h3>Outputs</h3>
+<p>
+An array of <a href="Client.html#M000007">video</a> objects
+</p>
+<h3>Exceptions</h3>
+<ul>
+<li><tt><a href="ApiNotFound.html">Howcast::ApiNotFound</a></tt> &#8212; raised
+if the requested sort and filter is malformed or not available (404)
+
+</li>
+</ul>
+<h3>Examples</h3>
+<p>
+Get the first page of most recent howcast studios <a
+href="Client.html#M000008">videos</a>.
+</p>
+<pre>
+  Howcast::Client.new.videos
+</pre>
+<p>
+Get the third page of top favorites which are featured
+</p>
+<pre>
+  Howcast::Client.new.videos(:page =&gt; 3, :sort =&gt; &quot;top_favorites&quot;, :filter =&gt; &quot;featured&quot;)
+</pre>
+        </div>
+      </div>
+
+      <h3 class="section-bar">Protected Instance methods</h3>
+
+      <div id="method-M000006" class="method-detail">
+        <a name="M000006"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000006.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000006.html');return false;">
+          <span class="method-name">attach_api_key</span><span class="method-args">(url)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Appends the api key to a url and returns the appended url
+</p>
+<h3>Inputs</h3>
+<ul>
+<li><tt>url</tt> &#8212; the url to append the api_key to
+
+</li>
+</ul>
+<h3>Outputs</h3>
+<p>
+The url with the api_key appended
+</p>
+<h3>Examples</h3>
+<pre>
+  attach_api_key(&quot;http://www.howcast.com&quot;)
+  =&gt; &quot;http://www.howcast.com?api_key=APIKEYHERE&quot;
+
+  attach_api_key(&quot;http://www.howcast.com/videos/most_recent/all?page=2&quot;)
+  =&gt; &quot;http://www.howcast.com/videos/most_recent/all?page=2&amp;api_key=APIKEYHERE&quot;
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000003" class="method-detail">
+        <a name="M000003"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000003.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000003.html');return false;">
+          <span class="method-name">establish_connection</span><span class="method-args">(relative_path)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Establishes a connection with the Howcast API. Will auto append the api
+key, that was used to instantiate the <a href="Client.html">Client</a>
+object, to the URL
+</p>
+<h3>Inputs</h3>
+<ul>
+<li><tt>relative_path</tt> &#8212; should be the path after <tt><a
+href="http://www.howcast.com">www.howcast.com</a>/</tt>
+
+</li>
+</ul>
+<h3>Outputs</h3>
+<p>
+Hpricot object encapsulating the xml returned from the Howcast API
+</p>
+<h3>Exceptions</h3>
+<ul>
+<li><tt><a href="ApiNotFound.html">Howcast::ApiNotFound</a></tt> &#8212; raised
+if the requested <tt>relative_path</tt> is malformed or not available (404)
+
+</li>
+<li><tt><a href="ApiKeyNotFound.html">Howcast::ApiKeyNotFound</a></tt> &#8212;
+raised if the <tt>api_key</tt> is invalid
+
+</li>
+</ul>
+<h3>Examples</h3>
+<p>
+Get the Hpricot data for most recent howcast studios <a
+href="Client.html#M000008">videos</a>
+</p>
+<pre>
+  establish_connection(&quot;videos/most_recent/howcast_studios.xml&quot;)
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000004" class="method-detail">
+        <a name="M000004"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000004.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000004.html');return false;">
+          <span class="method-name">parse_single_xml</span><span class="method-args">(xml, klass)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Parses the xml for a single item from <tt>xml</tt> and creates a <a
+href="Client.html#M000002">new</a> <tt>klass</tt> object
+</p>
+<h3>Inputs</h3>
+<ul>
+<li><tt>xml</tt> &#8212; See below for a sample xml input
+
+</li>
+<li><tt>klass</tt> &#8212; Class to create - <a
+href="Client/Guide.html">Guide</a> | <a href="Client/Video.html">Video</a>
+| <a href="Client/Category.html">Category</a> supported
+
+</li>
+</ul>
+<p>
+Sample input xml
+</p>
+<pre>
+  &lt;guide&gt;
+     &lt;id&gt;1086&lt;/id&gt;
+     &lt;rating&gt;96&lt;/rating&gt;
+     &lt;title&gt;How To Choose a Paintbrush&lt;/title&gt;
+     &lt;category-id&gt;19&lt;/category-id&gt;
+     &lt;description&gt;
+        &lt;![CDATA[Yes, you could just use your fingers, but selecting the best brushes for your painting might achieve a slightly more grown-up result.]]&gt;
+     &lt;/description&gt;
+     &lt;views&gt;362&lt;/views&gt;
+     &lt;permalink&gt;http://www.howcast.com/guides/1086-How-To-Choose-a-Paintbrush&lt;/permalink&gt;
+     &lt;username&gt;michaelrsanchez&lt;/username&gt;
+     &lt;created-at&gt;Thu, 20 Dec 2007 14:14:58 -0800&lt;/created-at&gt;
+   &lt;/guide&gt;
+</pre>
+<h3>Outputs</h3>
+<p>
+<tt>klass</tt> object with initialized attributes
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000005" class="method-detail">
+        <a name="M000005"></a>
+
+        <div class="method-heading">
+          <a href="Client.src/M000005.html" target="Code" class="method-signature"
+            onclick="popupCode('Client.src/M000005.html');return false;">
+          <span class="method-name">uri_suffix</span><span class="method-args">(opts)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Creates parameters to append to a uri
+</p>
+<h3>Inputs</h3>
+<p>
+Options are:
+</p>
+<ul>
+<li><tt>:page</tt> &#8212; the page number
+
+</li>
+<li><tt>:use_ampersand</tt> &#8212; boolean to return ampersand (defaults to
+false)
+
+</li>
+</ul>
+<h3>Outputs</h3>
+<p>
+A valid suffix string to append to the end of a url
+</p>
+<h3>Examples</h3>
+<p>
+&quot;?page=2&quot;
+</p>
+<pre>
+  uri_suffix(:page =&gt; 2)
+</pre>
+<p>
+&quot;&amp;page=2&quot;
+</p>
+<pre>
+  uri_suffix(:page =&gt; 3, :use_ampersand =&gt; true)
+</pre>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
