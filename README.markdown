@@ -1,45 +1,46 @@
 # Howcast API Ruby Wrapper
 
 Copyright (c) 2008 Howcast Media Inc.
+
 Author: Michael Murray <michael@howcast.com>
 
 ## Installing
-
-  sudo gem install howcast
+	
+    sudo gem install howcast
   
 ## Example
 
 An example ruby script to get some howcast videos
 
-  require 'rubygems'
-  require 'howcast'
+    require 'rubygems'
+    require 'howcast'
 
-  hc = Howcast::Client.new(:key => "INSERT API KEY HERE")
-  # Will print out the video titles of the first page of recent howcast studios videos
-  puts "Recent Howcast Studios Videos"
-  hc.videos.each do |v|
-    puts v.title
-  end
+    hc = Howcast::Client.new(:key => "INSERT API KEY HERE")
+    # Will print out the video titles of the first page of recent howcast studios videos
+    puts "Recent Howcast Studios Videos"
+    hc.videos.each do |v|
+      puts v.title
+    end
 
-  puts "2nd Page of Recent Featured Videos"
-  # Will print out the video titles of the 2nd page of recent featured videos
-  hc.videos(:page => 2, :sort => "most_recent", :filter => "featured").each do |v|
-    puts v.title
-  end
+    puts "2nd Page of Recent Featured Videos"
+    # Will print out the video titles of the 2nd page of recent featured videos
+    hc.videos(:page => 2, :sort => "most_recent", :filter => "featured").each do |v|
+      puts v.title
+    end
 
-  puts "Videos matching 'origami'"
-  hc.video_search("origami").each do |v|
-    puts v.title
-  end
+    puts "Videos matching 'origami'"
+    hc.video_search("origami").each do |v|
+      puts v.title
+    end
 
-  puts "Video with id 946"
-  puts hc.video(946).title
+    puts "Video with id 946"
+    puts hc.video(946).title
   
-  # Category API
-  piano = hc.category(1105)
-  puts "The parent category of Piano is #{hc.category(piano.parent_id).name}"
+    # Category API
+    piano = hc.category(1105)
+    puts "The parent category of Piano is #{hc.category(piano.parent_id).name}"
   
-  ancestors = piano.parents.map{|c| c[:name]}
-  # Ancestors will be an array of hash metadata: 
-  # => [{:name=>"Performing Arts", :id=>"1048"}, {:name=>"Musical Instruments", :id=>"1095"}, {:name=>"Keyboards", :id=>"1103"}]
-  puts "The ancestors of piano are: #{ancestors.join(" -> ")}"
+    ancestors = piano.parents.map{|c| c[:name]}
+    # Ancestors will be an array of hash metadata: 
+    # => [{:name=>"Performing Arts", :id=>"1048"}, {:name=>"Musical Instruments", :id=>"1095"}, {:name=>"Keyboards", :id=>"1103"}]
+    puts "The ancestors of piano are: #{ancestors.join(" -> ")}"
