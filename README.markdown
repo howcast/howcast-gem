@@ -10,8 +10,6 @@ Author: Michael Murray <michael@howcast.com>
   
 ## Example
 
-An example ruby script to get some howcast videos
-
     require 'rubygems'
     require 'howcast'
 
@@ -42,5 +40,7 @@ An example ruby script to get some howcast videos
   
     ancestors = piano.parents.map{|c| c[:name]}
     # Ancestors will be an array of hash metadata: 
-    # => [{:name=>"Performing Arts", :id=>"1048"}, {:name=>"Musical Instruments", :id=>"1095"}, {:name=>"Keyboards", :id=>"1103"}]
+    # => [{:name=>"Performing Arts", :id=>"1048"}, 
+    #     {:name=>"Musical Instruments", :id=>"1095"}, 
+    #     {:name=>"Keyboards", :id=>"1103"}]
     puts "The ancestors of piano are: #{ancestors.join(" -> ")}"
