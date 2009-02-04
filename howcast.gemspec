@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.date = %q{2008-06-03}
   s.description = %q{Howcast API Ruby Wrapper}
   s.email = ["michael+gem@howcast.com"]
-  s.extra_rdoc_files = ["History.txt", "License.txt", "Manifest.txt", "README.txt", "website/index.txt"]
+  s.extra_rdoc_files = ["History.txt", "License.txt", "Manifest.txt", "README.markdown", "website/index.txt"]
   
   s.files = FileList['config/*.rb', 'script/*', 'lib/**/*.rb', '[A-Z]*', 'spec/**/*',
     'website/**/*', 'tasks/*.rake'].to_a
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 =end    
   s.has_rdoc = true
   s.homepage = %q{http://howcast.rubyforge.org}
-  s.rdoc_options = ["--main", "README.txt"]
+  s.rdoc_options = ["--main", "README.markdown"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{howcast}
   s.rubygems_version = %q{1.1.0}
