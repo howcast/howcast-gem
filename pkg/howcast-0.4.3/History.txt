@@ -1,3 +1,7 @@
+== 0.4.3 2009-03-02
+
+* Compatibility with ruby 1.9 - replacing dependency on hpricot with why-hpricot as github as the ruby 1.9 hpricot gem
+
 == 0.4.2 2009-02-04
 
 * Adding embed code to video object
