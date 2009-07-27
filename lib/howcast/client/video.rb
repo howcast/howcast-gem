@@ -90,9 +90,9 @@ class Howcast::Client
   # === Inputs
   #
   # The options are:
-  # * <tt>:page</tt> -- The page number to retrieve (defaults to 1). There are 16 videos per page.
-  # * <tt>:sort</tt> -- One of +most_recent+ (default) | +most_viewed+ | +top_rated+ | +most_emailed+ | +most_discussed+ | +top_favorites+
-  # * <tt>:filter</tt> -- One of +all+ | +featured+ | +howcast_studios+ (default) | +directors_program+ | +community+
+  # * <tt>:page</tt> -- The page number to retrieve (defaults to 1). There are 20 videos per page.
+  # * <tt>:sort</tt> -- One of +most_recent+ (default) | +most_viewed+ | +top_rated+
+  # * <tt>:filter</tt> -- One of +all+ | +howcast_studios+ (default)
   #
   # === Outputs
   # An array of video objects

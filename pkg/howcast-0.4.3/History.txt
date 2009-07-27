@@ -1,3 +1,7 @@
+== 0.4.5 2009-07-27
+
+* Removed guide wrappers, Howcast API just has how-to's which merges old video and guides
+
 == 0.4.3 2009-03-02
 
 * Compatibility with ruby 1.9 - replacing dependency on hpricot with why-hpricot as github as the ruby 1.9 hpricot gem

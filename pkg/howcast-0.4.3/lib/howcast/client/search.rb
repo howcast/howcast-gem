@@ -48,24 +48,9 @@ class Howcast::Client
   #   Howcast::Client.new.video_search("poker")
   # Get the third page of howcast videos matching 'traveling'
   #   Howcast::Client.new.video_search("traveling", :page => 3)
-	def video_search(query, options = {})
-    uri = search_url(query, options.merge(:view => 'video'))
+	def search(query, options = {})
+    uri = search_url(query, options)
     (establish_connection(uri)/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}
-  end
-  
-  # Provides access to the Howcast wiki guide search API.
-  # 
-  # See video_search documentation for inputs, outputs and exceptions
-  #
-  # === Examples
-  #
-  # Get the first page of howcast wiki guides matching 'poker'.  
-  #   Howcast::Client.new.guide_search("poker")
-  # Get the third page of howcast wiki guides matching 'traveling'
-  #   Howcast::Client.new.guide_search("traveling", :page => 3)
-	def guide_search(query, options = {})
-    uri = search_url(query, options.merge(:view => 'guide'))
-    (establish_connection(uri)/:guide).inject([]){ |r, i| r << parse_single_xml(i, Guide) }
   end
   	
 	private
@@ -74,7 +59,7 @@ class Howcast::Client
       options = defaults.update(options)
       query = CGI.escape(query)
       uri = "search.xml?q=#{query}"
-      uri += "&view=#{options[:view]}" unless options[:view].nil?
+      uri += "&view=videos"
       uri += "&mode=extended" if (options[:mode] == :extended)
       uri + uri_suffix(options.merge(:use_ampersand => true))
     end

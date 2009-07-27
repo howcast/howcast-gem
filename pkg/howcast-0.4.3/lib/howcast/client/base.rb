@@ -79,10 +79,10 @@ class Howcast::Client
     # === Inputs
     #
     # * <tt>xml</tt> -- See below for a sample xml input
-    # * <tt>klass</tt> -- Class to create - Guide | Video | Category supported
+    # * <tt>klass</tt> -- Class to create - Video | Category supported
     #
     # Sample input xml
-    #   <guide>
+    #   <video>
     #      <id>1086</id>
     #      <rating>96</rating>
     #      <title>How To Choose a Paintbrush</title>
@@ -94,7 +94,7 @@ class Howcast::Client
     #      <permalink>http://www.howcast.com/guides/1086-How-To-Choose-a-Paintbrush</permalink>
     #      <username>michaelrsanchez</username>
     #      <created-at>Thu, 20 Dec 2007 14:14:58 -0800</created-at>
-    #    </guide>
+    #    </video>
     #
     # === Outputs 
     # 

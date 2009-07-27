@@ -25,14 +25,14 @@ hc.videos.each do |v|
   puts v.title
 end
 
-puts "2nd Page of Recent Featured Videos"
-# Will print out the video titles of the 2nd page of recent featured videos
-hc.videos(:page => 2, :sort => "most_recent", :filter => "featured").each do |v|
+puts "2nd Page of Top Rated Videos"
+# Will print out the video titles of the 2nd page of top rated videos
+hc.videos(:page => 2, :sort => "top_rated", :filter => "all").each do |v|
   puts v.title
 end
 
 puts "Videos matching 'origami'"
-hc.video_search("origami").each do |v|
+hc.search("origami").each do |v|
   puts v.title
 end
 
