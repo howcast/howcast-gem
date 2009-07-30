@@ -86,8 +86,8 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000017">easy_steps?</a>&nbsp;&nbsp;
-      <a href="#M000016">new</a>&nbsp;&nbsp;
+      <a href="#M000015">easy_steps?</a>&nbsp;&nbsp;
+      <a href="#M000014">new</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -197,19 +197,18 @@
     <div id="methods">
       <h3 class="section-bar">Public Class methods</h3>
 
-      <div id="method-M000016" class="method-detail">
-        <a name="M000016"></a>
+      <div id="method-M000014" class="method-detail">
+        <a name="M000014"></a>
 
         <div class="method-heading">
-          <a href="Video.src/M000016.html" target="Code" class="method-signature"
-            onclick="popupCode('Video.src/M000016.html');return false;">
+          <a href="#M000014" class="method-signature">
           <span class="method-name">new</span><span class="method-args">(attributes={})</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Creates a <a href="Video.html#M000016">new</a> <a
+Creates a <a href="Video.html#M000014">new</a> <a
 href="Video.html">Video</a> object which is used to encapsulate all the
 attributes available from the Howcast <a href="Video.html">Video</a> API
 </p>
@@ -227,17 +226,28 @@ Initialize a video with title &quot;hello&quot; and rating 20
 <pre>
   Video.new :title =&gt; &quot;hello&quot;, :rating =&gt; 20
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000014-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000014-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/video.rb, line 53</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">attributes</span>={})
+      <span class="ruby-identifier">attributes</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+        <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;#{k}=&quot;</span>, <span class="ruby-identifier">v</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-identifier">k</span>)
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000017" class="method-detail">
-        <a name="M000017"></a>
+      <div id="method-M000015" class="method-detail">
+        <a name="M000015"></a>
 
         <div class="method-heading">
-          <a href="Video.src/M000017.html" target="Code" class="method-signature"
-            onclick="popupCode('Video.src/M000017.html');return false;">
+          <a href="#M000015" class="method-signature">
           <span class="method-name">easy_steps?</span><span class="method-args">()</span>
           </a>
         </div>
@@ -246,6 +256,16 @@ Initialize a video with title &quot;hello&quot; and rating 20
           <p>
 Return true if the video contains easy step by step directions, else false
 </p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000015-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000015-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/video.rb, line 60</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">easy_steps?</span>
+      <span class="ruby-identifier">easy_steps</span> <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;true&quot;</span>
+    <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 

@@ -105,7 +105,7 @@ class Howcast::Client
   # Get the first page of most recent howcast studios videos.  
   #   Howcast::Client.new.videos
   # Get the third page of top favorites which are featured
-  #   Howcast::Client.new.videos(:page => 3, :sort => "top_favorites", :filter => "featured")
+  #   Howcast::Client.new.videos(:page => 3, :sort => "top_favorites", :filter => "top_rated")
 	def videos(options = {})
     uri = videos_url(options)
     (establish_connection(uri)/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}

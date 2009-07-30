@@ -55,28 +55,24 @@
         <tr class="top-aligned-row">
             <td><strong>In:</strong></td>
             <td>
-                <a href="../../files/lib/howcast/client_rb.html">
-                lib/howcast/client.rb
-                </a>
-        <br />
                 <a href="../../files/lib/howcast/client/base_rb.html">
                 lib/howcast/client/base.rb
                 </a>
         <br />
-                <a href="../../files/lib/howcast/client/video_rb.html">
-                lib/howcast/client/video.rb
-                </a>
-        <br />
-                <a href="../../files/lib/howcast/client/guide_rb.html">
-                lib/howcast/client/guide.rb
+                <a href="../../files/lib/howcast/client/category_rb.html">
+                lib/howcast/client/category.rb
                 </a>
         <br />
                 <a href="../../files/lib/howcast/client/search_rb.html">
                 lib/howcast/client/search.rb
                 </a>
         <br />
-                <a href="../../files/lib/howcast/client/category_rb.html">
-                lib/howcast/client/category.rb
+                <a href="../../files/lib/howcast/client/video_rb.html">
+                lib/howcast/client/video.rb
+                </a>
+        <br />
+                <a href="../../files/lib/howcast/client_rb.html">
+                lib/howcast/client.rb
                 </a>
         <br />
             </td>
@@ -98,6 +94,12 @@
 
   <div id="contextContent">
 
+    <div id="description">
+      <p>
+Used to query the Howcast REST API.
+</p>
+
+    </div>
 
 
    </div>
@@ -107,16 +109,14 @@
 
       <div class="name-list">
       <a href="#M000006">attach_api_key</a>&nbsp;&nbsp;
-      <a href="#M000012">category</a>&nbsp;&nbsp;
+      <a href="#M000007">category</a>&nbsp;&nbsp;
       <a href="#M000003">establish_connection</a>&nbsp;&nbsp;
-      <a href="#M000011">guide_search</a>&nbsp;&nbsp;
-      <a href="#M000009">guides</a>&nbsp;&nbsp;
       <a href="#M000002">new</a>&nbsp;&nbsp;
       <a href="#M000004">parse_single_xml</a>&nbsp;&nbsp;
+      <a href="#M000008">search</a>&nbsp;&nbsp;
       <a href="#M000005">uri_suffix</a>&nbsp;&nbsp;
-      <a href="#M000007">video</a>&nbsp;&nbsp;
-      <a href="#M000010">video_search</a>&nbsp;&nbsp;
-      <a href="#M000008">videos</a>&nbsp;&nbsp;
+      <a href="#M000009">video</a>&nbsp;&nbsp;
+      <a href="#M000010">videos</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -132,7 +132,6 @@
 
       Module <a href="Client/WatchAttrAccessors.html" class="link">Howcast::Client::WatchAttrAccessors</a><br />
 Class <a href="Client/Category.html" class="link">Howcast::Client::Category</a><br />
-Class <a href="Client/Guide.html" class="link">Howcast::Client::Guide</a><br />
 Class <a href="Client/Video.html" class="link">Howcast::Client::Video</a><br />
 
     </div>
@@ -164,8 +163,7 @@ Class <a href="Client/Video.html" class="link">Howcast::Client::Video</a><br />
         <a name="M000002"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000002.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000002.html');return false;">
+          <a href="#M000002" class="method-signature">
           <span class="method-name">new</span><span class="method-args">(options={})</span>
           </a>
         </div>
@@ -192,30 +190,40 @@ raised if the options[:key] value is nil
 
 </li>
 </ul>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000002-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000002-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/base.rb, line 42</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">options</span>={})
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">Howcast</span><span class="ruby-operator">::</span><span class="ruby-constant">ApiKeyNotFound</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:key</span>].<span class="ruby-identifier">nil?</span>
+    <span class="ruby-ivar">@key</span> = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:key</span>]
+  <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000012" class="method-detail">
-        <a name="M000012"></a>
+      <div id="method-M000007" class="method-detail">
+        <a name="M000007"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000012.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000012.html');return false;">
+          <a href="#M000007" class="method-signature">
           <span class="method-name">category</span><span class="method-args">(id)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Provides access to the Howcast <a href="Client.html#M000012">category</a>
+Provides access to the Howcast <a href="Client.html#M000007">category</a>
 API.
 </p>
 <h3>Inputs</h3>
 <ul>
 <li><tt>id</tt> &#8212; The id of the <a
-href="Client.html#M000012">category</a> to lookup
+href="Client.html#M000007">category</a> to lookup
 
 </li>
 </ul>
@@ -232,87 +240,62 @@ if the id doesn&#8216;t exist or is malformed
 </ul>
 <h3>Examples</h3>
 <p>
-Get the Howcast <a href="Client.html#M000012">category</a> with id 2
+Get the Howcast <a href="Client.html#M000007">category</a> with id 2
 </p>
 <pre>
   Howcast::Client.new.category(2)
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000007-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000007-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/category.rb, line 67</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">category</span>(<span class="ruby-identifier">id</span>)
+    <span class="ruby-identifier">response</span> = <span class="ruby-identifier">establish_connection</span>(<span class="ruby-node">&quot;categories/#{id}.xml&quot;</span>)
+    <span class="ruby-identifier">parse_single_category_xml</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">:category</span>))
+  <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
-      <div id="method-M000011" class="method-detail">
-        <a name="M000011"></a>
+      <div id="method-M000008" class="method-detail">
+        <a name="M000008"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000011.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000011.html');return false;">
-          <span class="method-name">guide_search</span><span class="method-args">(query, options = {})</span>
+          <a href="#M000008" class="method-signature">
+          <span class="method-name">search</span><span class="method-args">(query, options = {})</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Provides access to the Howcast wiki guide search API.
-</p>
-<p>
-See <a href="Client.html#M000010">video_search</a> documentation for
-inputs, outputs and exceptions
-</p>
-<h3>Examples</h3>
-<p>
-Get the first page of howcast wiki <a href="Client.html#M000009">guides</a>
-matching &#8216;poker&#8217;.
-</p>
-<pre>
-  Howcast::Client.new.guide_search(&quot;poker&quot;)
-</pre>
-<p>
-Get the third page of howcast wiki <a href="Client.html#M000009">guides</a>
-matching &#8216;traveling&#8216;
-</p>
-<pre>
-  Howcast::Client.new.guide_search(&quot;traveling&quot;, :page =&gt; 3)
-</pre>
-        </div>
-      </div>
-
-      <div id="method-M000009" class="method-detail">
-        <a name="M000009"></a>
-
-        <div class="method-heading">
-          <a href="Client.src/M000009.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000009.html');return false;">
-          <span class="method-name">guides</span><span class="method-args">(options = {})</span>
-          </a>
-        </div>
-      
-        <div class="method-description">
-          <p>
-Provides access to the Howcast list <a
-href="Client.html#M000009">guides</a> API.
+Provides access to the Howcast <a href="Client.html#M000009">video</a> <a
+href="Client.html#M000008">search</a> API.
 </p>
 <h3>Inputs</h3>
+<ul>
+<li><tt>query</tt> &#8212; The string query which you want to <a
+href="Client.html#M000008">search</a> for
+
+</li>
+</ul>
 <p>
 The options are:
 </p>
 <ul>
 <li><tt>:page</tt> &#8212; The page number to retrieve (defaults to 1). There
-are 16 <a href="Client.html#M000009">guides</a> per page.
+are 10 <a href="Client.html#M000010">videos</a> per page.
 
 </li>
-<li><tt>:sort</tt> &#8212; One of <tt>most_recent</tt> (default) |
-<tt>most_viewed</tt> | <tt>top_rated</tt> | <tt>most_emailed</tt> |
-<tt>most_discussed</tt> | <tt>top_favorites</tt>
-
-</li>
-<li><tt>:filter</tt> &#8212; One of <tt>all</tt> | <tt>featured</tt> |
-<tt>howcast_written</tt> (default) | <tt>community_written</tt>
+<li><tt>:mode</tt> &#8212; Mode to <a href="Client.html#M000008">search</a>,
+using :extended will allow title:something searches
 
 </li>
 </ul>
 <h3>Outputs</h3>
 <p>
-An array of guide objects
+An array of <a href="Client.html#M000009">video</a> objects
 </p>
 <h3>Exceptions</h3>
 <ul>
@@ -320,41 +303,56 @@ An array of guide objects
 if the requested sort and filter is malformed or not available (404)
 
 </li>
+<li><tt>ArgumentError</tt> &#8212; raised when the required 1 argument
+isn&#8216;t supplied
+
+</li>
 </ul>
 <h3>Examples</h3>
 <p>
-Get the first page of most recent howcast written <a
-href="Client.html#M000009">guides</a>.
+Get the first page of howcast <a href="Client.html#M000010">videos</a>
+matching &#8216;poker&#8217;.
 </p>
 <pre>
-  Howcast::Client.new.guides
+  Howcast::Client.new.video_search(&quot;poker&quot;)
 </pre>
 <p>
-Get the third page of top favorites which are featured
+Get the third page of howcast <a href="Client.html#M000010">videos</a>
+matching &#8216;traveling&#8216;
 </p>
 <pre>
-  Howcast::Client.new.guides(:page =&gt; 3, :sort =&gt; &quot;top_favorites&quot;, :filter =&gt; &quot;featured&quot;)
+  Howcast::Client.new.video_search(&quot;traveling&quot;, :page =&gt; 3)
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000008-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000008-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/search.rb, line 51</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">search</span>(<span class="ruby-identifier">query</span>, <span class="ruby-identifier">options</span> = {})
+    <span class="ruby-identifier">uri</span> = <span class="ruby-identifier">search_url</span>(<span class="ruby-identifier">query</span>, <span class="ruby-identifier">options</span>)
+    (<span class="ruby-identifier">establish_connection</span>(<span class="ruby-identifier">uri</span>)<span class="ruby-operator">/</span><span class="ruby-identifier">:video</span>).<span class="ruby-identifier">inject</span>([]){ <span class="ruby-operator">|</span><span class="ruby-identifier">r</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">parse_single_xml</span>(<span class="ruby-identifier">i</span>, <span class="ruby-constant">Video</span>)}
+  <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
-      <div id="method-M000007" class="method-detail">
-        <a name="M000007"></a>
+      <div id="method-M000009" class="method-detail">
+        <a name="M000009"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000007.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000007.html');return false;">
+          <a href="#M000009" class="method-signature">
           <span class="method-name">video</span><span class="method-args">(id)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Provides access to the Howcast <a href="Client.html#M000007">video</a> API.
+Provides access to the Howcast <a href="Client.html#M000009">video</a> API.
 </p>
 <h3>Inputs</h3>
 <ul>
-<li><tt>id</tt> &#8212; The id of the <a href="Client.html#M000007">video</a>
+<li><tt>id</tt> &#8212; The id of the <a href="Client.html#M000009">video</a>
 to lookup
 
 </li>
@@ -372,11 +370,22 @@ id doesn&#8216;t exist or is malformed
 </ul>
 <h3>Examples</h3>
 <p>
-Get the Howcast <a href="Client.html#M000007">video</a> with id 2
+Get the Howcast <a href="Client.html#M000009">video</a> with id 2
 </p>
 <pre>
   Howcast::Client.new.video(2)
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000009-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000009-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/video.rb, line 83</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">video</span>(<span class="ruby-identifier">id</span>)
+    <span class="ruby-identifier">response</span> = <span class="ruby-identifier">establish_connection</span>(<span class="ruby-node">&quot;videos/#{id}.xml&quot;</span>)
+    <span class="ruby-identifier">parse_single_xml</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">:video</span>), <span class="ruby-constant">Video</span>)
+  <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
@@ -384,75 +393,7 @@ Get the Howcast <a href="Client.html#M000007">video</a> with id 2
         <a name="M000010"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000010.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000010.html');return false;">
-          <span class="method-name">video_search</span><span class="method-args">(query, options = {})</span>
-          </a>
-        </div>
-      
-        <div class="method-description">
-          <p>
-Provides access to the Howcast <a href="Client.html#M000007">video</a>
-search API.
-</p>
-<h3>Inputs</h3>
-<ul>
-<li><tt>query</tt> &#8212; The string query which you want to search for
-
-</li>
-</ul>
-<p>
-The options are:
-</p>
-<ul>
-<li><tt>:page</tt> &#8212; The page number to retrieve (defaults to 1). There
-are 10 <a href="Client.html#M000008">videos</a> per page.
-
-</li>
-<li><tt>:mode</tt> &#8212; Mode to search, using :extended will allow
-title:something searches
-
-</li>
-</ul>
-<h3>Outputs</h3>
-<p>
-An array of <a href="Client.html#M000007">video</a> objects
-</p>
-<h3>Exceptions</h3>
-<ul>
-<li><tt><a href="ApiNotFound.html">Howcast::ApiNotFound</a></tt> &#8212; raised
-if the requested sort and filter is malformed or not available (404)
-
-</li>
-<li><tt>ArgumentError</tt> &#8212; raised when the required 1 argument
-isn&#8216;t supplied
-
-</li>
-</ul>
-<h3>Examples</h3>
-<p>
-Get the first page of howcast <a href="Client.html#M000008">videos</a>
-matching &#8216;poker&#8217;.
-</p>
-<pre>
-  Howcast::Client.new.video_search(&quot;poker&quot;)
-</pre>
-<p>
-Get the third page of howcast <a href="Client.html#M000008">videos</a>
-matching &#8216;traveling&#8216;
-</p>
-<pre>
-  Howcast::Client.new.video_search(&quot;traveling&quot;, :page =&gt; 3)
-</pre>
-        </div>
-      </div>
-
-      <div id="method-M000008" class="method-detail">
-        <a name="M000008"></a>
-
-        <div class="method-heading">
-          <a href="Client.src/M000008.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000008.html');return false;">
+          <a href="#M000010" class="method-signature">
           <span class="method-name">videos</span><span class="method-args">(options = {})</span>
           </a>
         </div>
@@ -460,7 +401,7 @@ matching &#8216;traveling&#8216;
         <div class="method-description">
           <p>
 Provides access to the Howcast list <a
-href="Client.html#M000008">videos</a> API.
+href="Client.html#M000010">videos</a> API.
 </p>
 <h3>Inputs</h3>
 <p>
@@ -468,23 +409,21 @@ The options are:
 </p>
 <ul>
 <li><tt>:page</tt> &#8212; The page number to retrieve (defaults to 1). There
-are 16 <a href="Client.html#M000008">videos</a> per page.
+are 20 <a href="Client.html#M000010">videos</a> per page.
 
 </li>
 <li><tt>:sort</tt> &#8212; One of <tt>most_recent</tt> (default) |
-<tt>most_viewed</tt> | <tt>top_rated</tt> | <tt>most_emailed</tt> |
-<tt>most_discussed</tt> | <tt>top_favorites</tt>
+<tt>most_viewed</tt> | <tt>top_rated</tt>
 
 </li>
-<li><tt>:filter</tt> &#8212; One of <tt>all</tt> | <tt>featured</tt> |
-<tt>howcast_studios</tt> (default) | <tt>directors_program</tt> |
-<tt>community</tt>
+<li><tt>:filter</tt> &#8212; One of <tt>all</tt> | <tt>howcast_studios</tt>
+(default)
 
 </li>
 </ul>
 <h3>Outputs</h3>
 <p>
-An array of <a href="Client.html#M000007">video</a> objects
+An array of <a href="Client.html#M000009">video</a> objects
 </p>
 <h3>Exceptions</h3>
 <ul>
@@ -496,7 +435,7 @@ if the requested sort and filter is malformed or not available (404)
 <h3>Examples</h3>
 <p>
 Get the first page of most recent howcast studios <a
-href="Client.html#M000008">videos</a>.
+href="Client.html#M000010">videos</a>.
 </p>
 <pre>
   Howcast::Client.new.videos
@@ -505,8 +444,19 @@ href="Client.html#M000008">videos</a>.
 Get the third page of top favorites which are featured
 </p>
 <pre>
-  Howcast::Client.new.videos(:page =&gt; 3, :sort =&gt; &quot;top_favorites&quot;, :filter =&gt; &quot;featured&quot;)
+  Howcast::Client.new.videos(:page =&gt; 3, :sort =&gt; &quot;top_favorites&quot;, :filter =&gt; &quot;top_rated&quot;)
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000010-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000010-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/video.rb, line 109</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">videos</span>(<span class="ruby-identifier">options</span> = {})
+    <span class="ruby-identifier">uri</span> = <span class="ruby-identifier">videos_url</span>(<span class="ruby-identifier">options</span>)
+    (<span class="ruby-identifier">establish_connection</span>(<span class="ruby-identifier">uri</span>)<span class="ruby-operator">/</span><span class="ruby-identifier">:video</span>).<span class="ruby-identifier">inject</span>([]){ <span class="ruby-operator">|</span><span class="ruby-identifier">r</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">parse_single_xml</span>(<span class="ruby-identifier">i</span>, <span class="ruby-constant">Video</span>)}
+        <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
@@ -516,8 +466,7 @@ Get the third page of top favorites which are featured
         <a name="M000006"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000006.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000006.html');return false;">
+          <a href="#M000006" class="method-signature">
           <span class="method-name">attach_api_key</span><span class="method-args">(url)</span>
           </a>
         </div>
@@ -544,6 +493,16 @@ The url with the api_key appended
   attach_api_key(&quot;http://www.howcast.com/videos/most_recent/all?page=2&quot;)
   =&gt; &quot;http://www.howcast.com/videos/most_recent/all?page=2&amp;api_key=APIKEYHERE&quot;
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000006-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000006-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/base.rb, line 150</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">attach_api_key</span>(<span class="ruby-identifier">url</span>)
+      <span class="ruby-identifier">url</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/\?/</span>) <span class="ruby-operator">?</span> <span class="ruby-node">&quot;#{url}&amp;api_key=#{self.key}&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;#{url}?api_key=#{self.key}&quot;</span>
+    <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
@@ -551,8 +510,7 @@ The url with the api_key appended
         <a name="M000003"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000003.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000003.html');return false;">
+          <a href="#M000003" class="method-signature">
           <span class="method-name">establish_connection</span><span class="method-args">(relative_path)</span>
           </a>
         </div>
@@ -588,11 +546,26 @@ raised if the <tt>api_key</tt> is invalid
 <h3>Examples</h3>
 <p>
 Get the Hpricot data for most recent howcast studios <a
-href="Client.html#M000008">videos</a>
+href="Client.html#M000010">videos</a>
 </p>
 <pre>
   establish_connection(&quot;videos/most_recent/howcast_studios.xml&quot;)
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000003-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000003-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/base.rb, line 68</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">establish_connection</span>(<span class="ruby-identifier">relative_path</span>)
+      <span class="ruby-identifier">h</span> = <span class="ruby-constant">Hpricot</span>.<span class="ruby-constant">XML</span>(<span class="ruby-identifier">open</span>(<span class="ruby-identifier">url</span> = <span class="ruby-identifier">attach_api_key</span>(<span class="ruby-node">&quot;http://www.howcast.com/#{relative_path}&quot;</span>)))
+      <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Established connection with: '#{url}'&quot;</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">Howcast</span><span class="ruby-operator">::</span><span class="ruby-constant">ApiKeyNotFound</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">h</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">:error</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">h</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">:error</span>).<span class="ruby-identifier">inner_html</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/Invalid API Key/</span>)
+      <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">h</span>
+    <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">URI</span><span class="ruby-operator">::</span><span class="ruby-constant">InvalidURIError</span>, <span class="ruby-constant">OpenURI</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTPError</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">Howcast</span><span class="ruby-operator">::</span><span class="ruby-constant">ApiNotFound</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;Invalid URL requested. Refer to the Howcast API for supported URL's&quot;</span>)
+    <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
@@ -600,8 +573,7 @@ href="Client.html#M000008">videos</a>
         <a name="M000004"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000004.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000004.html');return false;">
+          <a href="#M000004" class="method-signature">
           <span class="method-name">parse_single_xml</span><span class="method-args">(xml, klass)</span>
           </a>
         </div>
@@ -617,8 +589,8 @@ href="Client.html#M000002">new</a> <tt>klass</tt> object
 
 </li>
 <li><tt>klass</tt> &#8212; Class to create - <a
-href="Client/Guide.html">Guide</a> | <a href="Client/Video.html">Video</a>
-| <a href="Client/Category.html">Category</a> supported
+href="Client/Video.html">Video</a> | <a
+href="Client/Category.html">Category</a> supported
 
 </li>
 </ul>
@@ -626,7 +598,7 @@ href="Client/Guide.html">Guide</a> | <a href="Client/Video.html">Video</a>
 Sample input xml
 </p>
 <pre>
-  &lt;guide&gt;
+  &lt;video&gt;
      &lt;id&gt;1086&lt;/id&gt;
      &lt;rating&gt;96&lt;/rating&gt;
      &lt;title&gt;How To Choose a Paintbrush&lt;/title&gt;
@@ -638,12 +610,27 @@ Sample input xml
      &lt;permalink&gt;http://www.howcast.com/guides/1086-How-To-Choose-a-Paintbrush&lt;/permalink&gt;
      &lt;username&gt;michaelrsanchez&lt;/username&gt;
      &lt;created-at&gt;Thu, 20 Dec 2007 14:14:58 -0800&lt;/created-at&gt;
-   &lt;/guide&gt;
+   &lt;/video&gt;
 </pre>
 <h3>Outputs</h3>
 <p>
 <tt>klass</tt> object with initialized attributes
 </p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000004-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000004-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/base.rb, line 102</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse_single_xml</span>(<span class="ruby-identifier">xml</span>, <span class="ruby-identifier">klass</span>)
+      <span class="ruby-identifier">hash</span> = {}
+      <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">attr_accessors</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">attribute</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">node_name</span> = <span class="ruby-identifier">attribute</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-value str">&quot;_&quot;</span>, <span class="ruby-value str">&quot;-&quot;</span>) <span class="ruby-comment cmt"># xml schema uses hyphens for spaces, but ruby uses underscores</span>
+        <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">attribute</span>] = <span class="ruby-operator">!</span><span class="ruby-identifier">xml</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">node_name</span>).<span class="ruby-identifier">nil?</span> <span class="ruby-value">? </span><span class="ruby-identifier">xml</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">node_name</span>).<span class="ruby-identifier">inner_text</span>.<span class="ruby-identifier">strip</span> <span class="ruby-operator">:</span> <span class="ruby-value str">&quot;&quot;</span>
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-identifier">hash</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">all?</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">v</span><span class="ruby-operator">==</span><span class="ruby-value str">&quot;&quot;</span>} <span class="ruby-operator">?</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">hash</span>)
+    <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
@@ -651,8 +638,7 @@ Sample input xml
         <a name="M000005"></a>
 
         <div class="method-heading">
-          <a href="Client.src/M000005.html" target="Code" class="method-signature"
-            onclick="popupCode('Client.src/M000005.html');return false;">
+          <a href="#M000005" class="method-signature">
           <span class="method-name">uri_suffix</span><span class="method-args">(opts)</span>
           </a>
         </div>
@@ -691,6 +677,16 @@ A valid suffix string to append to the end of a url
 <pre>
   uri_suffix(:page =&gt; 3, :use_ampersand =&gt; true)
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000005-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000005-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/base.rb, line 129</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">uri_suffix</span>(<span class="ruby-identifier">opts</span>)
+      <span class="ruby-identifier">opts</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">opts</span>[<span class="ruby-identifier">:page</span>] <span class="ruby-operator">?</span> <span class="ruby-node">&quot;#{opts[:use_ampersand] ? '&amp;' : '?'}page=#{opts[:page]}&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-value str">&quot;&quot;</span>
+    <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 

@@ -102,13 +102,22 @@
         <a name="M000001"></a>
 
         <div class="method-heading">
-          <a href="howcast_rb.src/M000001.html" target="Code" class="method-signature"
-            onclick="popupCode('howcast_rb.src/M000001.html');return false;">
+          <a href="#M000001" class="method-signature">
           <span class="method-name">require_local</span><span class="method-args">(suffix)</span>
           </a>
         </div>
       
         <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000001-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000001-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast.rb, line 3</span>
+<span class="ruby-keyword kw">def</span> <span class="ruby-identifier">require_local</span>(<span class="ruby-identifier">suffix</span>)
+  <span class="ruby-identifier">require</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword kw">__FILE__</span>), <span class="ruby-identifier">suffix</span>)))
+<span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 

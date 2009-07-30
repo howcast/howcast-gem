@@ -33,7 +33,7 @@
     <h1></h1>
     <div id="version" class="clickable" onclick='document.location = "http://rubyforge.org/projects/howcast"; return false'>
       <p>Get Version</p>
-      <a href="http://rubyforge.org/projects/howcast" class="numbers">0.4.3</a>
+      <a href="http://rubyforge.org/projects/howcast" class="numbers">0.4.5</a>
     </div>
     <h2>Howcast <span class="caps">API</span> Rubygem</h2>
 <h2>What</h2>
@@ -53,14 +53,14 @@
   <span class="ident">puts</span> <span class="ident">v</span><span class="punct">.</span><span class="ident">title</span>
 <span class="keyword">end</span>
 
-<span class="ident">puts</span> <span class="punct">&quot;</span><span class="string">2nd Page of Recent Featured Videos</span><span class="punct">&quot;</span>
-<span class="comment"># Will print out the video titles of the 2nd page of recent featured videos</span>
-<span class="ident">hc</span><span class="punct">.</span><span class="ident">videos</span><span class="punct">(</span><span class="symbol">:page</span> <span class="punct">=&gt;</span> <span class="number">2</span><span class="punct">,</span> <span class="symbol">:sort</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">most_recent</span><span class="punct">&quot;,</span> <span class="symbol">:filter</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">featured</span><span class="punct">&quot;).</span><span class="ident">each</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">v</span><span class="punct">|</span>
+<span class="ident">puts</span> <span class="punct">&quot;</span><span class="string">2nd Page of Top Rated Videos</span><span class="punct">&quot;</span>
+<span class="comment"># Will print out the video titles of the 2nd page of top rated videos</span>
+<span class="ident">hc</span><span class="punct">.</span><span class="ident">videos</span><span class="punct">(</span><span class="symbol">:page</span> <span class="punct">=&gt;</span> <span class="number">2</span><span class="punct">,</span> <span class="symbol">:sort</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">top_rated</span><span class="punct">&quot;,</span> <span class="symbol">:filter</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">all</span><span class="punct">&quot;).</span><span class="ident">each</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">v</span><span class="punct">|</span>
   <span class="ident">puts</span> <span class="ident">v</span><span class="punct">.</span><span class="ident">title</span>
 <span class="keyword">end</span>
 
 <span class="ident">puts</span> <span class="punct">&quot;</span><span class="string">Videos matching 'origami'</span><span class="punct">&quot;</span>
-<span class="ident">hc</span><span class="punct">.</span><span class="ident">video_search</span><span class="punct">(&quot;</span><span class="string">origami</span><span class="punct">&quot;).</span><span class="ident">each</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">v</span><span class="punct">|</span>
+<span class="ident">hc</span><span class="punct">.</span><span class="ident">search</span><span class="punct">(&quot;</span><span class="string">origami</span><span class="punct">&quot;).</span><span class="ident">each</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">v</span><span class="punct">|</span>
   <span class="ident">puts</span> <span class="ident">v</span><span class="punct">.</span><span class="ident">title</span>
 <span class="keyword">end</span>
 
@@ -90,7 +90,7 @@
 <h2>Contact</h2>
 <p>Comments are welcome. Send an email to <a href="mailto:michael@howcast.com">Michael Murray</a>.</p>
     <p class="coda">
-      <a href="mailto:michael@howcast.com">Michael Murray</a>, 6th November 2008<br>
+      <a href="mailto:michael@howcast.com">Michael Murray</a>, 30th July 2009<br>
       Theme extended from <a href="http://rb2js.rubyforge.org/">Paul Battley</a>
     </p>
 </div>

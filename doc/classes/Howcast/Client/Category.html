@@ -86,7 +86,7 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000015">new</a>&nbsp;&nbsp;
+      <a href="#M000013">new</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -136,19 +136,18 @@
     <div id="methods">
       <h3 class="section-bar">Public Class methods</h3>
 
-      <div id="method-M000015" class="method-detail">
-        <a name="M000015"></a>
+      <div id="method-M000013" class="method-detail">
+        <a name="M000013"></a>
 
         <div class="method-heading">
-          <a href="Category.src/M000015.html" target="Code" class="method-signature"
-            onclick="popupCode('Category.src/M000015.html');return false;">
+          <a href="#M000013" class="method-signature">
           <span class="method-name">new</span><span class="method-args">(attributes={})</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Creates a <a href="Category.html#M000015">new</a> <a
+Creates a <a href="Category.html#M000013">new</a> <a
 href="Category.html">Category</a> object which is used to encapsulate all
 the attributes available from the Howcast <a
 href="Category.html">Category</a> API. The parents attribute will be an
@@ -171,6 +170,18 @@ Initialize a category with name &quot;Arts &amp; Crafts&quot;
 <pre>
   Category.new :name =&gt; &quot;Arts &amp; Crafts&quot;
 </pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000013-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000013-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/howcast/client/category.rb, line 42</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">attributes</span>={})
+      <span class="ruby-identifier">attributes</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+        <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;#{k}=&quot;</span>, <span class="ruby-identifier">v</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-identifier">k</span>)
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
         </div>
       </div>
 
