@@ -1,3 +1,7 @@
+== 0.4.9 2009-08-19
+
+* require hpricot, update readme
+
 == 0.4.8 2009-08-19
 
 * Move gem to github, use echoe to clean up configuration, remove dependency on hpricot

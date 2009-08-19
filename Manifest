@@ -1,5 +1,4 @@
 CHANGELOG
-howcast.gemspec
 lib/howcast/client/base.rb
 lib/howcast/client/category.rb
 lib/howcast/client/search.rb
