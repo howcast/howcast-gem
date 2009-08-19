@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('howcast', '0.4.6') do |x|
+Echoe.new('howcast', '0.4.7') do |x|
   x.description = "Howcast API Ruby Wrapper"
   x.url = "http://github.com/howcast/howcast-gem"
   x.author = "Jingshen Jimmy Zhang"
