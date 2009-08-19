@@ -14,4 +14,4 @@ Echoe.new('howcast', '0.4.7') do |x|
   x.development_dependencies = []
 end
 
-Dir['tasks/**/*.rake'].each { |rake| load rake }
+Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
