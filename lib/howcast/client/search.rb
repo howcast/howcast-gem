@@ -29,9 +29,11 @@ class Howcast::Client
   # === Inputs
   #
   # * <tt>query</tt> -- The string query which you want to search for
-  # The options are:
-  # * <tt>:page</tt> -- The page number to retrieve (defaults to 1). There are 10 videos per page.
-  # * <tt>:mode</tt> -- Mode to search, using :extended will allow title:something searches
+  #   The options are:
+  # ** <tt>:page</tt> -- The page number to retrieve (defaults to 1). There are
+  #    10 videos per page.
+  # ** <tt>:mode</tt> -- Mode to search, using :extended will allow
+  #    title:something searches
   #
   # === Outputs
   #
@@ -39,8 +41,10 @@ class Howcast::Client
   #
   # === Exceptions
   #
-  # * <tt>Howcast::ApiNotFound</tt> -- raised if the requested sort and filter is malformed or not available (404)
-  # * <tt>ArgumentError</tt> -- raised when the required 1 argument isn't supplied
+  # * <tt>Howcast::ApiNotFound</tt> -- raised if the requested sort and filter
+  #   is malformed or not available (404)
+  # * <tt>ArgumentError</tt> -- raised when the required 1 argument isn't
+  #   supplied
   #
   # === Examples
   #
@@ -49,18 +53,34 @@ class Howcast::Client
   # Get the third page of howcast videos matching 'traveling'
   #   Howcast::Client.new.video_search("traveling", :page => 3)
   def search(query, options = {})
-    uri = search_url(query, options)
-    (establish_connection(uri)/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}
+    defaults = {:view => "videos", :q => query}
+    params = defaults.merge options
+    do_search params
+  end
+
+  # Provides low-level access to the Howcast video search API.
+  #
+  # === Inputs
+  #
+  # * <tt>params</tt> -- A hash of params that will be URL encoded and appended
+  #   to the URI. You'll have to know what you're doing.
+  #
+  # Other than its arguments, this method is identical to +search+.
+  def advanced_search params
+    do_search params
   end
 
   private
-    def search_url(query, options={})
-      defaults = {:page => nil, :view => nil, :mode => nil}
-      options = defaults.update(options)
-      query = CGI.escape(query)
-      uri = "search.xml?q=#{query}"
-      uri += "&view=videos"
-      uri += "&mode=extended" if (options[:mode] == :extended)
-      uri + uri_suffix(options.merge(:use_ampersand => true))
+    def do_search params
+      uri = search_url params
+      (establish_connection(uri)/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}
+    end
+
+    def search_url params
+      uri = "search.xml?"
+      params[:q] = CGI.escape params[:q] if params[:q]
+      uri += hash_to_params params
+      uri += uri_suffix(params.merge(:use_ampersand => true)) unless params[:page]
+      uri
     end
 end

@@ -150,5 +150,32 @@ class Howcast::Client
     def attach_api_key(url)
       url.match(/\?/) ? "#{url}&api_key=#{self.key}" : "#{url}?api_key=#{self.key}"
     end
+
+    # From merb/core_ext/hash.rb, line 87
+    def hash_to_params hash
+      params = ''
+      stack = []
+
+      hash.each do |k, v|
+        if v.is_a?(Hash)
+          stack << [k,v]
+        else
+          params << "#{k}=#{v}&"
+        end
+      end
+
+      stack.each do |parent, h|
+        h.each do |k, v|
+          if v.is_a?(Hash)
+            stack << ["#{parent}[#{k}]", v]
+          else
+            params << "#{parent}[#{k}]=#{v}&"
+          end
+        end
+      end
+
+      params.chop! # trailing &
+      params
+    end
 end
 
