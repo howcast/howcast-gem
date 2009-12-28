@@ -25,10 +25,10 @@ require 'cgi'
 
 class Howcast::Client
   # Provides access to the Howcast video search API.
-  # 
+  #
   # === Inputs
   #
-  # * <tt>query</tt> -- The string query which you want to search for 
+  # * <tt>query</tt> -- The string query which you want to search for
   # The options are:
   # * <tt>:page</tt> -- The page number to retrieve (defaults to 1). There are 10 videos per page.
   # * <tt>:mode</tt> -- Mode to search, using :extended will allow title:something searches
@@ -44,17 +44,17 @@ class Howcast::Client
   #
   # === Examples
   #
-  # Get the first page of howcast videos matching 'poker'.  
+  # Get the first page of howcast videos matching 'poker'.
   #   Howcast::Client.new.video_search("poker")
   # Get the third page of howcast videos matching 'traveling'
   #   Howcast::Client.new.video_search("traveling", :page => 3)
-	def search(query, options = {})
+  def search(query, options = {})
     uri = search_url(query, options)
     (establish_connection(uri)/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}
   end
-  	
-	private
-  	def search_url(query, options={})
+
+  private
+    def search_url(query, options={})
       defaults = {:page => nil, :view => nil, :mode => nil}
       options = defaults.update(options)
       query = CGI.escape(query)
