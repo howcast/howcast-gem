@@ -22,7 +22,7 @@ begin
     gemspec.authors = ["Jingshen Jimmy Zhang", "Ian Smith-Heisters"]
     gemspec.add_dependency "hpricot"
     gemspec.add_development_dependency "rspec"
-    gemspec.files = FileList['**/*'].exclude('tmp/*', 'script/*', 'tags')
+    gemspec.files = FileList['**/*'].exclude('tmp/*', 'script/*', 'tags', 'pkg')
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"

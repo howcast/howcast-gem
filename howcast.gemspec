@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jingshen Jimmy Zhang", "Ian Smith-Heisters"]
-  s.date = %q{2009-12-28}
+  s.date = %q{2009-12-30}
   s.description = %q{    Howcast offers an Application Programming Interface (API) which allows
     developers to build applications that interface with Howcast. The Howcast
     API is RESTful (REpresentational State Transfer) and users of this API will
@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
      "README.markdown",
      "Rakefile",
      "VERSION",
+     "howcast-0.4.10.gem",
      "howcast.gemspec",
      "lib/howcast.rb",
      "lib/howcast/client.rb",
