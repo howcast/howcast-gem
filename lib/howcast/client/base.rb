@@ -24,6 +24,7 @@
 require 'rubygems'
 require 'hpricot'
 require 'open-uri'
+require 'uri'
 
 class Howcast::Client
   attr_accessor :key
@@ -43,7 +44,21 @@ class Howcast::Client
     raise Howcast::ApiKeyNotFound if options[:key].nil?
     @key = options[:key]
   end
-  
+
+  class << self
+    def base_uri= new_base_uri
+      @base_uri = case new_base_uri
+      when URI      then new_base_uri
+      when String   then URI.parse new_base_uri
+      when Hash     then URI::HTTP.build new_base_uri
+      else;         raise ArgumentError, "can't convert URI: #{new_base_uri.inspect}"
+      end
+    end
+
+    def base_uri
+      @base_uri ||= URI.parse("http://www.howcast.com")
+    end
+  end
   protected
     # Establishes a connection with the Howcast API. Will auto append the api key, that was used
     # to instantiate the Client object, to the URL
@@ -65,8 +80,11 @@ class Howcast::Client
     #
     # Get the Hpricot data for most recent howcast studios videos
     #   establish_connection("videos/most_recent/howcast_studios.xml") 
-    def establish_connection(relative_path)
-      h = Hpricot.XML(open(url = attach_api_key("http://www.howcast.com/#{relative_path}")))
+    def establish_connection(relative_path_and_query)
+      uri = self.class.base_uri.dup
+      relative_path_and_query = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
+      uri.path, uri.query = *relative_path_and_query.split('?')
+      h = Hpricot.XML(open(url = attach_api_key(uri)))
       puts "Established connection with: '#{url}'"
       raise Howcast::ApiKeyNotFound if h.at(:error) && h.at(:error).inner_html.match(/Invalid API Key/)
       return h
@@ -130,25 +148,28 @@ class Howcast::Client
       opts && opts[:page] ? "#{opts[:use_ampersand] ? '&' : '?'}page=#{opts[:page]}" : ""
     end
     
-    # Appends the api key to a url and returns the appended url
+    # Appends the api key to a uri and returns the appended uri
     # 
     # === Inputs
     # 
-    # * <tt>url</tt> -- the url to append the api_key to
+    # * <tt>uri</tt> -- the URI object to append the api_key to
     #
     # === Outputs
     #
-    # The url with the api_key appended
+    # The uri with the api_key appended to the query string
     #
     # === Examples
     #
-    #   attach_api_key("http://www.howcast.com")
+    #   attach_api_key(URI.parse("http://www.howcast.com")).to_s
     #   => "http://www.howcast.com?api_key=APIKEYHERE"
     #   
-    #   attach_api_key("http://www.howcast.com/videos/most_recent/all?page=2")
+    #   attach_api_key(URI.parse("http://www.howcast.com/videos/most_recent/all?page=2")).to_s
     #   => "http://www.howcast.com/videos/most_recent/all?page=2&api_key=APIKEYHERE"
-    def attach_api_key(url)
-      url.match(/\?/) ? "#{url}&api_key=#{self.key}" : "#{url}?api_key=#{self.key}"
+    def attach_api_key(uri)
+      uri = uri.dup
+      key = "api_key=#{self.key}"
+      uri.query = uri.query.to_s.strip != "" ? uri.query+"&"+key : key
+      uri
     end
 
     # From merb/core_ext/hash.rb, line 87
