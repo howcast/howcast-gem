@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{howcast}
-  s.version = "0.4.10"
+  s.version = "0.4.12"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jingshen Jimmy Zhang", "Ian Smith-Heisters"]
-  s.date = %q{2009-12-30}
+  s.date = %q{2010-03-02}
   s.description = %q{    Howcast offers an Application Programming Interface (API) which allows
     developers to build applications that interface with Howcast. The Howcast
     API is RESTful (REpresentational State Transfer) and users of this API will
@@ -31,7 +31,6 @@ Gem::Specification.new do |s|
      "README.markdown",
      "Rakefile",
      "VERSION",
-     "howcast-0.4.10.gem",
      "howcast.gemspec",
      "lib/howcast.rb",
      "lib/howcast/client.rb",
@@ -40,12 +39,16 @@ Gem::Specification.new do |s|
      "lib/howcast/client/search.rb",
      "lib/howcast/client/video.rb",
      "lib/howcast/errors.rb",
+     "lib/howcast/logging.rb",
      "spec/howcast/client/base_spec.rb",
      "spec/howcast/client/category_spec.rb",
      "spec/howcast/client/search_spec.rb",
      "spec/howcast/client/video_spec.rb",
+     "spec/output_capture_helper.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
+     "spec/string_matchers_helper.rb",
+     "spec/xml_fixtures_helper.rb",
      "tasks/github.rake"
   ]
   s.homepage = %q{http://github.com/howcast/howcast-gem}
@@ -54,11 +57,14 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{Howcast API Ruby Wrapper}
   s.test_files = [
-    "spec/howcast/client/base_spec.rb",
-     "spec/howcast/client/category_spec.rb",
-     "spec/howcast/client/search_spec.rb",
+    "spec/output_capture_helper.rb",
+     "spec/xml_fixtures_helper.rb",
+     "spec/string_matchers_helper.rb",
+     "spec/spec_helper.rb",
+     "spec/howcast/client/base_spec.rb",
      "spec/howcast/client/video_spec.rb",
-     "spec/spec_helper.rb"
+     "spec/howcast/client/category_spec.rb",
+     "spec/howcast/client/search_spec.rb"
   ]
 
   if s.respond_to? :specification_version then
