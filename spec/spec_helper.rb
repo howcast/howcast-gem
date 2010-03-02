@@ -16,4 +16,10 @@ Spec::Runner.configure do |config|
   config.include(OutputCaptureHelper)
   config.include(XmlFixturesHelper)
   config.include(StringMatchersHelper)
+  config.before :each do
+    start_capturing_output
+  end
+  config.after :each do
+    stop_capturing_output
+  end
 end
