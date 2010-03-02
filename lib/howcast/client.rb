@@ -2,7 +2,6 @@
 class Howcast::Client
 end
 
-require_local('howcast/client/base.rb')
-require_local('howcast/client/video.rb')
-require_local('howcast/client/search.rb')
-require_local('howcast/client/category.rb')
+%w(client/base client/video client/search client/category).each do |dependency|
+  require(File.expand_path(File.join(File.dirname(__FILE__), dependency)))
+end

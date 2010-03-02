@@ -52,3 +52,26 @@ describe Howcast::Client, "base_uri" do
     end.should raise_error(ArgumentError)
   end
 end
+
+describe Howcast::Client, "logging" do
+  before :each do
+    @hc = Howcast::Client.new(:key => "myapikey")
+    @hc.stub!(:open).and_return(videos_xml)
+  end
+
+  it "should log each request by default" do
+    @hc.search("something")
+    captured_output.join('').should match(/Established connection/)
+  end
+
+  it "should be easy to make it less verbose" do
+    original_log_level = Howcast.log.level
+    begin
+      Howcast.log.level = Logger::FATAL
+      @hc.search("something")
+      captured_output.join('').strip.should == ""
+    ensure
+      Howcast.log.level = original_log_level
+    end
+  end
+end
