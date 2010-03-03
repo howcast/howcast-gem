@@ -88,8 +88,10 @@ class Howcast::Client
       Howcast.log.info "Established connection with: '#{url}'"
       raise Howcast::ApiKeyNotFound if h.at(:error) && h.at(:error).inner_html.match(/Invalid API Key/)
       return h
-    rescue URI::InvalidURIError, OpenURI::HTTPError
-      raise Howcast::ApiNotFound.new("Invalid URL requested. Refer to the Howcast API for supported URL's")
+    rescue URI::InvalidURIError
+      raise Howcast::ApiNotFound.new("Invalid URL #{url.inspect} requested. Refer to the Howcast API for supported URL's")
+    rescue OpenURI::HTTPError => boom
+      raise Howcast::ApiError.new("HTTP error #{boom.message} accessing the API. Refer to the Howcast API for supported URL's")
     end
     
     # Parses the xml for a single item from +xml+ and creates a new +klass+ object
