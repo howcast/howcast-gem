@@ -1,3 +1,3 @@
-class Howcast::ApiNotFound < Exception; end
-class Howcast::ApiKeyNotFound < Exception; end
-class Howcast::ApiError < Exception; end
+class Howcast::ApiNotFound < StandardError; end
+class Howcast::ApiKeyNotFound < StandardError; end
+class Howcast::ApiError < StandardError; end
