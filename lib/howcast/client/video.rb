@@ -38,7 +38,7 @@ class Howcast::Client
     extend WatchAttrAccessors
     attr_accessor :id, :title, :permalink, :thumbnail_url, :category_id, 
       :views, :username, :duration, :created_at, :rating, :description, :width, :height,
-      :badges, :easy_steps, :embed, :category_hierarchy
+      :badges, :easy_steps, :embed, :category_hierarchy, :ingredients
     # Creates a new Video object which is used to encapsulate all the attributes available
     # from the Howcast Video API
     #

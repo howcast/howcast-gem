@@ -125,6 +125,8 @@ class Howcast::Client
         node_name = attribute.to_s.gsub("_", "-") # xml schema uses hyphens for spaces, but ruby uses underscores
         if node_name == "category-hierarchy"
           hash[attribute] = category_hierarchy_for(xml) unless xml.at(node_name).nil?
+        elsif node_name == "ingredients"
+          hash[attribute] = ingredients_for(xml) unless xml.at(node_name).nil?
         else
           hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
         end
@@ -215,5 +217,13 @@ class Howcast::Client
       end unless node.nil?
       categories
     end
+    
+    def ingredients_for(xml)
+      ingredients = []
+      node = xml.at('ingredients')
+      node.children_of_type('ingredient').each do |child|
+        ingredients << child.inner_text.strip
+      end unless node.nil?
+      ingredients
+    end
 end
-

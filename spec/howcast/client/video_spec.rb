@@ -76,6 +76,15 @@ describe Howcast::Client, "video" do
     hierarchy[1].name.should == "Exercise"
     hierarchy[2].name.should == "Yoga"
   end
+  
+  it "should set the ingredients in the video model response" do
+    ingredients = @hc.video(2).ingredients
+    ingredients.size.should == 4
+    ingredients[0].should == "Comfortable clothing suitable for stretching and moving"
+    ingredients[1].should == "A calm place where you won't be distracted or disturbed"
+    ingredients[2].should == "A yoga mat or folded blanket"
+    ingredients[3].should == "A belt or strap"
+  end
 end
 
 describe Howcast::Client, "videos" do
