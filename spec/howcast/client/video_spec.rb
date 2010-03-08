@@ -67,6 +67,15 @@ describe Howcast::Client, "video" do
   it "should set the permalink attribute in the video model response" do
     @hc.video(2).permalink.should == "http://www.howcast.com/videos/233-How-To-Do-a-Noble-Pose"
   end
+  
+  it "should set the category hierarchy in the video model response" do
+    hierarchy = @hc.video(2).category_hierarchy
+    hierarchy.size.should == 3
+    hierarchy.first.instance_of?(Howcast::Client::Category).should be_true
+    hierarchy[0].name.should == "Health & Nutrition"
+    hierarchy[1].name.should == "Exercise"
+    hierarchy[2].name.should == "Yoga"
+  end
 end
 
 describe Howcast::Client, "videos" do
