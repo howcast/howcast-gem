@@ -7,7 +7,7 @@ module OutputCaptureHelper
   end
 
   def captured_output
-    return *[@stdout, @stderr].map(&:string)
+    return *[@stdout, @stderr].map{|x|x.string}
   end
 
   def stop_capturing_output
