@@ -85,6 +85,15 @@ describe Howcast::Client, "video" do
     ingredients[2].should == "A yoga mat or folded blanket"
     ingredients[3].should == "A belt or strap"
   end
+  
+  it "should set the related videos in the video model response" do
+    related = @hc.video(2).related_videos
+    related.size.should == 2
+    related.first.instance_of?(Howcast::Client::Video).should be_true
+    related[0].title.should == "How To Do the Extended Triangle Pose"
+    related[0].category_hierarchy.last.name.should == "Yoga"
+    related[1].title.should == "How To Do a Seated Spinal Twist Pose"
+  end
 end
 
 describe Howcast::Client, "videos" do

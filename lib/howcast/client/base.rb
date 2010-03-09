@@ -127,6 +127,8 @@ class Howcast::Client
           hash[attribute] = category_hierarchy_for(xml) unless xml.at(node_name).nil?
         elsif node_name == "ingredients"
           hash[attribute] = ingredients_for(xml) unless xml.at(node_name).nil?
+        elsif node_name == "related-videos"
+          hash[attribute] = related_videos_for(xml) unless xml.at(node_name).nil?
         else
           hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
         end
@@ -212,7 +214,7 @@ class Howcast::Client
       categories = []
       node = xml.at('category-hierarchy')
       node.children_of_type('category').each do |child|
-        category = Howcast::Client::Category.new(:id => child['id'], :parent_id => child['parent_id'], :name => child.inner_text)
+        category = Category.new(:id => child['id'], :parent_id => child['parent_id'], :name => child.inner_text)
         categories << category
       end unless node.nil?
       categories
@@ -225,5 +227,14 @@ class Howcast::Client
         ingredients << child.inner_text.strip
       end unless node.nil?
       ingredients
+    end
+    
+    def related_videos_for(xml)
+      related = []
+      node = xml.at('related-videos')
+      node.children_of_type('video').each do |child|
+        related << parse_single_xml(child, Video)
+      end unless node.nil?
+      related
     end
 end
