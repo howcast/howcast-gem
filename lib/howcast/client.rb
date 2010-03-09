@@ -2,6 +2,6 @@
 class Howcast::Client
 end
 
-%w(client/base client/video client/search client/category).each do |dependency|
+%w(client/base client/video client/search client/category client/marker).each do |dependency|
   require(File.expand_path(File.join(File.dirname(__FILE__), dependency)))
 end

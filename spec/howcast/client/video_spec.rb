@@ -86,6 +86,20 @@ describe Howcast::Client, "video" do
     ingredients[3].should == "A belt or strap"
   end
   
+  it "should set the markers in the video model response" do
+    markers = @hc.video(2).markers
+    markers.size.should == 4
+    markers.first.instance_of?(Howcast::Client::Marker).should be_true
+    markers[0].type.should == "Step"
+    markers[0].textile_text.should == "Sit down on the mat with your legs straight out in front of you."
+    markers[1].type.should == "Tip"
+    markers[1].textile_text.should == "It's okay to slightly bend at the knees while extending into this pose."
+    markers[2].type.should == "Step"
+    markers[2].textile_text.should == "To release the pose, inhale, and raise your torso straight up with your arms stretched overhead, then exhale and lower your hands to the floor. Now to conquer kickball..."
+    markers[3].type.should == "Fact"
+    markers[3].textile_text.should == "Pop nobility Sting recently admitted that he and his wife's claims of yoga-inspired marathons of tantric sex was all a joke, saying, \"I have frantic sex, not tantric sex.\""
+  end
+  
   it "should set the related videos in the video model response" do
     related = @hc.video(2).related_videos
     related.size.should == 2

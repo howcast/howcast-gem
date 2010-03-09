@@ -1,3 +1,7 @@
+== 0.4.13 2010-03-08
+
+* add support for category hierarchy, ingredients, markers, and related videos for video object
+
 == 0.4.9 2009-08-19
 
 * require hpricot, update readme
