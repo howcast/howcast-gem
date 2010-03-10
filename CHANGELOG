@@ -1,3 +1,7 @@
+== 0.4.14 2010-03-10
+
+* Add filename to video object
+
 == 0.4.13 2010-03-08
 
 * add support for category hierarchy, ingredients, markers, and related videos for video object

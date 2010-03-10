@@ -89,6 +89,7 @@ module XmlFixturesHelper
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
         <title>How To Do a Noble Pose</title>
+        <filename>/system/videos/2/33/02/233.flv</filename>
         <embed>
           <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=233"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=233" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
         </embed>

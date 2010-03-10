@@ -68,6 +68,10 @@ describe Howcast::Client, "video" do
     @hc.video(2).permalink.should == "http://www.howcast.com/videos/233-How-To-Do-a-Noble-Pose"
   end
   
+  it "should set the filename attribute in the video model response" do
+    @hc.video(2).filename.should == "/system/videos/2/33/02/233.flv"
+  end
+  
   it "should set the category hierarchy in the video model response" do
     hierarchy = @hc.video(2).category_hierarchy
     hierarchy.size.should == 3
