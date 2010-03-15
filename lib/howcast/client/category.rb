@@ -69,6 +69,25 @@ class Howcast::Client
     parse_single_category_xml(response.at(:category))
   end
   
+  # Provides access to the Howcast categories API.
+  # 
+  # === Inputs
+  #
+  # * <tt>none</tt>
+  #
+  # === Outputs
+  # 
+  # Array of top level category objects
+  #
+  # === Examples
+  # 
+  # Get the top level Howcast categories
+  #   Howcast::Client.new.categories
+  def categories(options = {})
+    uri = "categories.xml"
+    establish_connection(uri).at('categories').children_of_type('category').inject([]){ |r, i| r << parse_single_category_xml(i)}
+	end
+  
   private
     # Exception here to parse the <parents> tag in a category, will set a category.parents variable
     # which is an array of parent metadata hases
@@ -79,7 +98,7 @@ class Howcast::Client
         node_name = attribute.to_s.gsub("_", "-") # xml schema uses hyphens for spaces, but ruby uses underscores
         hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
       end
-      hash[:parents] = (xml.at('parents')/:category).map{ |c| {:id => c['id'], :name => c.inner_html }}
+      hash[:parents] = (xml.at('parents')/:category).map{ |c| {:id => c['id'], :name => c.inner_html }} unless xml.at('parents').nil?
       hash.values.all?{|v| v==""} ? nil : Category.new(hash)
     end
 end

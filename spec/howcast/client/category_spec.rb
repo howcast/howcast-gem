@@ -43,3 +43,22 @@ describe Howcast::Client, "category" do
     @hc.category(2).parents.should == [{:id => "1571", :name => "Travel"}, {:id => "1584", :name => "African Travel"}]
   end
 end
+
+describe Howcast::Client, "categories" do
+  before do
+    @hc = Howcast::Client.new(:key => "myapikey")
+  end
+  
+  it "should establish a connection with categories.xml" do
+    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/categories.xml?api_key=myapikey")).and_return(categories_xml)
+    @hc.categories
+  end
+  
+  it "should return an array of top level category objects" do
+    @hc.should_receive(:open).and_return(categories_xml)
+    categories = @hc.categories
+    categories.size.should == 25
+    categories.first.name.should == "Arts & Media"
+    categories.last.name.should == 'Travel'
+  end
+end
