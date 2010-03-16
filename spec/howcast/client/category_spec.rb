@@ -40,7 +40,11 @@ describe Howcast::Client, "category" do
   end  
   
   it "should set the parents metadata hash" do
-    @hc.category(2).parents.should == [{:id => "1571", :name => "Travel"}, {:id => "1584", :name => "African Travel"}]
+    @hc.category(2).parents.should == [{:id => "1571", :name => "Travel", :permalink => "http://www.howcast.com/categories/1571-Travel"}, {:id => "1584", :name => "African Travel", :permalink => "http://www.howcast.com/categories/1584-African-Travel"}]
+  end
+  
+  it "should set the permalink" do
+    @hc.category(2).permalink.should == "http://www.howcast.com/categories/1585-General-African-Travel"
   end
 end
 

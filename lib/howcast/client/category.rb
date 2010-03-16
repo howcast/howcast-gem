@@ -24,7 +24,7 @@
 class Howcast::Client
   class Category
     extend WatchAttrAccessors
-    attr_accessor :id, :name, :parent_id, :parents
+    attr_accessor :id, :name, :parent_id, :parents, :permalink
     
     # Creates a new Category object which is used to encapsulate all the attributes available
     # from the Howcast Category API. The parents attribute will be an array of category 
@@ -98,7 +98,7 @@ class Howcast::Client
         node_name = attribute.to_s.gsub("_", "-") # xml schema uses hyphens for spaces, but ruby uses underscores
         hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
       end
-      hash[:parents] = (xml.at('parents')/:category).map{ |c| {:id => c['id'], :name => c.inner_html }} unless xml.at('parents').nil?
+      hash[:parents] = (xml.at('parents')/:category).map{ |c| {:id => c.at('id').inner_text.strip, :name => c.at('name').inner_text.strip, :permalink => c.at('permalink').inner_text.strip }} unless xml.at('parents').nil?
       hash.values.all?{|v| v==""} ? nil : Category.new(hash)
     end
 end

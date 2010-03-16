@@ -43,30 +43,24 @@ module XmlFixturesHelper
     <?xml version="1.0" encoding="UTF-8"?>
     <howcast version="0.1">
       <category>
-        <id>1255</id>
+        <id>1585</id>
         <name>General African Travel</name>
         <parent-id>1584</parent-id>
+        <permalink>http://www.howcast.com/categories/1585-General-African-Travel</permalink>
         <parents>
-          <category id="1571">Travel</category>
-          <category parent_id="1571" id="1584">African Travel</category>
+          <category>
+            <id>1571</id>
+            <name>Travel</name>
+            <permalink>http://www.howcast.com/categories/1571-Travel</permalink>
+          </category>
+          <category>
+            <id>1584</id>
+            <name>African Travel</name>
+            <parent-id>1571</parent-id>
+            <permalink>http://www.howcast.com/categories/1584-African-Travel</permalink>
+          </category>
         </parents>
         <subcategories>
-          <category>
-            <id>1265</id>
-            <name>African Travel</name>
-          </category>
-          <category>
-            <id>1289</id>
-            <name>European Travel</name>
-          </category>
-          <category>
-            <id>1256</id>
-            <name>General Travel</name>
-          </category>
-          <category>
-            <id>1311</id>
-            <name>General U.S. Travel</name>
-          </category>
         </subcategories>
       </category>
     </howcast>
