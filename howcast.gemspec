@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{howcast}
-  s.version = "0.4.16"
+  s.version = "0.5.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jingshen Jimmy Zhang", "Ian Smith-Heisters"]
-  s.date = %q{2010-03-16}
+  s.date = %q{2010-03-17}
   s.description = %q{    Howcast offers an Application Programming Interface (API) which allows
     developers to build applications that interface with Howcast. The Howcast
     API is RESTful (REpresentational State Transfer) and users of this API will
@@ -38,12 +38,14 @@ Gem::Specification.new do |s|
      "lib/howcast/client/category.rb",
      "lib/howcast/client/marker.rb",
      "lib/howcast/client/search.rb",
+     "lib/howcast/client/user.rb",
      "lib/howcast/client/video.rb",
      "lib/howcast/errors.rb",
      "lib/howcast/logging.rb",
      "spec/howcast/client/base_spec.rb",
      "spec/howcast/client/category_spec.rb",
      "spec/howcast/client/search_spec.rb",
+     "spec/howcast/client/user_spec.rb",
      "spec/howcast/client/video_spec.rb",
      "spec/output_capture_helper.rb",
      "spec/spec.opts",
@@ -61,6 +63,7 @@ Gem::Specification.new do |s|
     "spec/howcast/client/base_spec.rb",
      "spec/howcast/client/category_spec.rb",
      "spec/howcast/client/search_spec.rb",
+     "spec/howcast/client/user_spec.rb",
      "spec/howcast/client/video_spec.rb",
      "spec/output_capture_helper.rb",
      "spec/spec_helper.rb",

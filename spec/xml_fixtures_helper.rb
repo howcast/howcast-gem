@@ -2485,4 +2485,44 @@ module XmlFixturesHelper
     </howcast>
     VID
   end
+  
+  def user_videos_xml
+    <<-VID
+    <?xml version="1.0" encoding="UTF-8"?>
+    <howcast version="0.1">
+      <title>Howcast - mrmark86's videos</title>
+      <count>1</count>
+      <videos>
+        <video>
+          <category-id>1356</category-id>
+          <id>329098</id>
+          <title>How To Remove Bike Handlebar Grips</title>
+          <views>77</views>
+          <type>HowcastGuide</type>
+          <created-at>Sun, 14 Mar 2010 11:02:07 -0700</created-at>
+          <rating>0</rating>
+          <username>mrmark86</username>
+          <description>
+            <![CDATA[Remove your handlebar grips in just a few minutes with these tips.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=329098"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=329098" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>61</duration>
+          <filename>http://media.howcast.com/system/videos/6/16/57/32/325716.flv</filename>
+          <tags>sports, fitness, bikes, biking, bicycles, handles, grips, removal, tools, screwdriver</tags>
+          <category-hierarchy>
+            <category id="1334">Sports &amp; Fitness</category>
+            <category parent_id="1334" id="1353">Bikes &amp; Biking</category>
+            <category parent_id="1353" id="1356">Biking Equipment</category>
+          </category-hierarchy>
+          <comment-count>0</comment-count>
+          <thumbnail-url>http://img.howcast.com/system/thumbnails/329098/RemoveBikeHandlebarGrips_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/329098-How-To-Remove-Bike-Handlebar-Grips</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+      </videos>
+    </howcast>
+    VID
+  end
 end
