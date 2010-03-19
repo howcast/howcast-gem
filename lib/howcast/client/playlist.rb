@@ -22,21 +22,21 @@
 #++
 
 class Howcast::Client
-  class Homepage
+  class Playlist
     extend WatchAttrAccessors
-    attr_accessor :videos
+    attr_accessor :title, :videos
     
-    # Creates a new Homepage object which is used to encapsulate all the attributes available
-    # from the Howcast homepage API.
+    # Creates a new Playlist object which is used to encapsulate all the attributes available
+    # from the Howcast playlist API.
     #
     # === Inputs
     #
-    # * <tt>attributes</tt> -- A hash to set the various attributes of the homepage object
+    # * <tt>attributes</tt> -- A hash to set the various attributes of the playlist object
     #
     # === Examples
     # 
-    # Initialize a user with an array of videos
-    #   Homepage.new :videos => [video1, video2]
+    # Initialize a playlist with title "My Playlist"
+    #   Playlist.new :title => "My Playlist"
     def initialize(attributes={})
       attributes.each do |k, v|
         self.send("#{k}=", v) if self.respond_to?(k)
@@ -44,11 +44,15 @@ class Howcast::Client
     end
   end
     
-  # Provides access to the Howcast homepage API.
+  # Provides access to the Howcast playlist API.
   # 
+  # === Inputs
+  #
+  # * <tt>id</tt> -- The id of the playlist to lookup
+  #
   # === Outputs
   # 
-  # Homepage object
+  # Playlist object if the id exists or nil if the id doesn't exist or is malformed
   #
   # === Exceptions
   # 
@@ -56,10 +60,10 @@ class Howcast::Client
   #
   # === Examples
   # 
-  # Create the Howcast homepage object
-  #   Howcast::Client.new.homepage
-  def homepage
-    response = establish_connection("homepage/staff_videos.xml")
-    parse_single_xml(response, Homepage)
+  # Get the Howcast playlist with id 12345
+  #   Howcast::Client.new.playlist(12345)
+  def playlist(id, options = {})
+    response = establish_connection("playlists/#{id}.xml")
+    parse_single_xml(response, Playlist)
   end
 end

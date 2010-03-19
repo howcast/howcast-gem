@@ -131,6 +131,8 @@ class Howcast::Client
           hash[attribute] = markers_for(xml) unless xml.at(node_name).nil?
         elsif node_name == "related-videos"
           hash[attribute] = related_videos_for(xml) unless xml.at(node_name).nil?
+        elsif node_name == "videos"
+          hash[attribute] = videos_for(xml) unless xml.at(node_name).nil?
         else
           hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
         end

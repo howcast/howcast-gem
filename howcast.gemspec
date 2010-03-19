@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{howcast}
-  s.version = "0.6.0"
+  s.version = "0.7.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jingshen Jimmy Zhang", "Ian Smith-Heisters"]
@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
      "README.markdown",
      "Rakefile",
      "VERSION",
+     "howcast-0.6.0.gem",
      "howcast.gemspec",
      "lib/howcast.rb",
      "lib/howcast/client.rb",
@@ -38,6 +39,7 @@ Gem::Specification.new do |s|
      "lib/howcast/client/category.rb",
      "lib/howcast/client/homepage.rb",
      "lib/howcast/client/marker.rb",
+     "lib/howcast/client/playlist.rb",
      "lib/howcast/client/search.rb",
      "lib/howcast/client/user.rb",
      "lib/howcast/client/video.rb",
@@ -46,6 +48,7 @@ Gem::Specification.new do |s|
      "spec/howcast/client/base_spec.rb",
      "spec/howcast/client/category_spec.rb",
      "spec/howcast/client/homepage_spec.rb",
+     "spec/howcast/client/playlist_spec.rb",
      "spec/howcast/client/search_spec.rb",
      "spec/howcast/client/user_spec.rb",
      "spec/howcast/client/video_spec.rb",
@@ -65,6 +68,7 @@ Gem::Specification.new do |s|
     "spec/howcast/client/base_spec.rb",
      "spec/howcast/client/category_spec.rb",
      "spec/howcast/client/homepage_spec.rb",
+     "spec/howcast/client/playlist_spec.rb",
      "spec/howcast/client/search_spec.rb",
      "spec/howcast/client/user_spec.rb",
      "spec/howcast/client/video_spec.rb",

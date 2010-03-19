@@ -2758,4 +2758,231 @@ module XmlFixturesHelper
     </howcast>
     VID
   end
+  
+  def playlist_xml
+    <<-PLAYLIST
+    <?xml version="1.0" encoding="UTF-8"?>
+    <howcast version="0.1">
+      <title>Howcast - Eggs-Travaganza!</title>
+      <videos>
+        <video>
+          <category-id>392</category-id>
+          <id>21314</id>
+          <title>How To Separate an Egg</title>
+          <views>4653</views>
+          <type>HowcastGuide</type>
+          <created-at>Fri, 01 Aug 2008 17:00:40 -0700</created-at>
+          <rating>11</rating>
+          <username>michaelrsanchez</username>
+          <description>
+            <![CDATA[You may have to break a few eggs to make an omelet, but if you want to make a soufflé—or an angel food cake, or a custard—you’ll need to separate them too.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=21314"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=21314" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>85</duration>
+          <filename>http://media.howcast.com/system/videos/6/14/13/02/21314.flv</filename>
+          <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, egg, separate, cooking</tags>
+          <category-hierarchy>
+            <category id="355">Food &amp; Drink</category>
+            <category parent_id="355" id="392">Cooking Basics</category>
+          </category-hierarchy>
+          <comment-count>2</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/21314/40_xxlarge_maintained_aspect.jpg</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/21314-How-To-Separate-an-Egg</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>392</category-id>
+          <id>191496</id>
+          <title>How To Test Eggs For Freshness</title>
+          <views>4799</views>
+          <type>HowcastGuide</type>
+          <created-at>Wed, 10 Jun 2009 07:47:21 -0700</created-at>
+          <rating>27</rating>
+          <username>lorishe09</username>
+          <description>
+            <![CDATA[It's easy to find out if your eggs can be scrambled, fried, or used in a recipe - or if they need to be tossed in the trash.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=191496"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=191496" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>86</duration>
+          <filename>http://media.howcast.com/system/videos/4/96/14/19/191496.flv</filename>
+          <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, breakfast, Dairy, milk, flour, farm</tags>
+          <category-hierarchy>
+            <category id="355">Food &amp; Drink</category>
+            <category parent_id="355" id="392">Cooking Basics</category>
+          </category-hierarchy>
+          <comment-count>4</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/191496/Picture_1_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/191496-How-To-Test-Eggs-For-Freshness</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>392</category-id>
+          <id>282247</id>
+          <title>How To Crack an Egg</title>
+          <views>1421</views>
+          <type>HowcastGuide</type>
+          <created-at>Fri, 04 Dec 2009 09:16:18 -0800</created-at>
+          <rating>0</rating>
+          <username>lazydiamond</username>
+          <description>
+            <![CDATA[No need to walk on eggshells if you're looking to make scrambled eggs or your favorite homemade cookies – take a crack at this simple task.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=282247"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=282247" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>67</duration>
+          <filename>http://media.howcast.com/system/videos/0/58/97/28/289758.flv</filename>
+          <tags>egg, shell, cracking, splitting, beating, preparing, cooking, kitchen, baking, bowl, breaking, yolk</tags>
+          <category-hierarchy>
+            <category id="355">Food &amp; Drink</category>
+            <category parent_id="355" id="392">Cooking Basics</category>
+          </category-hierarchy>
+          <comment-count>0</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/282247/CrackEgg_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/282247-How-To-Crack-an-Egg</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>382</category-id>
+          <id>258250</id>
+          <title>How To Hard-Boil an Egg</title>
+          <views>886</views>
+          <type>HowcastGuide</type>
+          <created-at>Tue, 20 Oct 2009 15:17:37 -0700</created-at>
+          <rating>3</rating>
+          <username>michaelrsanchez</username>
+          <description>
+            <![CDATA[Making the perfect hard-boiled egg is a science. Follow these simple steps to have that perfect creamy yellow yolk.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=258250"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=258250" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>90</duration>
+          <filename>http://media.howcast.com/system/videos/5/82/46/26/264682.flv</filename>
+          <tags>eggs,boiling,hard-boiling,hard,cooking,making,breakfast,recipes,food,preparing,correctly</tags>
+          <category-hierarchy>
+            <category id="355">Food &amp; Drink</category>
+            <category parent_id="355" id="382">Breakfast</category>
+          </category-hierarchy>
+          <comment-count>0</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/258250/HardBoilEgg_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/258250-How-To-HardBoil-an-Egg</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>382</category-id>
+          <id>29259</id>
+          <title>How To Poach an Egg</title>
+          <views>22026</views>
+          <type>HowcastGuide</type>
+          <created-at>Tue, 02 Sep 2008 10:03:03 -0700</created-at>
+          <rating>64</rating>
+          <username>michaelrsanchez</username>
+          <description>
+            <![CDATA[Good news for egg lovers: You don't need a drop of oil or butter for this preparation, which makes poaching one of the healthiest ways to put a protein powerhouse on your plate.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=29259"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=29259" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>104</duration>
+          <filename>http://media.howcast.com/system/videos/6/59/92/02/29259.flv</filename>
+          <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, egg, poach, breakfast</tags>
+          <category-hierarchy>
+            <category id="355">Food &amp; Drink</category>
+            <category parent_id="355" id="382">Breakfast</category>
+          </category-hierarchy>
+          <comment-count>9</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/29259/Picture_8_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/29259-How-To-Poach-an-Egg</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>382</category-id>
+          <id>2578</id>
+          <title>How To Hard-Boil an Egg So It Peels Easily</title>
+          <views>21462</views>
+          <type>HowcastGuide</type>
+          <created-at>Tue, 18 Mar 2008 11:08:10 -0700</created-at>
+          <rating>32</rating>
+          <username>SheriffThompson</username>
+          <description>
+            <![CDATA[Have you ever thrown out a perfectly good hard-boiled egg because you got so frustrated trying to peel it? Here’s how to cook the perfectly-peelable egg. ]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=2578"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=2578" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>99</duration>
+          <filename>http://media.howcast.com/system/videos/2/78/25/2578.flv</filename>
+          <tags>boil, boiled, boiling, cook, cooking, DIY, Do It Yourself, easily, easy, egg, eggs, Essential Skills, food, hard-boil, hard-boiled, Instructional, Learn to, make, making, peel, peeling, Tips, tutorial</tags>
+          <category-hierarchy>
+            <category id="355">Food &amp; Drink</category>
+            <category parent_id="355" id="382">Breakfast</category>
+          </category-hierarchy>
+          <comment-count>8</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/2578/ppn_rich_hard_boil_egg_sd_xxlarge_maintained_aspect.jpg</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/2578-How-To-HardBoil-an-Egg-So-It-Peels-Easily</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>382</category-id>
+          <id>1072</id>
+          <title>How To Make Perfect Scrambled Eggs</title>
+          <views>19427</views>
+          <type>HowcastGuide</type>
+          <created-at>Tue, 05 Feb 2008 13:28:45 -0800</created-at>
+          <rating>23</rating>
+          <username>pjvaldez</username>
+          <description>
+            <![CDATA[Everyone and their mother claims to make the best scrambled eggs. We're no different—we're just not your mom.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=1072"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=1072" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>133</duration>
+          <filename>http://media.howcast.com/system/videos/1/72/10/1072.flv</filename>
+          <tags>breakfast, cook, DIY, Do It Yourself, eggs, Essential Skills, food, Instructional, Learn to, scrambled, Tips, tutorial</tags>
+          <category-hierarchy>
+            <category id="355">Food &amp; Drink</category>
+            <category parent_id="355" id="382">Breakfast</category>
+          </category-hierarchy>
+          <comment-count>2</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/1072/hpn_a011_perfect_scrambled_eggs_sd_xxlarge_maintained_aspect.jpg</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/1072-How-To-Make-Perfect-Scrambled-Eggs</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>382</category-id>
+          <id>29262</id>
+          <title>How To Fry an Egg</title>
+          <views>24757</views>
+          <type>HowcastGuide</type>
+          <created-at>Tue, 02 Sep 2008 10:45:47 -0700</created-at>
+          <rating>32</rating>
+          <username>michaelrsanchez</username>
+          <description>
+            <![CDATA[They say if it's hot enough, you can fry an egg on the sidewalk. But if concrete's not your thing, a skillet works, too.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=29262"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=29262" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>93</duration>
+          <filename>http://media.howcast.com/system/videos/2/62/92/02/29262.flv</filename>
+          <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, fry, egg, breakfast</tags>
+          <category-hierarchy>
+            <category id="355">Food &amp; Drink</category>
+            <category parent_id="355" id="382">Breakfast</category>
+          </category-hierarchy>
+          <comment-count>10</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/29262/Picture_7_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/29262-How-To-Fry-an-Egg</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+      </videos>
+    </howcast>
+    PLAYLIST
+  end
 end
