@@ -2525,4 +2525,237 @@ module XmlFixturesHelper
     </howcast>
     VID
   end
+  
+  def homepage_videos_xml
+    <<-VID
+    <?xml version="1.0" encoding="UTF-8"?>
+    <howcast version="0.1">
+      <title>Howcast - Staff Picks</title>
+      <videos>
+        <video>
+          <category-id>876</category-id>
+          <id>92193</id>
+          <title>How To Display Impeccable Manners</title>
+          <views>4420</views>
+          <type>HowcastGuide</type>
+          <created-at>Mon, 08 Dec 2008 06:01:37 -0800</created-at>
+          <rating>18</rating>
+          <username>Jordana_Giorgio</username>
+          <description>
+            <![CDATA[You’ll probably never have to greet the Queen, but everyone should know some basic etiquette rules. ]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=92193"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=92193" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>113</duration>
+          <filename>http://media.howcast.com/system/videos/3/93/21/09/92193.flv</filename>
+          <tags>etiquette, practicing, work, office, social, niceties, basics, decorum, public, acting</tags>
+          <category-hierarchy>
+            <category id="841">Language &amp; Reference</category>
+            <category parent_id="841" id="875">Etiquette</category>
+            <category parent_id="875" id="876">General Etiquette</category>
+          </category-hierarchy>
+          <comment-count>2</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/92193/impeccable_manners_hd_1_xxlarge_maintained_aspect.jpg</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/92193-How-To-Display-Impeccable-Manners</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>496</category-id>
+          <id>359329</id>
+          <title>Health To Go: How To Eat Healthy on the Go</title>
+          <views>127</views>
+          <type>HowcastGuide</type>
+          <created-at>Fri, 12 Mar 2010 12:15:56 -0800</created-at>
+          <rating>0</rating>
+          <username>Howcast</username>
+          <description>
+            <![CDATA[On the run and out of healthy options? Save plastic takeout containers, fill them with peanut butter or hummus, and take along some raw vegetables. Bingo!]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=359329"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=359329" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>20</duration>
+          <filename>http://media.howcast.com/system/videos/0/78/65/32/326578.flv</filename>
+          <tags>diet, food, nutrition, vegetables, to-go, eat, healthy, pack, lunch, snack</tags>
+          <category-hierarchy>
+            <category id="479">Health &amp; Nutrition</category>
+            <category parent_id="479" id="494">Diet</category>
+            <category parent_id="494" id="496">Better Health</category>
+          </category-hierarchy>
+          <comment-count>0</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/359329/ge_health-to-go_jungle_thumb_xxlarge_maintained_aspect.jpg</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/359329-Health-To-Go-How-To-Eat-Healthy-on-the-Go</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>1728</category-id>
+          <id>372018</id>
+          <title>How To Make a TV Remote Jammer</title>
+          <views>0</views>
+          <type>HowcastGuide</type>
+          <created-at>Thu, 18 Mar 2010 04:02:21 -0700</created-at>
+          <rating>1</rating>
+          <username>gigafide</username>
+          <description>
+            <![CDATA[Tired of remote control jockeys speeding through the channels? Here's your chance to stop them dead in their tracks.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=372018"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=372018" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>202</duration>
+          <filename>http://media.howcast.com/system/videos/6/06/00/35/350006.flv</filename>
+          <tags>channel, circuit, control, signal, interfere, project, make, tv, remote, jammer, create, resistor</tags>
+          <category-hierarchy>
+            <category id="1470">Technology</category>
+            <category parent_id="1470" id="1728">Science &amp; Technology Projects</category>
+          </category-hierarchy>
+          <comment-count>0</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/372018/make_a_tv_remote_jammer_thumb_xxlarge_maintained_aspect.jpg</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/372018-How-To-Make-a-TV-Remote-Jammer</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>884</category-id>
+          <id>185824</id>
+          <title>How To Pick a Wedgie in Public</title>
+          <views>4798</views>
+          <type>HowcastGuide</type>
+          <created-at>Wed, 27 May 2009 14:34:04 -0700</created-at>
+          <rating>9</rating>
+          <username>michaelrsanchez</username>
+          <description>
+            <![CDATA[Discomfort. Embarrassment. The wedgie. Get rid of the problem with these simple tips.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=185824"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=185824" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>71</duration>
+          <filename>http://media.howcast.com/system/videos/2/24/58/18/185824.flv</filename>
+          <tags>etiquette, picking, wedgie, socially, awkward, situations, adjusting, underwear, panties, public</tags>
+          <category-hierarchy>
+            <category id="841">Language &amp; Reference</category>
+            <category parent_id="841" id="875">Etiquette</category>
+            <category parent_id="875" id="884">Socially Awkward Situations</category>
+          </category-hierarchy>
+          <comment-count>2</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/185824/pick_wedgie_public_xxlarge_maintained_aspect.jpg</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/185824-How-To-Pick-a-Wedgie-in-Public</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>1034</category-id>
+          <id>217432</id>
+          <title>How To Have a Healthy Pregnancy</title>
+          <views>701</views>
+          <type>HowcastGuide</type>
+          <created-at>Mon, 16 Nov 2009 15:15:42 -0800</created-at>
+          <rating>1</rating>
+          <username>CinemaSlam</username>
+          <description>
+            <![CDATA[When you're expecting, you're not just eating for two – you're living for two. Here's how to have the healthiest pregnancy possible. ]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=217432"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=217432" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>176</duration>
+          <filename>http://media.howcast.com/system/videos/4/59/25/28/282559.flv</filename>
+          <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, parenting, family, pregnancy, health, fitness, have, having, healthy, safe, pregnant, child, baby, kid</tags>
+          <category-hierarchy>
+            <category id="978">Parenting &amp; Family</category>
+            <category parent_id="978" id="1027">Pregnancy</category>
+            <category parent_id="1027" id="1034">Pregnancy Health &amp; Fitness</category>
+          </category-hierarchy>
+          <comment-count>0</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/217432/HealthyPregnancy_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/217432-How-To-Have-a-Healthy-Pregnancy</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>492</category-id>
+          <id>194715</id>
+          <title>How To Soothe an Upset Stomach</title>
+          <views>26292</views>
+          <type>HowcastGuide</type>
+          <created-at>Fri, 12 Jun 2009 11:03:20 -0700</created-at>
+          <rating>5</rating>
+          <username>theprohouse</username>
+          <description>
+            <![CDATA[Everyone gets an upset stomach from time to time. The first line of defense in this high-tech age is still old-time remedies!]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=194715"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=194715" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>92</duration>
+          <filename>http://media.howcast.com/system/videos/3/15/47/19/194715.flv</filename>
+          <tags>DIY, Instructional, tutorial, indigestion, cramps, Bloating, diarrhea, flu, aches, pains</tags>
+          <category-hierarchy>
+            <category id="479">Health &amp; Nutrition</category>
+            <category parent_id="479" id="480">General Health</category>
+            <category parent_id="480" id="492">Stomach &amp; Digestion</category>
+          </category-hierarchy>
+          <comment-count>2</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/194715/Picture_1_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/194715-How-To-Soothe-an-Upset-Stomach</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>1728</category-id>
+          <id>202712</id>
+          <title>How To Get an Egg Through a Bottleneck</title>
+          <views>4574</views>
+          <type>HowcastGuide</type>
+          <created-at>Fri, 10 Jul 2009 12:48:01 -0700</created-at>
+          <rating>20</rating>
+          <username>sen1710</username>
+          <description>
+            <![CDATA[Be the life of the party – without wearing a lampshade or starting a conga line – by getting an egg into a bottle. ]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=202712"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=202712" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>60</duration>
+          <filename>http://media.howcast.com/system/videos/6/12/27/20/202712.flv</filename>
+          <tags>holidays, celebrations, parties, party, tricks, games, getting, egg, fitting, magic</tags>
+          <category-hierarchy>
+            <category id="1470">Technology</category>
+            <category parent_id="1470" id="1728">Science &amp; Technology Projects</category>
+          </category-hierarchy>
+          <comment-count>1</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/202712/Picture_3_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/202712-How-To-Get-an-Egg-Through-a-Bottleneck</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+        <video>
+          <category-id>496</category-id>
+          <id>218307</id>
+          <title>How To Develop Healthy Eating Habits</title>
+          <views>2506</views>
+          <type>HowcastGuide</type>
+          <created-at>Mon, 24 Aug 2009 07:47:32 -0700</created-at>
+          <rating>8</rating>
+          <username>Equilibrio</username>
+          <description>
+            <![CDATA[Good health is just a matter of taking a new approach to eating and making simple changes.]]>
+          </description>
+          <embed>
+            <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=218307"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=218307" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+          </embed>
+          <duration>98</duration>
+          <filename>http://media.howcast.com/system/videos/5/12/68/22/226812.flv</filename>
+          <tags>eating, habits, develop, healthy, health, nutrition, better health, food, eat</tags>
+          <category-hierarchy>
+            <category id="479">Health &amp; Nutrition</category>
+            <category parent_id="479" id="494">Diet</category>
+            <category parent_id="494" id="496">Better Health</category>
+          </category-hierarchy>
+          <comment-count>4</comment-count>
+          <thumbnail-url>http://img.howcast.com/thumbnails/218307/Picture_1_xxlarge_maintained_aspect.png</thumbnail-url>
+          <permalink>http://www.howcast.com/videos/218307-How-To-Develop-Healthy-Eating-Habits</permalink>
+          <content_rating>nonadult</content_rating>
+        </video>
+      </videos>
+    </howcast>
+    VID
+  end
 end

@@ -1,3 +1,11 @@
+== 0.6.0 2010-03-19
+
+* Add homepage object
+
+== 0.5.1 2010-03-18
+
+* Add paging for user object videos
+
 == 0.5.0 2010-03-17
 
 * Add user object

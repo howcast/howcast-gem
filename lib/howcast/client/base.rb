@@ -248,4 +248,13 @@ class Howcast::Client
       end unless node.nil?
       related
     end
+    
+    def videos_for(xml)
+      videos = []
+      node = xml.at('videos')
+      node.children_of_type('video').each do |child|
+        videos << parse_single_xml(child, Video)
+      end unless node.nil?
+      videos
+    end
 end

@@ -22,21 +22,21 @@
 #++
 
 class Howcast::Client
-  class User
+  class Homepage
     extend WatchAttrAccessors
-    attr_accessor :login, :videos
+    attr_accessor :videos
     
-    # Creates a new User object which is used to encapsulate all the attributes available
-    # from the Howcast user profile API.
+    # Creates a new Homepage object which is used to encapsulate all the attributes available
+    # from the Howcast homepage API.
     #
     # === Inputs
     #
-    # * <tt>attributes</tt> -- A hash to set the various attributes of the user object
+    # * <tt>attributes</tt> -- A hash to set the various attributes of the homepage object
     #
     # === Examples
     # 
-    # Initialize a user with login "someone"
-    #   User.new :login => "someone"
+    # Initialize a user with an array of videos
+    #   Homepage.new :videos => [video1, video2]
     def initialize(attributes={})
       attributes.each do |k, v|
         self.send("#{k}=", v) if self.respond_to?(k)
@@ -44,15 +44,11 @@ class Howcast::Client
     end
   end
     
-  # Provides access to the Howcast user API.
+  # Provides access to the Howcast homepage API.
   # 
-  # === Inputs
-  #
-  # * <tt>login</tt> -- The login/username of the user to lookup
-  #
   # === Outputs
   # 
-  # User object if the login exists or nil if the login doesn't exist or is malformed
+  # Homepage object
   #
   # === Exceptions
   # 
@@ -60,18 +56,17 @@ class Howcast::Client
   #
   # === Examples
   # 
-  # Get the Howcast user with login 'someone'
-  #   Howcast::Client.new.user('someone')
-  def user(login, options = {})
-    response = establish_connection("users/#{login}/profile/videos#{"/#{options[:page]}" if options[:page]}.xml")
-    parse_single_user_xml(login, response)
+  # Create the Howcast homepage object
+  #   Howcast::Client.new.homepage
+  def homepage
+    response = establish_connection("homepage/staff_videos.xml")
+    parse_homepage_videos_xml(response)
   end
   
   private
-    # Exception here to set the login vs. parsing it (not currently included in the api response)
-    def parse_single_user_xml(login, xml)
+    def parse_homepage_videos_xml(xml)
       hash = {}
-      User.attr_accessors.each do |attribute|
+      Homepage.attr_accessors.each do |attribute|
         node_name = attribute.to_s.gsub("_", "-") # xml schema uses hyphens for spaces, but ruby uses underscores
         if node_name == "videos"
           hash[attribute] = videos_for(xml) unless xml.at(node_name).nil?
@@ -79,7 +74,6 @@ class Howcast::Client
           hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
         end
       end
-      hash[:login] = login
-      hash.values.all?{|v| v==""} ? nil : User.new(hash)
+      hash.values.all?{|v| v==""} ? nil : Homepage.new(hash)
     end
 end
