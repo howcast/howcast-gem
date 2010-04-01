@@ -39,7 +39,11 @@ class Howcast::Client
     #   Playlist.new :title => "My Playlist"
     def initialize(attributes={})
       attributes.each do |k, v|
-        self.send("#{k}=", v) if self.respond_to?(k)
+        if k == :title
+          self.send("#{k}=", v.gsub(/^Howcast - /, '')) if self.respond_to?(k)
+        else
+          self.send("#{k}=", v) if self.respond_to?(k)
+        end
       end
     end
   end

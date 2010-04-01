@@ -17,13 +17,14 @@ describe Howcast::Client::Homepage, "initialize" do
   end
 end
 
-describe Howcast::Client, "videos" do  
+describe Howcast::Client, "homepage" do  
   before do
     @hc = Howcast::Client.new(:key => "myapikey")
   end
   
   it "should establish a connection with the correct homepage videos url" do
     @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/homepage/staff_videos.xml?api_key=myapikey")).and_return(homepage_videos_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/homepage/staff_playlists.xml?api_key=myapikey")).and_return(homepage_playlists_xml)
     @hc.homepage
   end
   
@@ -35,8 +36,18 @@ describe Howcast::Client, "videos" do
   end
   
   it "should set the videos attribute in the homepage model response" do
+    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/homepage/staff_videos.xml?api_key=myapikey")).and_return(homepage_videos_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/homepage/staff_playlists.xml?api_key=myapikey")).and_return(homepage_playlists_xml)
     videos = @hc.homepage.videos
     videos.size.should == 8
     videos[0].title.should == "How To Display Impeccable Manners"
+  end
+  
+  it "should set the playlists attribute in the homepage model response" do
+    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/homepage/staff_videos.xml?api_key=myapikey")).and_return(homepage_videos_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/homepage/staff_playlists.xml?api_key=myapikey")).and_return(homepage_playlists_xml)
+    playlists = @hc.homepage.playlists
+    playlists.size.should == 2
+    playlists[0].title.should == "Pranks For the Memories"
   end
 end

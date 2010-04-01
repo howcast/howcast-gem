@@ -1,6 +1,10 @@
+== 0.7.2 2010-04-01
+
+* Update homepage object per API changes
+
 == 0.7.1 2010-04-01
 
-* Add playlist and user objects per API changes
+* Update playlist and user objects per API changes
 
 == 0.7.0 2010-03-19
 

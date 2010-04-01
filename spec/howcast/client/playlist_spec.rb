@@ -32,7 +32,7 @@ describe Howcast::Client, "playlist" do
   end
   
   it "should set the title attribute in the playlist model response" do
-    @hc.playlist(12345).title.should == "Howcast - Eggs-Travaganza!"
+    @hc.playlist(12345).title.should == "Eggs-Travaganza!"
   end
   
   it "should set the description attribute in the playlist model response" do

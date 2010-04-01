@@ -24,7 +24,7 @@
 class Howcast::Client
   class Homepage
     extend WatchAttrAccessors
-    attr_accessor :videos
+    attr_accessor :videos, :playlists
     
     # Creates a new Homepage object which is used to encapsulate all the attributes available
     # from the Howcast homepage API.
@@ -59,7 +59,18 @@ class Howcast::Client
   # Create the Howcast homepage object
   #   Howcast::Client.new.homepage
   def homepage
-    response = establish_connection("homepage/staff_videos.xml")
-    parse_single_xml(response, Homepage)
+    homepage = parse_single_xml(establish_connection("homepage/staff_videos.xml"), Homepage)
+    homepage.playlists = parse_playlists(establish_connection("homepage/staff_playlists.xml"))
+    homepage
   end
+  
+  private
+    def parse_playlists(xml)
+      playlists = []
+      node = xml.at('playlists')
+      node.children_of_type('playlist').each do |child|
+        playlists << parse_single_xml(child, Playlist)
+      end unless node.nil?
+      playlists
+    end
 end
