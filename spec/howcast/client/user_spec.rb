@@ -37,7 +37,27 @@ describe Howcast::Client, "user" do
   end
 
   it "should set the login attribute in the user model response" do
-    @hc.user('someone').login.should == "someone"
+    @hc.user('someone').login.should == "mrmark86"
+  end
+  
+  it "should set the first name attribute in the user model response" do
+    @hc.user('someone').firstname.should == "Mark"
+  end
+  
+  it "should set the last name attribute in the user model response" do
+    @hc.user('someone').lastname.should == "Rogers"
+  end
+  
+  it "should set the views attribute in the user model response" do
+    @hc.user('someone').views.should == "63"
+  end
+  
+  it "should set the count attribute in the user model response" do
+    @hc.user('someone').count.should == "1"
+  end
+  
+  it "should set the thumbnail url attribute in the user model response" do
+    @hc.user('someone').thumbnail_url.should == "http://img.howcast.com/images/icons/user-medium.gif"
   end
   
   it "should set the videos attribute in the user model response" do

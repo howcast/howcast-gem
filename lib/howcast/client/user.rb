@@ -24,7 +24,7 @@
 class Howcast::Client
   class User
     extend WatchAttrAccessors
-    attr_accessor :login, :videos
+    attr_accessor :login, :firstname, :lastname, :thumbnail_url, :views, :count, :videos
     
     # Creates a new User object which is used to encapsulate all the attributes available
     # from the Howcast user profile API.
@@ -64,22 +64,6 @@ class Howcast::Client
   #   Howcast::Client.new.user('someone')
   def user(login, options = {})
     response = establish_connection("users/#{login}/profile/videos#{"/#{options[:page]}" if options[:page]}.xml")
-    parse_single_user_xml(login, response)
+    parse_single_xml(response, User)
   end
-  
-  private
-    # Exception here to set the login vs. parsing it (not currently included in the api response)
-    def parse_single_user_xml(login, xml)
-      hash = {}
-      User.attr_accessors.each do |attribute|
-        node_name = attribute.to_s.gsub("_", "-") # xml schema uses hyphens for spaces, but ruby uses underscores
-        if node_name == "videos"
-          hash[attribute] = videos_for(xml) unless xml.at(node_name).nil?
-        else
-          hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
-        end
-      end
-      hash[:login] = login
-      hash.values.all?{|v| v==""} ? nil : User.new(hash)
-    end
 end
