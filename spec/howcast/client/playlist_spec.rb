@@ -35,6 +35,14 @@ describe Howcast::Client, "playlist" do
     @hc.playlist(12345).title.should == "Howcast - Eggs-Travaganza!"
   end
   
+  it "should set the description attribute in the playlist model response" do
+    @hc.playlist(12345).description.should == "Become an eggs-pert! We can teach you how to test eggs for freshness, crack them, and hard-boil, poach, scramble, or fry them perfectly. We'll even let you in on a little trick for hard-boiling eggs so they peel easily."
+  end
+  
+  it "should set the thumbnail url in the playlist model response" do
+    @hc.playlist(12345).playlist_thumbnail_url.should == "http://img.howcast.com/thumbnails/1072/hpn_a011_perfect_scrambled_eggs_sd_medium.jpg"
+  end
+  
   it "should set the videos attribute in the playlist model response" do
     videos = @hc.playlist(12345).videos
     videos.size.should == 8

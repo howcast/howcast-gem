@@ -2491,13 +2491,18 @@ module XmlFixturesHelper
     <?xml version="1.0" encoding="UTF-8"?>
     <howcast version="0.1">
       <title>Howcast - mrmark86's videos</title>
+      <firstname>Mark</firstname>
       <count>1</count>
+      <lastname>Rogers</lastname>
+      <login>mrmark86</login>
+      <thumbnail-url>http://img.howcast.com/images/icons/user-medium.gif</thumbnail-url>
+      <views>63</views>
       <videos>
         <video>
           <category-id>1356</category-id>
           <id>329098</id>
           <title>How To Remove Bike Handlebar Grips</title>
-          <views>77</views>
+          <views>165</views>
           <type>HowcastGuide</type>
           <created-at>Sun, 14 Mar 2010 11:02:07 -0700</created-at>
           <rating>0</rating>
@@ -2517,7 +2522,7 @@ module XmlFixturesHelper
             <category parent_id="1353" id="1356">Biking Equipment</category>
           </category-hierarchy>
           <comment-count>0</comment-count>
-          <thumbnail-url>http://img.howcast.com/system/thumbnails/329098/RemoveBikeHandlebarGrips_xxlarge_maintained_aspect.png</thumbnail-url>
+          <thumbnail-url>http://img.howcast.com/thumbnails/329098/RemoveBikeHandlebarGrips_xxlarge_maintained_aspect.png</thumbnail-url>
           <permalink>http://www.howcast.com/videos/329098-How-To-Remove-Bike-Handlebar-Grips</permalink>
           <content_rating>nonadult</content_rating>
         </video>
@@ -2764,12 +2769,16 @@ module XmlFixturesHelper
     <?xml version="1.0" encoding="UTF-8"?>
     <howcast version="0.1">
       <title>Howcast - Eggs-Travaganza!</title>
+      <permalink>http://www.howcast.com/playlists/4566-EggsTravaganza</permalink>
+      <description>Become an eggs-pert! We can teach you how to test eggs for freshness, crack them, and hard-boil, poach, scramble, or fry them perfectly. We'll even let you in on a little trick for hard-boiling eggs so they peel easily.</description>
+      <playlist-thumbnail-url>http://img.howcast.com/thumbnails/1072/hpn_a011_perfect_scrambled_eggs_sd_medium.jpg</playlist-thumbnail-url>
+      <id>4566</id>
       <videos>
         <video>
           <category-id>392</category-id>
           <id>21314</id>
           <title>How To Separate an Egg</title>
-          <views>4653</views>
+          <views>4808</views>
           <type>HowcastGuide</type>
           <created-at>Fri, 01 Aug 2008 17:00:40 -0700</created-at>
           <rating>11</rating>
@@ -2796,7 +2805,7 @@ module XmlFixturesHelper
           <category-id>392</category-id>
           <id>191496</id>
           <title>How To Test Eggs For Freshness</title>
-          <views>4799</views>
+          <views>4920</views>
           <type>HowcastGuide</type>
           <created-at>Wed, 10 Jun 2009 07:47:21 -0700</created-at>
           <rating>27</rating>
@@ -2823,7 +2832,7 @@ module XmlFixturesHelper
           <category-id>392</category-id>
           <id>282247</id>
           <title>How To Crack an Egg</title>
-          <views>1421</views>
+          <views>1565</views>
           <type>HowcastGuide</type>
           <created-at>Fri, 04 Dec 2009 09:16:18 -0800</created-at>
           <rating>0</rating>
@@ -2850,7 +2859,7 @@ module XmlFixturesHelper
           <category-id>382</category-id>
           <id>258250</id>
           <title>How To Hard-Boil an Egg</title>
-          <views>886</views>
+          <views>1013</views>
           <type>HowcastGuide</type>
           <created-at>Tue, 20 Oct 2009 15:17:37 -0700</created-at>
           <rating>3</rating>
@@ -2877,7 +2886,7 @@ module XmlFixturesHelper
           <category-id>382</category-id>
           <id>29259</id>
           <title>How To Poach an Egg</title>
-          <views>22026</views>
+          <views>22398</views>
           <type>HowcastGuide</type>
           <created-at>Tue, 02 Sep 2008 10:03:03 -0700</created-at>
           <rating>64</rating>
@@ -2904,10 +2913,10 @@ module XmlFixturesHelper
           <category-id>382</category-id>
           <id>2578</id>
           <title>How To Hard-Boil an Egg So It Peels Easily</title>
-          <views>21462</views>
+          <views>22406</views>
           <type>HowcastGuide</type>
           <created-at>Tue, 18 Mar 2008 11:08:10 -0700</created-at>
-          <rating>32</rating>
+          <rating>33</rating>
           <username>SheriffThompson</username>
           <description>
             <![CDATA[Have you ever thrown out a perfectly good hard-boiled egg because you got so frustrated trying to peel it? Here’s how to cook the perfectly-peelable egg. ]]>
@@ -2931,7 +2940,7 @@ module XmlFixturesHelper
           <category-id>382</category-id>
           <id>1072</id>
           <title>How To Make Perfect Scrambled Eggs</title>
-          <views>19427</views>
+          <views>19760</views>
           <type>HowcastGuide</type>
           <created-at>Tue, 05 Feb 2008 13:28:45 -0800</created-at>
           <rating>23</rating>
@@ -2958,7 +2967,7 @@ module XmlFixturesHelper
           <category-id>382</category-id>
           <id>29262</id>
           <title>How To Fry an Egg</title>
-          <views>24757</views>
+          <views>25419</views>
           <type>HowcastGuide</type>
           <created-at>Tue, 02 Sep 2008 10:45:47 -0700</created-at>
           <rating>32</rating>
@@ -2984,5 +2993,36 @@ module XmlFixturesHelper
       </videos>
     </howcast>
     PLAYLIST
+  end
+  
+  def homepage_playlists_xml
+    <<-PLAYLISTS
+    <?xml version="1.0" encoding="UTF-8"?>
+    <howcast version="0.1">
+      <title>Howcast - Staff Picks</title>
+      <playlists>
+        <playlist>
+          <id>286</id>
+          <title>Pranks For the Memories</title>
+          <views>4260</views>
+          <created-at>Tue, 06 May 2008 13:13:15 -0700</created-at>
+          <videos-count>15</videos-count>
+          <rating>1</rating>
+          <permalink>http://www.howcast.com/playlists/286-Pull-Pranks-and-Fake-Out-Your-Friends</permalink>
+          <thumbnail-url>http://img.howcast.com/thumbnails/2721/ppn_milkhouse_buried_cubicle_prank_sd_medium.jpg</thumbnail-url>
+        </playlist>
+        <playlist>
+          <id>94</id>
+          <title>Happy Easter!</title>
+          <views>1776</views>
+          <created-at>Tue, 18 Mar 2008 14:18:38 -0700</created-at>
+          <videos-count>8</videos-count>
+          <rating>6</rating>
+          <permalink>http://www.howcast.com/playlists/94-Easter-Eggstravaganza</permalink>
+          <thumbnail-url>http://img.howcast.com/thumbnails/2567/ppn_zeug_easter_eggs_sd_medium.jpg</thumbnail-url>
+        </playlist>
+      </playlists>
+    </howcast>
+    PLAYLISTS
   end
 end
