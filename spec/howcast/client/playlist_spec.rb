@@ -30,6 +30,10 @@ describe Howcast::Client, "playlist" do
       @hc.playlist(12345)
     }.should raise_error(Howcast::ApiKeyNotFound)
   end
+
+  it "should set the id attribute in the playlist model response" do
+    @hc.playlist(12345).id.should == "4566"
+  end
   
   it "should set the title attribute in the playlist model response" do
     @hc.playlist(12345).title.should == "Eggs-Travaganza!"

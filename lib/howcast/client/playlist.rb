@@ -24,7 +24,7 @@
 class Howcast::Client
   class Playlist
     extend WatchAttrAccessors
-    attr_accessor :title, :description, :playlist_thumbnail_url, :videos
+    attr_accessor :id, :title, :description, :playlist_thumbnail_url, :videos
     
     # Creates a new Playlist object which is used to encapsulate all the attributes available
     # from the Howcast playlist API.
