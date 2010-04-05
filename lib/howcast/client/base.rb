@@ -133,6 +133,9 @@ class Howcast::Client
           hash[attribute] = related_videos_for(xml) unless xml.at(node_name).nil?
         elsif node_name == "videos"
           hash[attribute] = videos_for(xml) unless xml.at(node_name).nil?
+        elsif node_name == "playlist-thumbnail-url"
+          # TO DO: Resolve this hack, xml attributes aren't named consistently
+          hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : xml.at("thumbnail-url").inner_text.strip
         else
           hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
         end

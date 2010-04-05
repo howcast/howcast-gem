@@ -1,3 +1,7 @@
+== 0.7.4 2010-04-05
+
+* Fix bug due to inconsistently named playlist thumbnail elements
+
 == 0.7.3 2010-04-01
 
 * Add missing playlist id attribute

@@ -49,5 +49,6 @@ describe Howcast::Client, "homepage" do
     playlists = @hc.homepage.playlists
     playlists.size.should == 2
     playlists[0].title.should == "Pranks For the Memories"
+    playlists[0].playlist_thumbnail_url.should == "http://img.howcast.com/thumbnails/2721/ppn_milkhouse_buried_cubicle_prank_sd_medium.jpg"
   end
 end
