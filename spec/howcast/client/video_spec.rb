@@ -20,7 +20,7 @@ describe Howcast::Client, "video" do
   end
   
   it "should establish a connection with the correct video url" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/2.xml?api_key=myapikey")).and_return(video_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://api.howcast.com/videos/2.xml?api_key=myapikey")).and_return(video_xml)
     @hc.video(2)
   end  
   
@@ -120,27 +120,27 @@ describe Howcast::Client, "videos" do
   end
   
   it "should establish a connection with videos/most_recent/howcast_studios.xml by default" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/most_recent/howcast_studios.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://api.howcast.com/videos/most_recent/howcast_studios.xml?api_key=myapikey")).and_return(videos_xml)
     @hc.videos
   end
   
   it "should establish a connection with videos/most_recent/howcast_studios/2.xml when :page => 2" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/most_recent/howcast_studios/2.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://api.howcast.com/videos/most_recent/howcast_studios/2.xml?api_key=myapikey")).and_return(videos_xml)
     @hc.videos(:page => 2)
   end
   
   it "should establish a connection with videos/most_viewed/howcast_studios.xml when :sort => most_viewed" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/most_viewed/howcast_studios.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://api.howcast.com/videos/most_viewed/howcast_studios.xml?api_key=myapikey")).and_return(videos_xml)
     @hc.videos(:sort => "most_viewed")    
   end
   
   it "should establish a connection with videos/most_viewed/directors_program.xml when :sort => most_viewed and :filter => directors_program" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/most_viewed/directors_program.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://api.howcast.com/videos/most_viewed/directors_program.xml?api_key=myapikey")).and_return(videos_xml)
     @hc.videos(:sort => "most_viewed", :filter => "directors_program")    
   end
   
   it "should establish a connection with videos/top_rated/directors_program.xml when :sort => most_viewed and :filter => directors_program" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/top_rated/directors_program.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://api.howcast.com/videos/top_rated/directors_program.xml?api_key=myapikey")).and_return(videos_xml)
     @hc.videos(:sort => "top_rated", :filter => "directors_program")    
   end
   

@@ -20,7 +20,7 @@ describe Howcast::Client, "playlist" do
   end
   
   it "should establish a connection with the correct playlist url" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/playlists/12345.xml?api_key=myapikey")).and_return(playlist_xml)
+    @hc.should_receive(:open).with(equivalent_uri("http://api.howcast.com/playlists/12345.xml?api_key=myapikey")).and_return(playlist_xml)
     @hc.playlist(12345)
   end
   

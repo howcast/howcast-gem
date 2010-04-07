@@ -73,7 +73,7 @@ class Howcast::Client
   private
     def do_search params
       uri = search_url params
-      (establish_connection(uri)/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}
+      (establish_connection(uri, :base_uri => "http://www.howcast.com")/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}
     end
 
     def search_url params

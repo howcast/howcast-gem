@@ -56,7 +56,7 @@ class Howcast::Client
     end
 
     def base_uri
-      @base_uri ||= URI.parse("http://www.howcast.com")
+      @base_uri ||= URI.parse("http://api.howcast.com")
     end
   end
   protected
@@ -65,7 +65,7 @@ class Howcast::Client
     #
     # === Inputs
     #
-    # * <tt>relative_path</tt> -- should be the path after <tt>http://www.howcast.com/</tt>
+    # * <tt>relative_path</tt> -- should be the path after <tt>http://api.howcast.com/</tt>
     #
     # === Outputs
     # 
@@ -80,8 +80,8 @@ class Howcast::Client
     #
     # Get the Hpricot data for most recent howcast studios videos
     #   establish_connection("videos/most_recent/howcast_studios.xml") 
-    def establish_connection(relative_path_and_query)
-      uri = self.class.base_uri.dup
+    def establish_connection(relative_path_and_query, options = {})
+      uri = options[:base_uri] ? URI.parse(options[:base_uri]) : self.class.base_uri.dup
       relative_path_and_query = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
       uri.path, uri.query = *relative_path_and_query.split('?')
       h = Hpricot.XML(open(url = attach_api_key(uri)))
@@ -177,11 +177,11 @@ class Howcast::Client
     #
     # === Examples
     #
-    #   attach_api_key(URI.parse("http://www.howcast.com")).to_s
-    #   => "http://www.howcast.com?api_key=APIKEYHERE"
+    #   attach_api_key(URI.parse("http://api.howcast.com")).to_s
+    #   => "http://api.howcast.com?api_key=APIKEYHERE"
     #   
-    #   attach_api_key(URI.parse("http://www.howcast.com/videos/most_recent/all?page=2")).to_s
-    #   => "http://www.howcast.com/videos/most_recent/all?page=2&api_key=APIKEYHERE"
+    #   attach_api_key(URI.parse("http://api.howcast.com/videos/most_recent/all?page=2")).to_s
+    #   => "http://api.howcast.com/videos/most_recent/all?page=2&api_key=APIKEYHERE"
     def attach_api_key(uri)
       uri = uri.dup
       key = "api_key=#{self.key}"
