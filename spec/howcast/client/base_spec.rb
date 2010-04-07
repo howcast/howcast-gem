@@ -18,8 +18,8 @@ describe Howcast::Client, "base_uri" do
     Howcast::Client.instance_variable_set :@base_uri, nil
   end
 
-  it "should use a default base_uri of api.howcast.com" do
-    Howcast::Client.base_uri.to_s.should == "http://api.howcast.com"
+  it "should use a default base_uri of www.howcast.com" do
+    Howcast::Client.base_uri.to_s.should == "http://www.howcast.com"
   end
 
   it "should allow easily setting the base_url" do
