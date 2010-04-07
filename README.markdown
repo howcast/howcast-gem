@@ -6,7 +6,7 @@ Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
 
 ## Installing
 	
-    sudo gem install howcast-howcast
+    sudo gem install howcast
   
 ## Example
 
