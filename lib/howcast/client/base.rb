@@ -25,6 +25,7 @@ require 'rubygems'
 require 'hpricot'
 require 'open-uri'
 require 'uri'
+require File.expand_path(File.join(File.dirname(__FILE__), '../hpricot/elements'))
 
 class Howcast::Client
   attr_accessor :key

@@ -83,10 +83,18 @@ class Howcast::Client
   # 
   # Get the top level Howcast categories
   #   Howcast::Client.new.categories
+  CATEGORIES_DOCUMENT = "categories.xml"
+  
   def categories(options = {})
-    uri = "categories.xml"
-    establish_connection(uri).at('categories').children_of_type('category').inject([]){ |r, i| r << parse_single_category_xml(i)}
+    establish_connection(CATEGORIES_DOCUMENT).at('categories').children_of_type('category').inject([]){ |r, i| r << parse_single_category_xml(i)}
 	end
+  
+  def category_id_for key
+    categories = establish_connection(CATEGORIES_DOCUMENT)
+    node       = (categories/"//category/name[text-downcase()='#{key.downcase}']/../permalink")
+    node       = (categories/"//category/permalink[text-downcase()*='#{key.downcase}']") if node.empty?
+    node.text.split("/").last unless node.empty?
+  end
   
   private
     # Exception here to parse the <parents> tag in a category, will set a category.parents variable

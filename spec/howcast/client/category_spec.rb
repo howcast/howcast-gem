@@ -66,3 +66,42 @@ describe Howcast::Client, "categories" do
     categories.last.name.should == 'Travel'
   end
 end
+
+describe Howcast::Client, "category_id_for" do
+  before :each do
+    @hc = Howcast::Client.new(:key => "myapikey")
+    @hc.stub!(:open).and_return(categories_xml)
+  end
+  
+  it "should be able to fetch the category id of a top-level category" do
+    @hc.category_id_for("Arts & Media").should == "1-Arts-and-Media"
+  end
+  
+  it "should be able to fetch the category id of a top-level category in a case-insensitive manner" do
+    @hc.category_id_for("arts & media").should == "1-Arts-and-Media"
+  end
+
+  it "should be able to fetch the category id of a subcategory" do
+    @hc.category_id_for("Animation Techniques").should == "6-Animation-Techniques"
+  end
+
+  it "should be able to fetch the category id of a subcategory in a case-insensitive manner" do
+    @hc.category_id_for("animation techniques").should == "6-Animation-Techniques"
+  end
+
+  it "should be able to fetch the category id given a permalink id" do
+    @hc.category_id_for("375-Asian-Cooking").should == "375-Asian-Cooking"
+  end
+
+  it "should be able to fetch the category id given a permalink id in a case-insensitive manner" do
+    @hc.category_id_for("375-asian-cooking").should == "375-Asian-Cooking"
+  end
+
+  it "should return nothing if the category name does not exist" do
+    @hc.category_id_for("This Category Does Not Exist").should be nil
+  end
+
+  it "should return nothing if the permalink id does not exist" do
+    @hc.category_id_for("99999-This-Category-Does-Not-Exist").should be nil
+  end
+end

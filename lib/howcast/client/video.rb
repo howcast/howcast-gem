@@ -62,6 +62,10 @@ class Howcast::Client
     def easy_steps?
       easy_steps == "true"
     end
+
+    def to_param
+      id
+    end
   end
     
   # Provides access to the Howcast video API.

@@ -1,3 +1,9 @@
+== 0.7.5 2011-03-15
+
+* You can now search for the category-id of any category via
+  Howcast::Client#category_id_for
+* Howcast::Client::Video now supports #to_param
+
 == 0.7.4 2010-04-05
 
 * Fix bug due to inconsistently named playlist thumbnail elements
