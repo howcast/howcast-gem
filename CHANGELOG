@@ -1,3 +1,7 @@
+== 0.7.6 2011-03-15
+
+* #search, #advanced_search will now CGI::escape all param values.
+
 == 0.7.5 2011-03-15
 
 * You can now search for the category-id of any category via
