@@ -77,10 +77,10 @@ class Howcast::Client
     end
 
     def search_url params
-      uri = "search.xml?"
-      params[:q] = CGI.escape params[:q] if params[:q]
-      uri += hash_to_params params
-      uri += uri_suffix(params.merge(:use_ampersand => true)) unless params[:page]
+      uri    = "search.xml?"
+      params = params.inject({}){ |h, (k, v)| h[k] = CGI::escape(v.to_s); h }
+      uri   += hash_to_params params
+      uri   += uri_suffix(params.merge(:use_ampersand => true)) unless params[:page]
       uri
     end
 end
