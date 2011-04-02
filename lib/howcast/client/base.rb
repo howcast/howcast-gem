@@ -195,7 +195,8 @@ class Howcast::Client
       params = ''
       stack = []
 
-      hash.each do |k, v|
+      hash.keys.sort{ |a, b| a.to_s <=> b.to_s }.each do |k|
+        v = hash[k]
         if v.is_a?(Hash)
           stack << [k,v]
         else

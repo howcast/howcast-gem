@@ -20,7 +20,7 @@ describe Howcast::Client, "video" do
   end
   
   it "should establish a connection with the correct video url" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/2.xml?api_key=myapikey")).and_return(video_xml)
+    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/videos/2.xml?api_key=myapikey").and_return(video_xml)
     @hc.video(2)
   end  
   
@@ -36,6 +36,32 @@ describe Howcast::Client, "video" do
     @hc.video(2).should be_nil
   end
 
+  it "should set the mature flag in the video model response" do
+    @hc.video(2).mature?.should == true
+  end
+
+  it "should set the ads-allowed flag in the video model response" do
+    @hc.video(2).ads_allowed?.should == true
+  end
+
+  it "should set the type attribute in the video model response" do
+    type = @hc.video(2).type
+    type.kind.should == "foobar"
+    type.status.should == "foobar"
+  end
+
+  it "should set the playlist-memberships attribute in the video model response" do
+    memberships = @hc.video(2).playlist_memberships
+    memberships.size.should == 3
+    memberships.first.instance_of?(Howcast::Client::Category).should be_true
+    memberships[0].id.should   == "Health & Nutrition"
+    memberships[0].name.should == "Health & Nutrition"
+    memberships[1].id.should   == "Exercise"
+    memberships[1].name.should == "Exercise"
+    memberships[2].id.should   == "Yoga"
+    memberships[2].name.should == "Yoga"
+  end
+  
   it "should set the embed attribute in the video model response" do
     @hc.video(2).embed.should == %(<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=233"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=233" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>)
   end
@@ -120,27 +146,27 @@ describe Howcast::Client, "videos" do
   end
   
   it "should establish a connection with videos/most_recent/howcast_studios.xml by default" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/most_recent/howcast_studios.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/videos/most_recent/howcast_studios.xml?api_key=myapikey").and_return(videos_xml)
     @hc.videos
   end
   
   it "should establish a connection with videos/most_recent/howcast_studios/2.xml when :page => 2" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/most_recent/howcast_studios/2.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/videos/most_recent/howcast_studios/2.xml?api_key=myapikey").and_return(videos_xml)
     @hc.videos(:page => 2)
   end
   
   it "should establish a connection with videos/most_viewed/howcast_studios.xml when :sort => most_viewed" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/most_viewed/howcast_studios.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/videos/most_viewed/howcast_studios.xml?api_key=myapikey").and_return(videos_xml)
     @hc.videos(:sort => "most_viewed")    
   end
   
   it "should establish a connection with videos/most_viewed/directors_program.xml when :sort => most_viewed and :filter => directors_program" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/most_viewed/directors_program.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/videos/most_viewed/directors_program.xml?api_key=myapikey").and_return(videos_xml)
     @hc.videos(:sort => "most_viewed", :filter => "directors_program")    
   end
   
   it "should establish a connection with videos/top_rated/directors_program.xml when :sort => most_viewed and :filter => directors_program" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/videos/top_rated/directors_program.xml?api_key=myapikey")).and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/videos/top_rated/directors_program.xml?api_key=myapikey").and_return(videos_xml)
     @hc.videos(:sort => "top_rated", :filter => "directors_program")    
   end
   

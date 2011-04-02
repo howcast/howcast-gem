@@ -20,12 +20,12 @@ describe Howcast::Client, "user" do
   end
   
   it "should establish a connection with the correct user url" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/users/someone/profile/videos.xml?api_key=myapikey")).and_return(user_videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/users/someone/profile/videos.xml?api_key=myapikey").and_return(user_videos_xml)
     @hc.user('someone')
   end
   
   it "should support a paging option" do
-    @hc.should_receive(:open).with(equivalent_uri("http://www.howcast.com/users/someone/profile/videos/2.xml?api_key=myapikey")).and_return(user_videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/users/someone/profile/videos/2.xml?api_key=myapikey").and_return(user_videos_xml)
     @hc.user('someone', :page => 2)
   end
   
