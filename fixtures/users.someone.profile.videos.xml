@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<howcast version="0.1">
+  <title>Howcast - mrmark86's videos</title>
+  <count>12</count>
+  <views>1657</views>
+  <thumbnail-url>http://img.users.howcast.com/i/mrmark86.jpg?size=large</thumbnail-url>
+  <login>mrmark86</login>
+  <firstname>Mark</firstname>
+  <lastname>Rogers</lastname>
+  <videos>
+    <video>
+      <category-id>1414</category-id>
+      <id>429836</id>
+      <title>How to Buy Used Camping and Hiking Gear</title>
+      <views>29</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Mon, 28 Feb 2011 08:15:39 -0800</created-at>
+      <rating>0</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[Buying used camping and hiking gear can save you a bundle, but first you have to know where to look.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="9323">3/1/2011 Flash</playlist>
+        <playlist id="8451">Camping Fun</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=429836"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=429836" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>90</duration>
+      <filename>http://media.howcast.com/system/videos/0/05/40/40/404005.flv</filename>
+      <tags>buy,used,camping,hiking,gear,save,money,online,retail,store</tags>
+      <category-hierarchy>
+        <category id="1334">Sports &amp; Fitness</category>
+        <category parent_id="1334" id="1412">Outdoor Skills</category>
+        <category parent_id="1412" id="1414">Camping</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/429836/buy_used_camping_hiking_gear_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/429836-How-to-Buy-Used-Camping-and-Hiking-Gear</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>1072</category-id>
+      <id>403932</id>
+      <title>How to Get Better TV Reception</title>
+      <views>644</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Tue, 21 Dec 2010 08:15:47 -0800</created-at>
+      <rating>0</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[Fiddling around with rabbit ears can be frustrating. Use your antenna the right way to get a better signal.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="8605">1/4/2011 Big 8</playlist>
+        <playlist id="460">Hot How To's</playlist>
+        <playlist id="2394">AT&amp;T UVerse</playlist>
+        <playlist id="6613">TubeMogul - YOUTUBE MYSPACE</playlist>
+        <playlist id="5055">Blip Hot How To's</playlist>
+        <playlist id="835">Hot How-To's</playlist>
+        <playlist id="763">Hot How-To's</playlist>
+        <playlist id="795">Slide</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=403932"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=403932" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>91</duration>
+      <filename>http://media.howcast.com/system/videos/3/86/38/39/393886.flv</filename>
+      <tags>get,better,tv,reception,cable,shows,watch,clear,antenna,signal,internet</tags>
+      <category-hierarchy>
+        <category id="1">Arts &amp; Media</category>
+        <category parent_id="1" id="9">Film, Video &amp; Television</category>
+        <category parent_id="9" id="1072">Watching TV</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/403932/get_better_TV_reception_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/403932-How-to-Get-Better-TV-Reception</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>1106</category-id>
+      <id>397066</id>
+      <title>How To Buy an Acoustic Guitar</title>
+      <views>125</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Tue, 21 Dec 2010 06:30:55 -0800</created-at>
+      <rating>0</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[If you have rock and roll dreams but a shoestring budget, this guide will get you started towards stardom without breaking the bank.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="5059">Blip Fun &amp; Games</playlist>
+        <playlist id="2394">AT&amp;T UVerse</playlist>
+        <playlist id="5742">TubeMogul Auto-Publish</playlist>
+        <playlist id="870">Fun &amp; Games</playlist>
+        <playlist id="459">Recreation</playlist>
+        <playlist id="763">Hot How-To's</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=397066"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=397066" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>110</duration>
+      <filename>http://media.howcast.com/system/videos/5/08/36/39/393608.flv</filename>
+      <tags>buy, acoustic, guitar, play, sound, strings, wood, amp, neck, body</tags>
+      <category-hierarchy>
+        <category id="1048">Performing Arts</category>
+        <category parent_id="1048" id="1095">Musical Instruments</category>
+        <category parent_id="1095" id="1106">Strings</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/397066/buy_acoustic_guitar_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/397066-How-To-Buy-an-Acoustic-Guitar</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>1511</category-id>
+      <id>391351</id>
+      <title>How To Avoid Mp3 Hearing Loss</title>
+      <views>1282</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Wed, 11 Aug 2010 13:31:37 -0700</created-at>
+      <rating>2</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[Carrying your music collection in your pocket is irreplaceable, and so is your hearing. Keep your ears healthy to ensure you'll be hearing the sweet sounds of music for a long time.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="8345">12/12/2010 Big 8</playlist>
+        <playlist id="6769">8/13/2010 Big 8</playlist>
+        <playlist id="8598">1/1/2011</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=391351"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=391351" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>114</duration>
+      <filename>http://media.howcast.com/system/videos/3/49/29/37/372949.flv</filename>
+      <tags>ipods, earbuds, headphones, decibles, deaf, avoid, mp3, hearing, loss, volume</tags>
+      <category-hierarchy>
+        <category id="1470">Technology</category>
+        <category parent_id="1470" id="1508">Home Electronics</category>
+        <category parent_id="1508" id="1511">Portable Music &amp; Video Players</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>2</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/391351/avoid_mp3_hearing_loss_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/391351-How-To-Avoid-Mp3-Hearing-Loss</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>1355</category-id>
+      <id>324870</id>
+      <title>How To Customize a Bike</title>
+      <views>426</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Tue, 20 Jul 2010 09:31:06 -0700</created-at>
+      <rating>1</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[If you've ever lost your bike in a sea of doppelgangers, or if things just don't fit right when you ride, this guide will help you make your bike as original as you are.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="6382">7/21/2010 Flash</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=324870"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=324870" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>93</duration>
+      <filename>http://media.howcast.com/system/videos/5/09/59/36/365909.flv</filename>
+      <tags>customize,bike,cycling,bicycle,biking,customizing,doppelgangers,style,individuality,original,schwinn,bmx</tags>
+      <category-hierarchy>
+        <category id="1334">Sports &amp; Fitness</category>
+        <category parent_id="1334" id="1353">Bikes &amp; Biking</category>
+        <category parent_id="1353" id="1355">Bike Repair &amp; Maintenance</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>1</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/324870/customize_a_bike_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/324870-How-To-Customize-a-Bike</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>1761</category-id>
+      <id>359886</id>
+      <title>How To Upgrade Drivers For a Video Card on a PC</title>
+      <views>280</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Mon, 12 Jul 2010 15:16:14 -0700</created-at>
+      <rating>0</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[For people interested in playing games or watching movies on a PC, it's important to have an updated video card. Here's the quick way to make sure it's up to date.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="6260">7/14/2010 Flash</playlist>
+        <playlist id="6449">Tech, Gadgets &amp; Gaming</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=359886"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=359886" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>80</duration>
+      <filename>http://media.howcast.com/system/videos/4/19/78/36/367819.flv</filename>
+      <tags>computer, laptop, music, movies, playback, slow, faster, upgrade, drivers, video, card, pc, windows, install</tags>
+      <category-hierarchy>
+        <category id="1470">Technology</category>
+        <category parent_id="1470" id="1484">Computer Hardware</category>
+        <category parent_id="1484" id="1761">Hardware Upgrades</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/359886/update_drivers_for_video_card_on_PC_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/359886-How-To-Upgrade-Drivers-For-a-Video-Card-on-a-PC</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>1357</category-id>
+      <id>324866</id>
+      <title>How To Choose a Bike</title>
+      <views>1970</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Fri, 02 Jul 2010 09:16:16 -0700</created-at>
+      <rating>1</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[Taking the time to select the right bike ensures that your investment yields the rewards you desire.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="6168">7/8/2010 Flash</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=324866"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=324866" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>87</duration>
+      <filename>http://media.howcast.com/system/videos/5/84/60/36/366084.flv</filename>
+      <tags>bike,bicycle,cycling,biking,sports,fitness,picking,choosing,selecting,schwinn,lancearmstrong</tags>
+      <category-hierarchy>
+        <category id="1334">Sports &amp; Fitness</category>
+        <category parent_id="1334" id="1353">Bikes &amp; Biking</category>
+        <category parent_id="1353" id="1357">Buying and Selling a Bike</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/324866/choose_bike_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/324866-How-To-Choose-a-Bike</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>343</category-id>
+      <id>356343</id>
+      <title>How To Know If Your Toe Is Broken</title>
+      <views>1556</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Fri, 25 Jun 2010 14:45:54 -0700</created-at>
+      <rating>1</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[If you find it difficult to walk or run and have pain, swelling, and tenderness in your toe, the toe may be broken. Here are some symptoms to be on the lookout for.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="6055">6/29/2010 Big 8</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=356343"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=356343" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>63</duration>
+      <filename>http://media.howcast.com/system/videos/1/24/53/36/365324.flv</filename>
+      <tags>foot, walk, injury, pain, swell, swollen, xray, x-ray, doctor, know, toe, broken, fracture, hairline, hospital, stub, aid, symptoms, signs, bruise, bruising</tags>
+      <category-hierarchy>
+        <category id="326">First Aid &amp; Safety</category>
+        <category parent_id="326" id="343">First Aid</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/356343/know_if_toe_is_broken_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/356343-How-To-Know-If-Your-Toe-Is-Broken</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>483</category-id>
+      <id>384297</id>
+      <title>How To Avoid Back Strain With a Backpack</title>
+      <views>521</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Thu, 27 May 2010 17:01:11 -0700</created-at>
+      <rating>1</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[Avoid back strain, headaches, and neck pain that can be caused by a heavy backpack by following these tips.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="5696">5/30/2010 Flash</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=384297"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=384297" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>95</duration>
+      <filename>http://media.howcast.com/system/videos/2/74/04/36/360474.flv</filename>
+      <tags>weight, heavy, school, hike, neck, pain, bag, avoid, back, strain, backpack, headache, books</tags>
+      <category-hierarchy>
+        <category id="479">Health &amp; Nutrition</category>
+        <category parent_id="479" id="480">General Health</category>
+        <category parent_id="480" id="483">Back Pain</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/384297/avoid_back_strain_with_backpack_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/384297-How-To-Avoid-Back-Strain-With-a-Backpack</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>428</category-id>
+      <id>335523</id>
+      <title>How To Cook Butternut Squash</title>
+      <views>2843</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Wed, 26 May 2010 08:03:00 -0700</created-at>
+      <rating>0</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[If you’re tired of peas and green beans, give butternut squash a place at your table. ]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="5690">5/28/2010 Flash</playlist>
+        <playlist id="4736">Cooking</playlist>
+        <playlist id="7943">Thanksgiving Made Easy: Side Dishes</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=335523"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=335523" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>73</duration>
+      <filename>http://media.howcast.com/system/videos/6/37/00/36/360037.flv</filename>
+      <tags>food, drink, side dishes, dinner, meals, vegetables, cooking, squash, butter, broth</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="428">Side Dishes</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/335523/cook_butternut_squash_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/335523-How-To-Cook-Butternut-Squash</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>1156</category-id>
+      <id>217221</id>
+      <title>How To Choose a Bird Feeder</title>
+      <views>698</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Thu, 29 Apr 2010 15:15:58 -0700</created-at>
+      <rating>1</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[In the cold weather, birds need extra help finding the seeds they crave. Here’s everything you need to know to put up a snack bar for your feathered friends.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="5408">5/3/2010 Big 8</playlist>
+        <playlist id="6086">For the Birds</playlist>
+        <playlist id="9590">3/26/2011 Big 8</playlist>
+        <playlist id="7890">11/8/2010 Flash</playlist>
+        <playlist id="5934">6/21/2010 Flash</playlist>
+        <playlist id="4973">Pets</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=217221"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=217221" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>127</duration>
+      <filename>http://media.howcast.com/system/videos/5/81/60/35/356081.flv</filename>
+      <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, pets, animal, animals, pet, birds, bird, choose, choosing, pick, picking, decide, deciding, buy, buying, purchase, purchasing, feeder</tags>
+      <category-hierarchy>
+        <category id="1153">Pets</category>
+        <category parent_id="1153" id="1156">Birds</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/217221/choose_bird_feeder_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/217221-How-To-Choose-a-Bird-Feeder</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>1356</category-id>
+      <id>329098</id>
+      <title>How To Remove Bike Handlebar Grips</title>
+      <views>974</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Sun, 14 Mar 2010 11:02:07 -0700</created-at>
+      <rating>0</rating>
+      <username>mrmark86</username>
+      <description>
+        <![CDATA[Remove your handlebar grips in just a few minutes with these tips.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="5582">5/18/2010 Flash</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=329098"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=329098" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>61</duration>
+      <filename>http://media.howcast.com/system/videos/6/16/57/32/325716.flv</filename>
+      <tags>sports, fitness, bikes, biking, bicycles, handles, grips, removal, tools, screwdriver</tags>
+      <category-hierarchy>
+        <category id="1334">Sports &amp; Fitness</category>
+        <category parent_id="1334" id="1353">Bikes &amp; Biking</category>
+        <category parent_id="1353" id="1356">Biking Equipment</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/329098/RemoveBikeHandlebarGrips_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/329098-How-To-Remove-Bike-Handlebar-Grips</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+  </videos>
+</howcast>

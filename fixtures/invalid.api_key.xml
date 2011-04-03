@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<howcast version="0.1">
+  <response stat="fail">
+    <err code="100" msg="Invalid API Key"/>
+  </response>
+</howcast>

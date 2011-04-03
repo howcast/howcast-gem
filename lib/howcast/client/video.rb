@@ -36,10 +36,10 @@ class Howcast::Client
   
   class Video
     extend WatchAttrAccessors
-    attr_accessor :id, :title, :permalink, :thumbnail_url, :category_id, 
+    attr_accessor :id, :title, :permalink, :thumbnail_url, :category_id,
       :views, :username, :duration, :created_at, :rating, :description, :width, :height,
       :badges, :easy_steps, :embed, :category_hierarchy, :ingredients, :markers, :related_videos,
-      :filename
+      :filename, :mature, :ads_allowed, :playlist_memberships, :type
 
     # Creates a new Video object which is used to encapsulate all the attributes available
     # from the Howcast Video API
@@ -61,6 +61,14 @@ class Howcast::Client
     # Return true if the video contains easy step by step directions, else false
     def easy_steps?
       easy_steps == "true"
+    end
+    
+    def mature?
+      mature == "true"
+    end
+    
+    def ads_allowed?
+      ads_allowed == "true"
     end
 
     def to_param
@@ -118,9 +126,9 @@ class Howcast::Client
 	end
 	
 	private
-  	def videos_url(options={})
-      defaults = {:page => nil, :sort => "most_recent", :filter => "howcast_studios", :category_id => nil}
-      options = defaults.update(options)
-      "videos/#{options[:sort]}/#{options[:filter]}#{"/#{options[:category_id]}" if options[:category_id]}#{"/#{options[:page]}" if options[:page]}.xml"
-    end
+  def videos_url(options={})
+    defaults = {:page => nil, :sort => "most_recent", :filter => "howcast_studios", :category_id => nil}
+    options = defaults.update(options)
+    "videos/#{options[:sort]}/#{options[:filter]}#{"/#{options[:category_id]}" if options[:category_id]}#{"/#{options[:page]}" if options[:page]}.xml"
+  end
 end

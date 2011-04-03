@@ -46,20 +46,20 @@ describe Howcast::Client, "video" do
 
   it "should set the type attribute in the video model response" do
     type = @hc.video(2).type
-    type.kind.should == "foobar"
-    type.status.should == "foobar"
+    type.instance_of?(Howcast::Client::Type).should be_true
+    type.kind.should == "HowcastOriginalGuide"
+    type.status.should == "proprietary"
+    type.name.should == "HowcastGuide"
   end
 
   it "should set the playlist-memberships attribute in the video model response" do
     memberships = @hc.video(2).playlist_memberships
-    memberships.size.should == 3
-    memberships.first.instance_of?(Howcast::Client::Category).should be_true
-    memberships[0].id.should   == "Health & Nutrition"
-    memberships[0].name.should == "Health & Nutrition"
-    memberships[1].id.should   == "Exercise"
-    memberships[1].name.should == "Exercise"
-    memberships[2].id.should   == "Yoga"
-    memberships[2].name.should == "Yoga"
+    memberships.size.should == 9
+    memberships.first.instance_of?(Howcast::Client::Playlist).should be_true
+    memberships.each do |membership|
+      membership.id.should_not be_empty
+      membership.title.should_not be_empty
+    end
   end
   
   it "should set the embed attribute in the video model response" do
@@ -71,7 +71,7 @@ describe Howcast::Client, "video" do
   end
   
   it "should set the views attribute in the video model response" do
-    @hc.video(2).views.should == "38"
+    @hc.video(2).views.should_not be_empty
   end
   
   it "should set the badges in the video model response" do
@@ -83,11 +83,11 @@ describe Howcast::Client, "video" do
   end
   
   it "should set the rating attribute in the video model response" do
-    @hc.video(2).rating.should == "2.0"
+    @hc.video(2).rating.should_not be_empty
   end
   
   it "should set the description attribute in the video model response" do
-    @hc.video(2).description.should == "You recognize the Noble Pose as the dreaded \"sit-and-reach\" from your childhood gym class. A sample <a href=\"howcast.com\">link</a>"
+    @hc.video(2).description.should_not be_empty
   end
   
   it "should set the permalink attribute in the video model response" do
@@ -118,25 +118,22 @@ describe Howcast::Client, "video" do
   
   it "should set the markers in the video model response" do
     markers = @hc.video(2).markers
-    markers.size.should == 4
+    markers.size.should == 9
     markers.first.instance_of?(Howcast::Client::Marker).should be_true
-    markers[0].type.should == "Step"
-    markers[0].textile_text.should == "Sit down on the mat with your legs straight out in front of you."
-    markers[1].type.should == "Tip"
-    markers[1].textile_text.should == "It's okay to slightly bend at the knees while extending into this pose."
-    markers[2].type.should == "Step"
-    markers[2].textile_text.should == "To release the pose, inhale, and raise your torso straight up with your arms stretched overhead, then exhale and lower your hands to the floor. Now to conquer kickball..."
-    markers[3].type.should == "Fact"
-    markers[3].textile_text.should == "Pop nobility Sting recently admitted that he and his wife's claims of yoga-inspired marathons of tantric sex was all a joke, saying, \"I have frantic sex, not tantric sex.\""
+    markers.each do |marker|
+      marker.textile_text.should_not be_empty
+      marker.type.should =~ /^(Fact|Step|Tip)$/
+    end
   end
   
   it "should set the related videos in the video model response" do
     related = @hc.video(2).related_videos
-    related.size.should == 2
+    related.size.should == 15
     related.first.instance_of?(Howcast::Client::Video).should be_true
-    related[0].title.should == "How To Do the Extended Triangle Pose"
-    related[0].category_hierarchy.last.name.should == "Yoga"
-    related[1].title.should == "How To Do a Seated Spinal Twist Pose"
+    related.each do |video|
+      video.title.should_not be_empty
+      video.category_hierarchy.should_not be_empty
+    end
   end
 end
 

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<howcast version="0.1">
+  <title>Howcast - Eggs-Travaganza!</title>
+  <playlist-thumbnail-url>http://img.howcast.com/thumbnails/1072/hpn_a011_perfect_scrambled_eggs_sd_medium.jpg</playlist-thumbnail-url>
+  <description>Become an eggs-pert!&#160; We can teach you how to test eggs for freshness, crack them, and hard-boil, poach, scramble, or fry them perfectly. We'll even let you in on a little trick for hard-boiling eggs so they peel easily.</description>
+  <permalink>http://www.howcast.com/playlists/4566-EggsTravaganza</permalink>
+  <id>4566</id>
+  <videos>
+    <video>
+      <category-id>392</category-id>
+      <id>21314</id>
+      <title>How To Separate an Egg</title>
+      <views>5979</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Fri, 01 Aug 2008 17:00:40 -0700</created-at>
+      <rating>11</rating>
+      <username>michaelrsanchez</username>
+      <description>
+        <![CDATA[You may have to break a few eggs to make an omelet, but if you want to make a soufflé—or an angel food cake, or a custard—you’ll need to separate them too.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="1971">4/18/09 Flash</playlist>
+        <playlist id="1486">2/17/2009 Flash</playlist>
+        <playlist id="1805">3/31/2009 Flash</playlist>
+        <playlist id="1780">3/19/2009 Flash</playlist>
+        <playlist id="1470">2/13/2009 Flash</playlist>
+        <playlist id="1611">2/23/2009 Flash</playlist>
+        <playlist id="1928">4/6/2009 Flash</playlist>
+        <playlist id="4715">Cooking</playlist>
+        <playlist id="1735">3/8/2009 Flash</playlist>
+        <playlist id="1957">4/11/09 Flash</playlist>
+        <playlist id="8756">1/12/2011 Flash</playlist>
+        <playlist id="6558">8/1/2010 Big 8</playlist>
+        <playlist id="7888">11/7/2010 Flash</playlist>
+        <playlist id="1816">Simple Food Recipes</playlist>
+        <playlist id="445">Verizon Hub</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=21314"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=21314" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>85</duration>
+      <filename>http://media.howcast.com/system/videos/6/14/13/02/21314.flv</filename>
+      <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, egg, separate, cooking</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="392">Cooking Basics</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>2</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/21314/40_xxlarge_maintained_aspect.jpg</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/21314-How-To-Separate-an-Egg</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>392</category-id>
+      <id>191496</id>
+      <title>How To Test Eggs For Freshness</title>
+      <views>7622</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Wed, 10 Jun 2009 07:47:21 -0700</created-at>
+      <rating>30</rating>
+      <username>lorishe09</username>
+      <description>
+        <![CDATA[It's easy to find out if your eggs can be scrambled, fried, or used in a recipe - or if they need to be tossed in the trash.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="3446">9/23/2009 Big 8</playlist>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="3003">Health</playlist>
+        <playlist id="4120">Kitchen Basics</playlist>
+        <playlist id="3328">9/11/2009 Flash</playlist>
+        <playlist id="2729">7/19/2009 Flash</playlist>
+        <playlist id="2653">Sant&#233;</playlist>
+        <playlist id="2560">7/2/2009 Flash</playlist>
+        <playlist id="3042">8/18/2009 Flash</playlist>
+        <playlist id="3683">10/18/2009 Big 8</playlist>
+        <playlist id="6768">8/13/2010 Flash</playlist>
+        <playlist id="3081">Cooking Tips - New</playlist>
+        <playlist id="3182">8/30/2009 Flash</playlist>
+        <playlist id="5138">4/5/2010 Big 8</playlist>
+        <playlist id="2584">Wiinoma</playlist>
+        <playlist id="9594">3/28/2011 Flash</playlist>
+        <playlist id="2287">Usual Videos</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=191496"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=191496" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>86</duration>
+      <filename>http://media.howcast.com/system/videos/4/96/14/19/191496.flv</filename>
+      <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, breakfast, Dairy, milk, flour, farm</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="392">Cooking Basics</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>5</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/191496/Picture_1_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/191496-How-To-Test-Eggs-For-Freshness</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>392</category-id>
+      <id>282247</id>
+      <title>How To Crack an Egg</title>
+      <views>4497</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Fri, 04 Dec 2009 09:16:18 -0800</created-at>
+      <rating>3</rating>
+      <username>lazydiamond</username>
+      <description>
+        <![CDATA[No need to walk on eggshells if you're looking to make scrambled eggs or your favorite homemade cookies – take a crack at this simple task.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="4818">2/25/2010 Big 8</playlist>
+        <playlist id="7677">Culinary Arts</playlist>
+        <playlist id="3190">Whas Good</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=282247"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=282247" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>67</duration>
+      <filename>http://media.howcast.com/system/videos/0/58/97/28/289758.flv</filename>
+      <tags>egg, shell, cracking, splitting, beating, preparing, cooking, kitchen, baking, bowl, breaking, yolk</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="392">Cooking Basics</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/282247/CrackEgg_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/282247-How-To-Crack-an-Egg</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>382</category-id>
+      <id>258250</id>
+      <title>How To Hard-Boil an Egg</title>
+      <views>1859</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Tue, 20 Oct 2009 15:17:37 -0700</created-at>
+      <rating>4</rating>
+      <username>michaelrsanchez</username>
+      <description>
+        <![CDATA[Making the perfect hard-boiled egg is a science. Follow these simple steps to have that perfect creamy yellow yolk.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="1389">COOKING</playlist>
+        <playlist id="456">Food &amp; Drink</playlist>
+        <playlist id="767">Food &amp; Drink</playlist>
+        <playlist id="617">Food &amp; Drink</playlist>
+        <playlist id="869">Food &amp; Drink</playlist>
+        <playlist id="720">Glam Media</playlist>
+        <playlist id="445">Verizon Hub</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=258250"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=258250" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>90</duration>
+      <filename>http://media.howcast.com/system/videos/5/82/46/26/264682.flv</filename>
+      <tags>eggs,boiling,hard-boiling,hard,cooking,making,breakfast,recipes,food,preparing,correctly</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="382">Breakfast</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>0</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/258250/HardBoilEgg_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/258250-How-To-HardBoil-an-Egg</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>382</category-id>
+      <id>29259</id>
+      <title>How To Poach an Egg</title>
+      <views>35523</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Tue, 02 Sep 2008 10:03:03 -0700</created-at>
+      <rating>69</rating>
+      <username>michaelrsanchez</username>
+      <description>
+        <![CDATA[Good news for egg lovers: You don't need a drop of oil or butter for this preparation, which makes poaching one of the healthiest ways to put a protein powerhouse on your plate.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="2643">Renzie on Food: Breakfast Stuff</playlist>
+        <playlist id="2644">Renzie on Food: Eggs!</playlist>
+        <playlist id="1808">Foodstuff</playlist>
+        <playlist id="3082">Other Cooking - New</playlist>
+        <playlist id="3461">Alles Ivm Koken</playlist>
+        <playlist id="3449">Cooking</playlist>
+        <playlist id="2723">HOME TIPS</playlist>
+        <playlist id="5586">Cooking</playlist>
+        <playlist id="8320">Cooking Catagory</playlist>
+        <playlist id="4568">Good Morning!</playlist>
+        <playlist id="4554">1/28/2010 Flash</playlist>
+        <playlist id="3500">9/29/2009 Big 8</playlist>
+        <playlist id="4378">Playlist</playlist>
+        <playlist id="4910">3/7/2010 Flash</playlist>
+        <playlist id="4119">Breakfast</playlist>
+        <playlist id="5586">Cooking</playlist>
+        <playlist id="2524">Food</playlist>
+        <playlist id="2594">Renzie on Food: Cooking</playlist>
+        <playlist id="5999">Cooking</playlist>
+        <playlist id="8276">Food</playlist>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="3835">11/2/2009 Big 8</playlist>
+        <playlist id="2665">Healthy Breakfasts</playlist>
+        <playlist id="3204">Useful Info</playlist>
+        <playlist id="9188">HOWCAST</playlist>
+        <playlist id="3901">Random Jizz</playlist>
+        <playlist id="6515">Cooking</playlist>
+        <playlist id="860">Culinary Videos</playlist>
+        <playlist id="1334">Cooking/Baking</playlist>
+        <playlist id="1389">COOKING</playlist>
+        <playlist id="3893">Girlyness</playlist>
+        <playlist id="5978">Comment Engagement (Control Group)</playlist>
+        <playlist id="83">Useful Videos</playlist>
+        <playlist id="4850">Food &amp; Drink</playlist>
+        <playlist id="83">Useful Videos</playlist>
+        <playlist id="445">Verizon Hub</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=29259"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=29259" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>104</duration>
+      <filename>http://media.howcast.com/system/videos/6/59/92/02/29259.flv</filename>
+      <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, egg, poach, breakfast</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="382">Breakfast</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>9</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/29259/Picture_8_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/29259-How-To-Poach-an-Egg</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>382</category-id>
+      <id>2578</id>
+      <title>How To Hard-Boil an Egg So It Peels Easily</title>
+      <views>31954</views>
+      <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Tue, 18 Mar 2008 11:08:10 -0700</created-at>
+      <rating>38</rating>
+      <username>SheriffThompson</username>
+      <description>
+        <![CDATA[Have you ever thrown out a perfectly good hard-boiled egg because you got so frustrated trying to peel it? Here’s how to cook the perfectly-peelable egg. ]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="450">Test</playlist>
+        <playlist id="2584">Wiinoma</playlist>
+        <playlist id="76">Unsorted Videos</playlist>
+        <playlist id="5856">Food Videos</playlist>
+        <playlist id="4965">3/15/2010 Flash</playlist>
+        <playlist id="2524">Food</playlist>
+        <playlist id="4816">Food &amp; Drink</playlist>
+        <playlist id="4638">2/5/2010 Flash</playlist>
+        <playlist id="617">Food &amp; Drink</playlist>
+        <playlist id="3081">Cooking Tips - New</playlist>
+        <playlist id="456">Food &amp; Drink</playlist>
+        <playlist id="8276">Food</playlist>
+        <playlist id="4025">11/30/2009 Big 8</playlist>
+        <playlist id="94">Happy Easter!</playlist>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="1979">Happy Easter!</playlist>
+        <playlist id="4744">Nutrition and Fitness</playlist>
+        <playlist id="2426">Recipes</playlist>
+        <playlist id="218">Best Knowing</playlist>
+        <playlist id="137">Howcast Food &amp; Drink</playlist>
+        <playlist id="860">Culinary Videos</playlist>
+        <playlist id="6298">Life Hacking</playlist>
+        <playlist id="9189">Fully</playlist>
+        <playlist id="2666">To See</playlist>
+        <playlist id="83">Useful Videos</playlist>
+        <playlist id="507">Food Playlist</playlist>
+        <playlist id="767">Food &amp; Drink</playlist>
+        <playlist id="3142">Favorites</playlist>
+        <playlist id="869">Food &amp; Drink</playlist>
+        <playlist id="3938">Top Howcast Videos</playlist>
+        <playlist id="4850">Food &amp; Drink</playlist>
+        <playlist id="445">Verizon Hub</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=2578"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=2578" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>99</duration>
+      <filename>http://media.howcast.com/system/videos/2/78/25/2578.flv</filename>
+      <tags>boil, boiled, boiling, cook, cooking, DIY, Do It Yourself, easily, easy, egg, eggs, Essential Skills, food, hard-boil, hard-boiled, Instructional, Learn to, make, making, peel, peeling, Tips, tutorial</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="382">Breakfast</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>8</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/2578/ppn_rich_hard_boil_egg_sd_xxlarge_maintained_aspect.jpg</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/2578-How-To-HardBoil-an-Egg-So-It-Peels-Easily</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>382</category-id>
+      <id>1072</id>
+      <title>How To Make Perfect Scrambled Eggs</title>
+      <views>32298</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Tue, 05 Feb 2008 13:28:45 -0800</created-at>
+      <rating>31</rating>
+      <username>pjvaldez</username>
+      <description>
+        <![CDATA[Everyone and their mother claims to make the best scrambled eggs. We're no different—we're just not your mom.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="246">Food-drink</playlist>
+        <playlist id="1085">Food!</playlist>
+        <playlist id="392">Food</playlist>
+        <playlist id="9533">3/16/2011 Flash</playlist>
+        <playlist id="3954">Food</playlist>
+        <playlist id="7175">Cooked Meals</playlist>
+        <playlist id="1816">Simple Food Recipes</playlist>
+        <playlist id="4649">2/8/2010 Flash</playlist>
+        <playlist id="137">Howcast Food &amp; Drink</playlist>
+        <playlist id="9254">2/24/2011 Flash</playlist>
+        <playlist id="7628">10/18/2010 Flash</playlist>
+        <playlist id="3136">Crafts</playlist>
+        <playlist id="4865">Food</playlist>
+        <playlist id="180">Howcast Directors: Easy Eats</playlist>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="5284">Food</playlist>
+        <playlist id="5740">6/3/2010 Flash</playlist>
+        <playlist id="8320">Cooking Catagory</playlist>
+        <playlist id="4568">Good Morning!</playlist>
+        <playlist id="1389">COOKING</playlist>
+        <playlist id="6515">Cooking</playlist>
+        <playlist id="6800">Jameskeeper</playlist>
+        <playlist id="2666">To See</playlist>
+        <playlist id="9513">Food</playlist>
+        <playlist id="5989">Comment Engagement (Experimental Group)</playlist>
+        <playlist id="507">Food Playlist</playlist>
+        <playlist id="1334">Cooking/Baking</playlist>
+        <playlist id="4850">Food &amp; Drink</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=1072"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=1072" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>133</duration>
+      <filename>http://media.howcast.com/system/videos/1/72/10/1072.flv</filename>
+      <tags>breakfast, cook, DIY, Do It Yourself, eggs, Essential Skills, food, Instructional, Learn to, scrambled, Tips, tutorial</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="382">Breakfast</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>2</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/1072/hpn_a011_perfect_scrambled_eggs_sd_xxlarge_maintained_aspect.jpg</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/1072-How-To-Make-Perfect-Scrambled-Eggs</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>382</category-id>
+      <id>29262</id>
+      <title>How To Fry an Egg</title>
+      <views>43084</views>
+      <type class="AssignmentGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Tue, 02 Sep 2008 10:45:47 -0700</created-at>
+      <rating>37</rating>
+      <username>michaelrsanchez</username>
+      <description>
+        <![CDATA[They say if it's hot enough, you can fry an egg on the sidewalk. But if concrete's not your thing, a skillet works, too.]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="860">Culinary Videos</playlist>
+        <playlist id="3954">Food</playlist>
+        <playlist id="5856">Food Videos</playlist>
+        <playlist id="4730">2/16/2010 Big 8</playlist>
+        <playlist id="2524">Food</playlist>
+        <playlist id="4704">2/16/2010 Big 8</playlist>
+        <playlist id="3650">10/14/2009 Big 8</playlist>
+        <playlist id="5542">5/17/2010 Flash</playlist>
+        <playlist id="5077">3/26/2010 Big 8</playlist>
+        <playlist id="8276">Food</playlist>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="6515">Cooking</playlist>
+        <playlist id="1389">COOKING</playlist>
+        <playlist id="6800">Jameskeeper</playlist>
+        <playlist id="2666">To See</playlist>
+        <playlist id="83">Useful Videos</playlist>
+        <playlist id="445">Verizon Hub</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=29262"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=29262" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>93</duration>
+      <filename>http://media.howcast.com/system/videos/2/62/92/02/29262.flv</filename>
+      <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, fry, egg, breakfast</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="382">Breakfast</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>10</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/29262/Picture_7_xxlarge_maintained_aspect.png</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/29262-How-To-Fry-an-Egg</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+    <video>
+      <category-id>382</category-id>
+      <id>17480</id>
+      <title>How To Fry an Egg on the Sidewalk</title>
+      <views>13667</views>
+      <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+      <ads-allowed/>
+      <created-at>Thu, 03 Jul 2008 06:31:09 -0700</created-at>
+      <rating>34</rating>
+      <username>SheriffThompson</username>
+      <description>
+        <![CDATA[It’s hot. You’re hungry. You’ve got nothing better to do. Why not fry an egg on the sidewalk!]]>
+      </description>
+      <playlist-memberships>
+        <playlist id="83">Useful Videos</playlist>
+        <playlist id="505">Green Playlist</playlist>
+        <playlist id="1662">3/1/2009 Flash</playlist>
+        <playlist id="3002">8/17/2009 Big 8</playlist>
+        <playlist id="443">Test</playlist>
+        <playlist id="485">Nonsense</playlist>
+        <playlist id="2728">7/18/2009 Big 8</playlist>
+        <playlist id="1803">3/30/2009 Flash</playlist>
+        <playlist id="1778">3/18/2009 Flash</playlist>
+        <playlist id="2559">7/1/2009 Big 8</playlist>
+        <playlist id="1969">4/17/09 Flash</playlist>
+        <playlist id="2051">4/27/2009 Flash</playlist>
+        <playlist id="1926">4/5/2009 Flash</playlist>
+        <playlist id="1733">3/7/2009 Flash</playlist>
+        <playlist id="1792">3/25/2009 Flash</playlist>
+        <playlist id="1954">4/10/09 Flash</playlist>
+        <playlist id="2584">Wiinoma</playlist>
+        <playlist id="1382">Receitas</playlist>
+        <playlist id="3181">8/29/2009 Big 8</playlist>
+        <playlist id="3320">9/10/2009 Big 8</playlist>
+        <playlist id="4566">Eggs-Travaganza!</playlist>
+        <playlist id="6780">Summer Fun</playlist>
+        <playlist id="456">Food &amp; Drink</playlist>
+        <playlist id="767">Food &amp; Drink</playlist>
+        <playlist id="617">Food &amp; Drink</playlist>
+        <playlist id="869">Food &amp; Drink</playlist>
+        <playlist id="903">On the Go</playlist>
+        <playlist id="720">Glam Media</playlist>
+      </playlist-memberships>
+      <embed>
+        <![CDATA[<object width="425" height="273" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=17480"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=17480" type="application/x-shockwave-flash" width="425" height="273" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+      </embed>
+      <duration>91</duration>
+      <filename>http://media.howcast.com/system/videos/1/80/74/01/17480.flv</filename>
+      <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, food, breakfast, fry</tags>
+      <category-hierarchy>
+        <category id="355">Food &amp; Drink</category>
+        <category parent_id="355" id="382">Breakfast</category>
+      </category-hierarchy>
+      <easy-steps>true</easy-steps>
+      <badges>Howcast Studios</badges>
+      <comment-count>6</comment-count>
+      <thumbnail-url>http://img.howcast.com/thumbnails/17480/fry-egg-sidewalk-HD_1_xxlarge_maintained_aspect.jpg</thumbnail-url>
+      <permalink>http://www.howcast.com/videos/17480-How-To-Fry-an-Egg-on-the-Sidewalk</permalink>
+      <content-rating>nonadult</content-rating>
+    </video>
+  </videos>
+</howcast>

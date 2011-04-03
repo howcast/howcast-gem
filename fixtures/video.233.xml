@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<howcast version="0.1">
+  <video>
+    <id>233</id>
+    <category-id>515</category-id>
+    <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+    <mature/>
+    <ads-allowed/>
+    <playlist-memberships>
+      <playlist id="141">Howcast Health &amp; Beauty</playlist>
+      <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+      <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+      <playlist id="3653">Beliefnet</playlist>
+      <playlist id="2376">Yoga</playlist>
+      <playlist id="564">All Things Yoga</playlist>
+      <playlist id="2620">Yoga Poses</playlist>
+      <playlist id="9279">Yoga For You</playlist>
+      <playlist id="445">Verizon Hub</playlist>
+    </playlist-memberships>
+    <category-hierarchy>
+      <category id="479">Health &amp; Nutrition</category>
+      <category parent_id="479" id="510">Exercise</category>
+      <category parent_id="510" id="515">Yoga</category>
+    </category-hierarchy>
+    <easy-steps>true</easy-steps>
+    <badges>Howcast Studios</badges>
+    <created-at>Wed, 05 Dec 2007 20:07:50 -0800</created-at>
+    <filename>/system/videos/2/33/02/233.flv</filename>
+    <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, noble</tags>
+    <title>How To Do a Noble Pose</title>
+    <description>
+      <![CDATA[You might recognize the Noble Pose as the dreaded "sit-and-reach" from your childhood gym class. But while that was an exercise in pre-pubescent humiliation, this is a time-honored and well-respected yoga posture.  See the difference?]]>
+    </description>
+    <permalink>http://www.howcast.com/videos/233-How-To-Do-a-Noble-Pose</permalink>
+    <edit-url>http://www.howcast.com/videos/233-How-To-Do-a-Noble-Pose/edit</edit-url>
+    <state>approved</state>
+    <duration>96</duration>
+    <width>640</width>
+    <height>480</height>
+    <embed>
+      <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=233"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=233" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+    </embed>
+    <rating>2</rating>
+    <username>joekulak</username>
+    <thumbnail-url>http://img.howcast.com/thumbnails/233/Mind.How_to_Do_the_Noble_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+    <views>714</views>
+    <content_rating>adult</content_rating>
+    <overlay>
+      <titlecard>false</titlecard>
+      <steps>false</steps>
+      <overlays>false</overlays>
+    </overlay>
+    <ingredients>
+      <ingredient>
+        <![CDATA[Comfortable clothing suitable for stretching and moving]]>
+      </ingredient>
+      <ingredient>
+        <![CDATA[A calm place where you won't be distracted or disturbed]]>
+      </ingredient>
+      <ingredient>
+        <![CDATA[A yoga mat or folded blanket]]>
+      </ingredient>
+      <ingredient>
+        <![CDATA[A belt or strap]]>
+      </ingredient>
+    </ingredients>
+    <markers>
+      <marker>
+        <id>3716</id>
+        <position>1</position>
+        <timemarker>32</timemarker>
+        <type>Step</type>
+        <thumbnail-url>http://img.howcast.com/thumbnails/233/32.jpg</thumbnail-url>
+        <title>Sit down on mat</title>
+        <textile-text>
+          <![CDATA[Sit down on the mat with your legs straight out in front of you.]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>Sit down on the mat with your legs straight out in front of you.</p>]]>
+        </text>
+      </marker>
+      <marker>
+        <id>3717</id>
+        <position>2</position>
+        <timemarker>37</timemarker>
+        <type>Step</type>
+        <thumbnail-url>http://img.howcast.com/thumbnails/233/37.jpg</thumbnail-url>
+        <title>Raise arms</title>
+        <textile-text>
+          <![CDATA[Inhale, and raise your arms up overhead.]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>Inhale, and raise your arms up overhead.</p>]]>
+        </text>
+      </marker>
+      <marker>
+        <id>3718</id>
+        <position>3</position>
+        <timemarker>41</timemarker>
+        <type>Step</type>
+        <thumbnail-url>http://img.howcast.com/thumbnails/233/41.jpg</thumbnail-url>
+        <title>Bend forward</title>
+        <textile-text>
+          <![CDATA[Exhale, and bend forward from the hips, lowering your torso and outstretched arms parallel to your legs.]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>Exhale, and bend forward from the hips, lowering your torso and outstretched arms parallel to your legs.</p>]]>
+        </text>
+      </marker>
+      <marker>
+        <id>3719</id>
+        <position>4</position>
+        <timemarker>48</timemarker>
+        <type>Tip</type>
+        <thumbnail-url></thumbnail-url>
+        <title></title>
+        <textile-text>
+          <![CDATA[It's okay to slightly bend at the knees while extending into this pose.]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>It&#8217;s okay to slightly bend at the knees while extending into this pose.</p>]]>
+        </text>
+      </marker>
+      <marker>
+        <id>3720</id>
+        <position>5</position>
+        <timemarker>52</timemarker>
+        <type>Step</type>
+        <thumbnail-url>http://img.howcast.com/thumbnails/233/52.jpg</thumbnail-url>
+        <title>Lower chest &amp; grab feet</title>
+        <textile-text>
+          <![CDATA[Bring your chest to your thighs and your face to your shins while reaching for and grabbing hold of your feet. Keep your back as straight as possible.]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>Bring your chest to your thighs and your face to your shins while reaching for and grabbing hold of your feet. Keep your back as straight as possible.</p>]]>
+        </text>
+      </marker>
+      <marker>
+        <id>3721</id>
+        <position>6</position>
+        <timemarker>60</timemarker>
+        <type>Tip</type>
+        <thumbnail-url></thumbnail-url>
+        <title></title>
+        <textile-text>
+          <![CDATA[If you can't reach your feet, loop a belt or a strap around them to grab onto.]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>If you can&#8217;t reach your feet, loop a belt or a strap around them to grab onto.</p>]]>
+        </text>
+      </marker>
+      <marker>
+        <id>3722</id>
+        <position>7</position>
+        <timemarker>65</timemarker>
+        <type>Step</type>
+        <thumbnail-url>http://img.howcast.com/thumbnails/233/65.jpg</thumbnail-url>
+        <title>Hold pose</title>
+        <textile-text>
+          <![CDATA[Hold the pose for 5 to 10 breaths, or longer if you can.]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>Hold the pose for 5 to 10 breaths, or longer if you can.</p>]]>
+        </text>
+      </marker>
+      <marker>
+        <id>3723</id>
+        <position>8</position>
+        <timemarker>70</timemarker>
+        <type>Step</type>
+        <thumbnail-url>http://img.howcast.com/thumbnails/233/70.jpg</thumbnail-url>
+        <title>Release pose</title>
+        <textile-text>
+          <![CDATA[To release the pose, inhale, and raise your torso straight up with your arms stretched overhead, then exhale and lower your hands to the floor. Now to conquer kickball...]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>To release the pose, inhale, and raise your torso straight up with your arms stretched overhead, then exhale and lower your hands to the floor. Now to conquer kickball&#8230;</p>]]>
+        </text>
+      </marker>
+      <marker>
+        <id>3724</id>
+        <position>9</position>
+        <timemarker>81</timemarker>
+        <type>Fact</type>
+        <thumbnail-url></thumbnail-url>
+        <title></title>
+        <textile-text>
+          <![CDATA[Pop nobility Sting recently admitted that he and his wife's claims of yoga-inspired marathons of tantric sex was all a joke, saying, "I have frantic sex, not tantric sex."]]>
+        </textile-text>
+        <text>
+          <![CDATA[<p>Pop nobility Sting recently admitted that he and his wife&#8217;s claims of yoga-inspired marathons of tantric sex was all a joke, saying, &#8220;I have frantic sex, not tantric sex.&#8221;</p>]]>
+        </text>
+      </marker>
+    </markers>
+    <related-videos>
+      <video>
+        <category-id>515</category-id>
+        <id>224</id>
+        <title>How To Do the Extended Triangle Pose</title>
+        <views>3320</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:04 -0800</created-at>
+        <rating>6</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[What do paintings on a wall, car tires, and promising horoscopes have in common? They all require proper alignment. It's not the easiest skill to acquire, but the Extended Triangle Pose will help hone it.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="393">Yoga</playlist>
+          <playlist id="439">Yoga</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="5052">Yoga</playlist>
+          <playlist id="117">YOGA</playlist>
+          <playlist id="598">Yoga Routine</playlist>
+          <playlist id="6931">Hit the Mat</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=224"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=224" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>146</duration>
+        <filename>http://media.howcast.com/system/videos/0/24/02/224.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, extended, triangle, utthita, trikonasana, warrior</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/224/Mind.How_to_Do_the_Extended_Triangle_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/224-How-To-Do-the-Extended-Triangle-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>225</id>
+        <title>How To Do a Seated Spinal Twist Pose</title>
+        <views>4621</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:08 -0800</created-at>
+        <rating>8</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[According to Hindu mythology, this pose was originated by a yogi who spent 12 years in the belly of a fish, eavesdropping on Shiva's secret yoga instructions in an ocean cave.  All you have to do is sit on a mat.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="5052">Yoga</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="117">YOGA</playlist>
+          <playlist id="3875">Yoga</playlist>
+          <playlist id="3653">Beliefnet</playlist>
+          <playlist id="7363">9/25/2010 Flash</playlist>
+          <playlist id="6646">8/4/2010 Flash</playlist>
+          <playlist id="8696">1/10/2011 Flash</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+          <playlist id="445">Verizon Hub</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=225"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=225" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>143</duration>
+        <filename>http://media.howcast.com/system/videos/1/25/02/225.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, seated, spinal, twist, Ardha, Matsyendrasana</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>2</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/225/Mind.How_to_Do_a_Seated_Spinal_Twist_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/225-How-To-Do-a-Seated-Spinal-Twist-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>226</id>
+        <title>How To Do the Chair Pose</title>
+        <views>7257</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:12 -0800</created-at>
+        <rating>3</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[Remember how there was always one joker in school who pretended to sit on an invisible chair? That joker might just make an excellent yoga practitioner.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="393">Yoga</playlist>
+          <playlist id="439">Yoga</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="598">Yoga Routine</playlist>
+          <playlist id="8">Yoga Basics</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+          <playlist id="445">Verizon Hub</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=226"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=226" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>91</duration>
+        <filename>http://media.howcast.com/system/videos/2/26/02/226.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, chair</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>1</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/226/Mind.How_to_Do_the_Chair_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/226-How-To-Do-the-Chair-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>227</id>
+        <title>How To Do the Cobra Pose</title>
+        <views>4711</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:19 -0800</created-at>
+        <rating>5</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[Cobras are known for achieving a menacing pose by expanding their hoods when threatened. You don't need a hood—or a threat—to strike a cobra pose. Just expand your chest.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="439">Yoga</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="3875">Yoga</playlist>
+          <playlist id="598">Yoga Routine</playlist>
+          <playlist id="6931">Hit the Mat</playlist>
+          <playlist id="868">Health &amp; Beauty</playlist>
+          <playlist id="8">Yoga Basics</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+          <playlist id="445">Verizon Hub</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=227"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=227" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>93</duration>
+        <filename>http://media.howcast.com/system/videos/3/27/02/227.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, cobra</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/227/Mind.How_to_Do_the_Cobra_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/227-How-To-Do-the-Cobra-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>228</id>
+        <title>How To Do the Headstand Pose</title>
+        <views>4605</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:31 -0800</created-at>
+        <rating>6</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[Learn how to do the headstand pose correctly with these instructions.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="6436">Contortion Training</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=228"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=228" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>147</duration>
+        <filename>http://media.howcast.com/system/videos/4/28/02/228.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, head, stand, headstand, sirsasana</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/228/Mind.How_to_Do_the_Headstand_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/228-How-To-Do-the-Headstand-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>229</id>
+        <title>How To Do the Lunge Pose</title>
+        <views>1439</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:35 -0800</created-at>
+        <rating>4</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[The Lunge Pose will have you looking like a sprinter in the blocks, ready to take off.  And after practicing it to build your lower body strength and stamina, you will be.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="393">Yoga</playlist>
+          <playlist id="439">Yoga</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="6931">Hit the Mat</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+          <playlist id="445">Verizon Hub</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=229"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=229" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>122</duration>
+        <filename>http://media.howcast.com/system/videos/5/29/02/229.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, lunge</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>1</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/229/Mind.How_to_Do_the_Lunge_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/229-How-To-Do-the-Lunge-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>230</id>
+        <title>How To Do the Four Limbed Staff Pose</title>
+        <views>687</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:40 -0800</created-at>
+        <rating>3</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[Eventually, your calm and peaceful mind will relish the challenge that this pose presents your wrists and abdominal muscles. Until then, just be thankful it's not a one-limbed pose.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="393">Yoga</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="445">Verizon Hub</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=230"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=230" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>92</duration>
+        <filename>http://media.howcast.com/system/videos/6/30/02/230.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, four-limbed, four, limbed, staff, Chaturanga, Dandasana</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/230/Mind.How_to_Do_the_Four-Limbed_Staff_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/230-How-To-Do-the-Four-Limbed-Staff-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>231</id>
+        <title>How To Do the Eagle Pose</title>
+        <views>1587</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:43 -0800</created-at>
+        <rating>4</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[You won't actually be able to fly in this pose, but you will improve your balance, strengthen your legs, and stretch your hips and shoulders.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="393">Yoga</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=231"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=231" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>123</duration>
+        <filename>http://media.howcast.com/system/videos/0/31/02/231.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, eagle, Garudasana</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>1</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/231/Mind.How_to_Do_the_Eagle_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/231-How-To-Do-the-Eagle-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>232</id>
+        <title>How To Do the Bound Angle Pose</title>
+        <views>4201</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:47 -0800</created-at>
+        <rating>4</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[This relatively simple pose might make you feel like a kid stretching before gym class, but that's not necessarily a bad thing—the more you do it, the better you can gauge your maturing yoga skills.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="3653">Beliefnet</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+          <playlist id="445">Verizon Hub</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=232"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=232" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>84</duration>
+        <filename>http://media.howcast.com/system/videos/1/32/02/232.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, bound, angle</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/232/Mind.How_to_Do_the_Bound_Angle_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/232-How-To-Do-the-Bound-Angle-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>234</id>
+        <title>How To Do the Wide Legged Forward Bend</title>
+        <views>676</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:54 -0800</created-at>
+        <rating>2</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[This is a variation of the Wide Legged Seated Forward Bend, but since you're standing for this one, you have a helpful partner — gravity.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=234"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=234" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>99</duration>
+        <filename>http://media.howcast.com/system/videos/3/34/02/234.flv</filename>
+        <tags>health, fitness, stretch, exercise, yoga, technique, poses, positions, wide legged forward bend, relaxation, stress, calm </tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/234/Mind.How_to_Do_the_Wide_Legged_Forward_Bend_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/234-How-To-Do-the-Wide-Legged-Forward-Bend</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>235</id>
+        <title>How To Do the Shooting Bow Pose</title>
+        <views>1300</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:07:58 -0800</created-at>
+        <rating>5</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[This pose is exactly as it sounds—you'll be drawing back an imaginary arrow. We don't want to spoil the surprise, but you already have all the equipment built-in.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="2815">Yoga</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=235"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=235" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>96</duration>
+        <filename>http://media.howcast.com/system/videos/4/35/02/235.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, shooting, bow, Akarna-dhanura-asana, Akarna, dhanura, asana</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/235/Mind.How_to_Do_the_Shooting_Bow_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/235-How-To-Do-the-Shooting-Bow-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>236</id>
+        <title>How To Do the Plow Pose</title>
+        <views>2040</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:08:05 -0800</created-at>
+        <rating>5</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[The Plow Pose is essentially a Noble Pose turned on its head—or rather, turned on your head.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="6436">Contortion Training</playlist>
+          <playlist id="4012">11/24/2009 Flash</playlist>
+          <playlist id="3875">Yoga</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=236"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=236" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>164</duration>
+        <filename>http://media.howcast.com/system/videos/5/36/02/236.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, plow, halsana</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/236/Mind.How_to_Do_the_Plow_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/236-How-To-Do-the-Plow-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>237</id>
+        <title>How To Do the Lion Pose</title>
+        <views>10408</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:08:10 -0800</created-at>
+        <rating>8</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[The Lion's Pose gives the muscles of the jaw, throat, eyes, and face a stretch that can ease problems like teeth grinding and clenched jaws. It's also excellent preparation for a KISS concert.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="3249">category_479</playlist>
+          <playlist id="164">Yoga_Thais</playlist>
+          <playlist id="8">Yoga Basics</playlist>
+          <playlist id="445">Verizon Hub</playlist>
+          <playlist id="6260">7/14/2010 Flash</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=237"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=237" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>97</duration>
+        <filename>http://media.howcast.com/system/videos/6/37/02/237.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, lion, simhasana</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/237/Mind.How_to_Do_the_Lion_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/237-How-To-Do-the-Lion-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>238</id>
+        <title>How To Do the Warrior III Pose</title>
+        <views>526</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:08:16 -0800</created-at>
+        <rating>2</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[The Warrior III Pose recreates the moment that the fierce Virabhadra chopped off the head of his master's enemy. If you could do battle balanced on one leg, maybe you'd have a pose named after you.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="117">YOGA</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+          <playlist id="445">Verizon Hub</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=238"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=238" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>118</duration>
+        <filename>http://media.howcast.com/system/videos/0/38/02/238.flv</filename>
+        <tags>yoga, health, mind, body, flexibility, balance, warrior, pose, technique, stretch</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/238/Mind.How_to_Do_the_Warrior_III_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/238-How-To-Do-the-Warrior-Iii-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+      <video>
+        <category-id>515</category-id>
+        <id>239</id>
+        <title>How To Do the Extended Side Angle Pose</title>
+        <views>533</views>
+        <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
+        <ads-allowed/>
+        <created-at>Wed, 05 Dec 2007 20:08:33 -0800</created-at>
+        <rating>5</rating>
+        <username>joekulak</username>
+        <description>
+          <![CDATA[You could become a flight attendant and cram luggage into those overhead storage bins to get a good torso stretch. But we think the Extended Side Angle Pose is a little more practical.]]>
+        </description>
+        <playlist-memberships>
+          <playlist id="141">Howcast Health &amp; Beauty</playlist>
+          <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
+          <playlist id="515">Yoga! Yoga! Yoga!</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="2376">Yoga</playlist>
+          <playlist id="564">All Things Yoga</playlist>
+          <playlist id="9279">Yoga For You</playlist>
+          <playlist id="2620">Yoga Poses</playlist>
+        </playlist-memberships>
+        <embed>
+          <![CDATA[<object width="425" height="352" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="howcastplayer"><param name="movie" value="http://www.howcast.com/flash/howcast_player.swf?file=239"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.howcast.com/flash/howcast_player.swf?file=239" type="application/x-shockwave-flash" width="425" height="352" allowFullScreen="true" allowScriptAccess="always" ></embed></object>]]>
+        </embed>
+        <duration>136</duration>
+        <filename>http://media.howcast.com/system/videos/1/39/02/239.flv</filename>
+        <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, extended, side, angle, utthita, parsvakonasana</tags>
+        <category-hierarchy>
+          <category id="479">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510">Exercise</category>
+          <category parent_id="510" id="515">Yoga</category>
+        </category-hierarchy>
+        <easy-steps>true</easy-steps>
+        <badges>Howcast Studios</badges>
+        <comment-count>0</comment-count>
+        <thumbnail-url>http://img.howcast.com/thumbnails/239/Mind.How_to_Do_the_Extended_Side_Angle_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
+        <permalink>http://www.howcast.com/videos/239-How-To-Do-the-Extended-Side-Angle-Pose</permalink>
+        <content-rating>nonadult</content-rating>
+      </video>
+    </related-videos>
+    <comments count="0"/>
+  </video>
+</howcast>

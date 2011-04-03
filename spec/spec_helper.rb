@@ -11,7 +11,7 @@ require File.expand_path(File.dirname(__FILE__) + "/output_capture_helper")
 require File.expand_path(File.dirname(__FILE__) + "/xml_fixtures_helper")
 
 RSpec.configure do |config|
-  config.include(OutputCaptureHelper)
+  config.include(OutputCaptureHelper) # THIS IS FUCKING ATROCIOUS!!!
   config.include(XmlFixturesHelper)
   config.before :each do
     start_capturing_output
