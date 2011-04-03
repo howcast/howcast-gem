@@ -1,6 +1,6 @@
 # Howcast API Ruby Wrapper
 
-Copyright (c) 2008 Howcast Media Inc.
+Copyright (c) 2008 - 2011 Howcast Media Inc.
 
 Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
 
