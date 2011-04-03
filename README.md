@@ -1,14 +1,13 @@
 # Howcast API Ruby Wrapper
 
-Copyright (c) 2008 - 2011 Howcast Media Inc.
-
+Copyright (c) 2008 - 2011 Howcast Media Inc.  
 Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
 
 ## Installing
 	
-    sudo gem install howcast
+    $ sudo gem install howcast
   
-## Example
+## Examples
 
     require 'rubygems'
     require 'howcast'
@@ -44,3 +43,21 @@ Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
     #     {:name=>"Musical Instruments", :id=>"1095"}, 
     #     {:name=>"Keyboards", :id=>"1103"}]
     puts "The ancestors of piano are: #{ancestors.join(" -> ")}"
+
+## Setup for Development Work
+
+  # get it
+  $ git clone git://github.com/howcast/howcast-gem.git
+  
+  # install dependencies
+  $ cd howcast-gem 
+  $ bundle install
+  
+  # run tests
+  $ bundle exec rake spec
+  
+  # see useful rake tasks
+  $ bundle exec rake -T
+  
+  # start hacking
+  $ mate .
