@@ -61,3 +61,18 @@ Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
   
   # start hacking
   $ mate .
+
+## Releasing
+
+  # make sure all specs are passing
+  $ bundle exec rake spec
+
+  # update/set the release version, where X.X.X is the new version number
+  $ echo "X.X.X" > VERSION
+  
+  # commit and push the new version (and any other uncommitted files)
+  $ git commit -a -m 'Blah-blah-blah'
+  $ git push
+  
+  # create tag, build, and push howcast gem to rubygems
+  $ bundle release

@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
   
   s.add_runtime_dependency(%q<hpricot>, [">= 0"])
   
+  #s.add_development_dependency(%q<jeweler>, [">= 0"])
   s.add_development_dependency(%q<rake>, [">= 0"])
   s.add_development_dependency(%q<rspec>, [">= 0"])
   s.add_development_dependency(%q<ruby-debug>, [">= 0"])
