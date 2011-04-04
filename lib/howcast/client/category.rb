@@ -83,30 +83,38 @@ class Howcast::Client
   # 
   # Get the top level Howcast categories
   #   Howcast::Client.new.categories
-  CATEGORIES_DOCUMENT = "categories.xml"
-  
   def categories(options = {})
-    establish_connection(CATEGORIES_DOCUMENT).at('categories').children_of_type('category').inject([]){ |r, i| r << parse_single_category_xml(i)}
+    fetch_categories.at('categories').children_of_type('category').inject([]){ |r, i| r << parse_single_category_xml(i) }
 	end
   
   def category_id_for key
-    categories = establish_connection(CATEGORIES_DOCUMENT)
-    node       = (categories/"//category/name[text-downcase()='#{key.downcase}']/../permalink")
-    node       = (categories/"//category/permalink[text-downcase()*='#{key.downcase}']") if node.empty?
-    node.text.split("/").last unless node.empty?
+    fetch_categories do |categories|
+      node       = (categories/"//category/name[text-downcase()='#{key.downcase}']/../permalink")
+      node       = (categories/"//category/permalink[text-downcase()*='#{key.downcase}']") if node.empty?
+      node.text.split("/").last unless node.empty?
+    end
   end
   
   private
-    # Exception here to parse the <parents> tag in a category, will set a category.parents variable
-    # which is an array of parent metadata hases
-    # [{:id => '123', :name => "root"}, {:id => "1234", :name => "parent"}]
-    def parse_single_category_xml(xml)
-      hash = {}
-      Category.attr_accessors.each do |attribute|
-        node_name = attribute.to_s.gsub("_", "-") # xml schema uses hyphens for spaces, but ruby uses underscores
-        hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
-      end
-      hash[:parents] = (xml.at('parents')/:category).map{ |c| {:id => c.at('id').inner_text.strip, :name => c.at('name').inner_text.strip, :permalink => c.at('permalink').inner_text.strip }} unless xml.at('parents').nil?
-      hash.values.all?{|v| v==""} ? nil : Category.new(hash)
+  def fetch_categories
+    @categories ||= establish_connection("categories.xml")
+    if block_given?
+      yield @categories
+    else
+      @categories
     end
+  end
+  
+  # Exception here to parse the <parents> tag in a category, will set a category.parents variable
+  # which is an array of parent metadata hases
+  # [{:id => '123', :name => "root"}, {:id => "1234", :name => "parent"}]
+  def parse_single_category_xml(xml)
+    hash = {}
+    Category.attr_accessors.each do |attribute|
+      node_name = attribute.to_s.gsub("_", "-") # xml schema uses hyphens for spaces, but ruby uses underscores
+      hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
+    end
+    hash[:parents] = (xml.at('parents')/:category).map{ |c| {:id => c.at('id').inner_text.strip, :name => c.at('name').inner_text.strip, :permalink => c.at('permalink').inner_text.strip }} unless xml.at('parents').nil?
+    hash.values.all?{|v| v==""} ? nil : Category.new(hash)
+  end
 end

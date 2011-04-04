@@ -83,13 +83,17 @@ class Howcast::Client
   # Get the Hpricot data for most recent howcast studios videos
   #   establish_connection("videos/most_recent/howcast_studios.xml") 
   def establish_connection(relative_path_and_query)
-    uri = self.class.base_uri.dup
-    relative_path_and_query = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
-    uri.path, uri.query = *relative_path_and_query.split('?')
-    h = Hpricot.XML(open(url = attach_api_key(uri)))
+    uri                      = self.class.base_uri.dup
+    relative_path_and_query  = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
+    uri.path, uri.query      = *relative_path_and_query.split('?')
+    
+    doc = Hpricot.XML(open(url = attach_api_key(uri)))
     Howcast.log.info "Established connection with: '#{url}'"
-    raise Howcast::ApiKeyNotFound if h.at(:err) && h.at(:err)['msg'].match(/Invalid API Key/)
-    return h
+    
+    raise Howcast::ApiKeyNotFound \
+      if doc.at(:err) && doc.at(:err)['msg'].match(/Invalid API Key/)
+        
+    doc
   rescue URI::InvalidURIError
     raise Howcast::ApiNotFound.new("Invalid URL #{url.inspect} requested. Refer to the Howcast API for supported URL's")
   rescue OpenURI::HTTPError => boom
