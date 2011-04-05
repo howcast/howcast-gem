@@ -88,6 +88,7 @@ class Howcast::Client
     uri.path, uri.query      = *relative_path_and_query.split('?')
     
     doc = Hpricot.XML(open(url = attach_api_key(uri)))
+    puts ">>> #{url.inspect}"
     Howcast.log.info "Established connection with: '#{url}'"
     
     raise Howcast::ApiKeyNotFound \
