@@ -93,6 +93,9 @@ class Howcast::Client
     raise Howcast::ApiKeyNotFound \
       if doc.at(:err) && doc.at(:err)['msg'].match(/Invalid API Key/)
         
+    puts "*- #{uri} -*"
+    puts doc
+    puts "*---*"
     doc
   rescue URI::InvalidURIError
     raise Howcast::ApiNotFound.new("Invalid URL #{url.inspect} requested. Refer to the Howcast API for supported URL's")
