@@ -123,7 +123,7 @@ class Howcast::Client
 	def videos(options = {})
     uri = videos_url(options)
     doc = establish_connection(uri)
-    puts "---"
+    puts "- #{uri} -"
     puts doc
     puts "---"
     (doc/:video).inject([]){ |r, i| r << parse_single_xml(i, Video) }
