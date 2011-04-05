@@ -87,12 +87,19 @@ class Howcast::Client
     relative_path_and_query  = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
     uri.path, uri.query      = *relative_path_and_query.split('?')
     
-    doc = Hpricot.XML(open(url = attach_api_key(uri)))
+    stream = open(url = attach_api_key(uri))
+    data   = stream.read
+    puts data
+    puts "xxx"
+    doc    = Hpricot.XML(data)
     Howcast.log.info "Established connection with: '#{url}'"
     
     raise Howcast::ApiKeyNotFound \
       if doc.at(:err) && doc.at(:err)['msg'].match(/Invalid API Key/)
-        
+
+    puts "---"
+    puts doc
+    puts "***"
     doc
   rescue URI::InvalidURIError
     raise Howcast::ApiNotFound.new("Invalid URL #{url.inspect} requested. Refer to the Howcast API for supported URL's")
