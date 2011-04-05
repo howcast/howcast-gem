@@ -122,16 +122,11 @@ class Howcast::Client
   #   Howcast::Client.new.videos(:page => 3, :sort => "top_favorites", :filter => "top_rated")
 	def videos(options = {})
     uri = videos_url(options)
-    doc = (establish_connection(uri)/:video)
+    doc = establish_connection(uri)
+    puts "---"
     puts doc
-    puts "---------"
-    doc.inject([]){ |r, i| 
-      begin
-        r << parse_single_xml(i, Video)
-      rescue => e
-        puts e.message
-      end
-    }
+    puts "---"
+    (doc/:video).inject([]){ |r, i| r << parse_single_xml(i, Video) }
 	end
 	
 	private
