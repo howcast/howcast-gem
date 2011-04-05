@@ -124,6 +124,7 @@ class Howcast::Client
     uri = videos_url(options)
     (establish_connection(uri)/:video).inject([]){ |r, i| 
       begin
+        puts "xxx: #{r.length}"
         r << parse_single_xml(i, Video)
       rescue => e
         puts e.message
@@ -135,6 +136,8 @@ class Howcast::Client
   def videos_url(options={})
     defaults = {:page => nil, :sort => "most_recent", :filter => "howcast_studios", :category_id => nil}
     options  = defaults.update(options)
-    "videos/#{options[:sort]}/#{options[:filter]}#{"/#{options[:category_id]}" if options[:category_id]}#{"/#{options[:page]}" if options[:page]}.xml"
+    url = "videos/#{options[:sort]}/#{options[:filter]}#{"/#{options[:category_id]}" if options[:category_id]}#{"/#{options[:page]}" if options[:page]}.xml"
+    puts "XXX: #{url}"
+    url
   end
 end
