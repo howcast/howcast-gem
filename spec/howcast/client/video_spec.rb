@@ -36,8 +36,8 @@ describe Howcast::Client, "video" do
     @hc.video(2).should be_nil
   end
 
-  it "should set the mature flag in the video model response" do
-    @hc.video(2).mature?.should == true
+  it "should set the mature-content flag in the video model response" do
+    @hc.video(2).mature_content?.should == true
   end
 
   it "should set the ads-allowed flag in the video model response" do

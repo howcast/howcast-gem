@@ -146,7 +146,7 @@ class Howcast::Client
         hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : xml.at("thumbnail-url").inner_text.strip
       elsif node_name == "type"
         hash[attribute] = type_for(xml) unless xml.at(node_name).nil?
-      elsif %w{ ads-allowed mature }.include? node_name
+      elsif %w{ ads-allowed mature-content }.include? node_name
         hash[attribute] = !xml.at(node_name).nil? ? "true" : ""
       else
         hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""

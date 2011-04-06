@@ -39,7 +39,7 @@ class Howcast::Client
     attr_accessor :id, :title, :permalink, :thumbnail_url, :category_id,
       :views, :username, :duration, :created_at, :rating, :description, :width, :height,
       :badges, :easy_steps, :embed, :category_hierarchy, :ingredients, :markers, :related_videos,
-      :filename, :mature, :ads_allowed, :playlist_memberships, :type
+      :filename, :mature_content, :ads_allowed, :playlist_memberships, :type
 
     # Creates a new Video object which is used to encapsulate all the attributes available
     # from the Howcast Video API
@@ -63,8 +63,8 @@ class Howcast::Client
       easy_steps == "true"
     end
     
-    def mature?
-      mature == "true"
+    def mature_content?
+      mature_content == "true"
     end
     
     def ads_allowed?
