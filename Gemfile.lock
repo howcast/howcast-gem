@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    howcast (0.7.7)
+    howcast (0.7.8)
       hpricot
 
 GEM
