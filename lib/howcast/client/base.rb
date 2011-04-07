@@ -87,6 +87,7 @@ class Howcast::Client
     relative_path_and_query  = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
     uri.path, uri.query      = *relative_path_and_query.split('?')
 
+    raise Timeout::Error
     doc = Hpricot.XML(open(url = attach_api_key(uri)))
     Howcast.log.info "Established connection with: '#{url}'"
     
@@ -98,6 +99,8 @@ class Howcast::Client
     raise Howcast::ApiNotFound.new("Invalid URL #{url.inspect} requested. Refer to the Howcast API for supported URL's")
   rescue OpenURI::HTTPError => boom
     raise Howcast::ApiError.new("HTTP error #{boom.message} accessing the API. Refer to the Howcast API for supported URL's")
+  rescue Timeout::Error
+    raise Howcast::ApiError.new("Timeout error occured while attempting to access the API. Refer to the Howcast API for supported URL's")
   end
   
   # Parses the xml for a single item from +xml+ and creates a new +klass+ object
