@@ -22,6 +22,7 @@
 #++
 
 require 'rubygems'
+require 'timeout'
 require 'hpricot'
 require 'open-uri'
 require 'uri'
@@ -83,24 +84,25 @@ class Howcast::Client
   # Get the Hpricot data for most recent howcast studios videos
   #   establish_connection("videos/most_recent/howcast_studios.xml") 
   def establish_connection(relative_path_and_query)
-    uri                      = self.class.base_uri.dup
-    relative_path_and_query  = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
-    uri.path, uri.query      = *relative_path_and_query.split('?')
+    begin
+      uri                      = self.class.base_uri.dup
+      relative_path_and_query  = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
+      uri.path, uri.query      = *relative_path_and_query.split('?')
 
-    raise Timeout::Error
-    doc = Hpricot.XML(open(url = attach_api_key(uri)))
-    Howcast.log.info "Established connection with: '#{url}'"
+      doc  = Hpricot.XML open(url = attach_api_key(uri))
+      Howcast.log.info "Established connection with: '#{url}'"
     
-    raise Howcast::ApiKeyNotFound \
-      if doc.at(:err) && doc.at(:err)['msg'].match(/Invalid API Key/)
+      raise Howcast::ApiKeyNotFound \
+        if doc.at(:err) && doc.at(:err)['msg'].match(/Invalid API Key/)
 
-    doc
-  rescue URI::InvalidURIError
-    raise Howcast::ApiNotFound.new("Invalid URL #{url.inspect} requested. Refer to the Howcast API for supported URL's")
-  rescue OpenURI::HTTPError => boom
-    raise Howcast::ApiError.new("HTTP error #{boom.message} accessing the API. Refer to the Howcast API for supported URL's")
-  rescue Timeout::Error
-    raise Howcast::ApiError.new("Timeout error occured while attempting to access the API. Refer to the Howcast API for supported URL's")
+      doc
+    rescue Timeout::Error
+      raise Howcast::ApiError, "Timeout error occured while attempting to access the API. Refer to the Howcast API for supported URL's"
+    rescue URI::InvalidURIError
+      raise Howcast::ApiNotFound, "Invalid URL #{url.inspect} requested. Refer to the Howcast API for supported URL's"
+    rescue OpenURI::HTTPError => boom
+      raise Howcast::ApiError, "HTTP error #{boom.message} accessing the API. Refer to the Howcast API for supported URL's"
+    end
   end
   
   # Parses the xml for a single item from +xml+ and creates a new +klass+ object
