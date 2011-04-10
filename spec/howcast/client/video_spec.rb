@@ -105,6 +105,15 @@ describe Howcast::Client, "video" do
     hierarchy[0].name.should == "Health & Nutrition"
     hierarchy[1].name.should == "Exercise"
     hierarchy[2].name.should == "Yoga"
+    hierarchy[0].parent_id.should be_nil
+    hierarchy[1].parent_id.should_not be_nil
+    hierarchy[2].parent_id.should_not be_nil
+    hierarchy[0].id.should_not be_nil
+    hierarchy[1].id.should_not be_nil
+    hierarchy[2].id.should_not be_nil
+    hierarchy[0].permalink.should match(/http/)
+    hierarchy[1].permalink.should match(/http/)
+    hierarchy[2].permalink.should match(/http/)
   end
   
   it "should set the ingredients in the video model response" do

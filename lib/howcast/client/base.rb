@@ -239,7 +239,7 @@ class Howcast::Client
     categories = []
     node = xml.at('category-hierarchy')
     node.children_of_type('category').each do |child|
-      category = Category.new(:id => child['id'], :parent_id => child['parent_id'], :name => child.inner_text)
+      category = Category.new(:id => child['id'], :parent_id => child['parent_id'], :name => child.inner_text, :permalink => child['permalink'])
       categories << category
     end unless node.nil?
     categories
