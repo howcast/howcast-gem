@@ -1,12 +1,11 @@
 # Howcast API Ruby Wrapper
 
-Copyright (c) 2008 - 2011 Howcast Media Inc.  
-Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
+Copyright (c) 2008 - 2011 Howcast Media Inc.
 
 ## Installing
-	
+
     $ sudo gem install howcast
-  
+
 ## Examples
 
     require 'rubygems'
@@ -32,15 +31,15 @@ Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
 
     puts "Video with id 946"
     puts hc.video(946).title
-  
+
     # Category API
     piano = hc.category(1105)
     puts "The parent category of Piano is #{hc.category(piano.parent_id).name}"
-  
+
     ancestors = piano.parents.map{|c| c[:name]}
-    # Ancestors will be an array of hash metadata: 
-    # => [{:name=>"Performing Arts", :id=>"1048"}, 
-    #     {:name=>"Musical Instruments", :id=>"1095"}, 
+    # Ancestors will be an array of hash metadata:
+    # => [{:name=>"Performing Arts", :id=>"1048"},
+    #     {:name=>"Musical Instruments", :id=>"1095"},
     #     {:name=>"Keyboards", :id=>"1103"}]
     puts "The ancestors of piano are: #{ancestors.join(" -> ")}"
 
@@ -48,17 +47,17 @@ Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
 
   # get it
   $ git clone git://github.com/howcast/howcast-gem.git
-  
+
   # install dependencies
-  $ cd howcast-gem 
+  $ cd howcast-gem
   $ bundle install
-  
+
   # run tests
   $ bundle exec rake spec
-  
+
   # see useful rake tasks
   $ bundle exec rake -T
-  
+
   # start hacking
   $ mate .
 
@@ -69,10 +68,10 @@ Author: Jingshen Jimmy Zhang <jimmy@howcast.com>
 
   # update/set the release version, where X.X.X is the new version number
   $ echo "X.X.X" > VERSION
-  
+
   # commit and push the new version (and any other uncommitted files)
   $ git commit -a -m 'Blah-blah-blah'
   $ git push
-  
+
   # create tag, build, and push howcast gem to rubygems
   $ bundle release

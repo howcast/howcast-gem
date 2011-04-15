@@ -4,8 +4,8 @@
     <id>233</id>
     <category-id>515</category-id>
     <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
-    <mature-content/>
     <ads-allowed/>
+    <mature-content/>
     <playlist-memberships>
       <playlist id="141">Howcast Health &amp; Beauty</playlist>
       <playlist id="515">Yoga! Yoga! Yoga!</playlist>
@@ -18,9 +18,9 @@
       <playlist id="445">Verizon Hub</playlist>
     </playlist-memberships>
     <category-hierarchy>
-      <category id="479">Health &amp; Nutrition</category>
-      <category parent_id="479" id="510">Exercise</category>
-      <category parent_id="510" id="515">Yoga</category>
+      <category permalink="http://www.howcast.com/categories/479-Health-and-Nutrition" id="479">Health &amp; Nutrition</category>
+      <category parent_id="479" permalink="http://www.howcast.com/categories/510-Exercise" id="510">Exercise</category>
+      <category parent_id="510" permalink="http://www.howcast.com/categories/515-Yoga" id="515">Yoga</category>
     </category-hierarchy>
     <easy-steps>true</easy-steps>
     <badges>Howcast Studios</badges>
@@ -44,7 +44,7 @@
     <username>joekulak</username>
     <thumbnail-url>http://img.howcast.com/thumbnails/233/Mind.How_to_Do_the_Noble_Pose_SD_xxlarge_maintained_aspect.jpg</thumbnail-url>
     <views>714</views>
-    <content_rating>adult</content_rating>
+    <content_rating>nonadult</content_rating>
     <overlay>
       <titlecard>false</titlecard>
       <steps>false</steps>
@@ -228,9 +228,9 @@
         <filename>http://media.howcast.com/system/videos/0/24/02/224.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, extended, triangle, utthita, trikonasana, warrior</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -243,7 +243,7 @@
         <category-id>515</category-id>
         <id>225</id>
         <title>How To Do a Seated Spinal Twist Pose</title>
-        <views>4621</views>
+        <views>4631</views>
         <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
         <ads-allowed/>
         <created-at>Wed, 05 Dec 2007 20:07:08 -0800</created-at>
@@ -275,9 +275,9 @@
         <filename>http://media.howcast.com/system/videos/1/25/02/225.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, seated, spinal, twist, Ardha, Matsyendrasana</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -290,7 +290,7 @@
         <category-id>515</category-id>
         <id>226</id>
         <title>How To Do the Chair Pose</title>
-        <views>7257</views>
+        <views>7268</views>
         <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
         <ads-allowed/>
         <created-at>Wed, 05 Dec 2007 20:07:12 -0800</created-at>
@@ -319,9 +319,9 @@
         <filename>http://media.howcast.com/system/videos/2/26/02/226.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, chair</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -334,7 +334,7 @@
         <category-id>515</category-id>
         <id>227</id>
         <title>How To Do the Cobra Pose</title>
-        <views>4711</views>
+        <views>4737</views>
         <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
         <ads-allowed/>
         <created-at>Wed, 05 Dec 2007 20:07:19 -0800</created-at>
@@ -364,9 +364,9 @@
         <filename>http://media.howcast.com/system/videos/3/27/02/227.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, cobra</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -379,11 +379,11 @@
         <category-id>515</category-id>
         <id>228</id>
         <title>How To Do the Headstand Pose</title>
-        <views>4605</views>
+        <views>4621</views>
         <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
         <ads-allowed/>
         <created-at>Wed, 05 Dec 2007 20:07:31 -0800</created-at>
-        <rating>6</rating>
+        <rating>7</rating>
         <username>joekulak</username>
         <description>
           <![CDATA[Learn how to do the headstand pose correctly with these instructions.]]>
@@ -404,9 +404,9 @@
         <filename>http://media.howcast.com/system/videos/4/28/02/228.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, head, stand, headstand, sirsasana</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -447,9 +447,9 @@
         <filename>http://media.howcast.com/system/videos/5/29/02/229.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, lunge</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -487,9 +487,9 @@
         <filename>http://media.howcast.com/system/videos/6/30/02/230.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, four-limbed, four, limbed, staff, Chaturanga, Dandasana</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -502,7 +502,7 @@
         <category-id>515</category-id>
         <id>231</id>
         <title>How To Do the Eagle Pose</title>
-        <views>1587</views>
+        <views>1593</views>
         <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
         <ads-allowed/>
         <created-at>Wed, 05 Dec 2007 20:07:43 -0800</created-at>
@@ -528,9 +528,9 @@
         <filename>http://media.howcast.com/system/videos/0/31/02/231.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, eagle, Garudasana</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -569,9 +569,9 @@
         <filename>http://media.howcast.com/system/videos/1/32/02/232.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, bound, angle</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -606,9 +606,9 @@
         <filename>http://media.howcast.com/system/videos/3/34/02/234.flv</filename>
         <tags>health, fitness, stretch, exercise, yoga, technique, poses, positions, wide legged forward bend, relaxation, stress, calm </tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -647,9 +647,9 @@
         <filename>http://media.howcast.com/system/videos/4/35/02/235.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, shooting, bow, Akarna-dhanura-asana, Akarna, dhanura, asana</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -688,9 +688,9 @@
         <filename>http://media.howcast.com/system/videos/5/36/02/236.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, plow, halsana</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -703,7 +703,7 @@
         <category-id>515</category-id>
         <id>237</id>
         <title>How To Do the Lion Pose</title>
-        <views>10408</views>
+        <views>10436</views>
         <type class="HowcastOriginalGuide" status="proprietary">HowcastGuide</type>
         <ads-allowed/>
         <created-at>Wed, 05 Dec 2007 20:08:10 -0800</created-at>
@@ -716,7 +716,6 @@
           <playlist id="141">Howcast Health &amp; Beauty</playlist>
           <playlist id="515">Yoga! Yoga! Yoga!</playlist>
           <playlist id="144">OBSOLETE - Howcast Yoga</playlist>
-          <playlist id="3249">category_479</playlist>
           <playlist id="164">Yoga_Thais</playlist>
           <playlist id="8">Yoga Basics</playlist>
           <playlist id="445">Verizon Hub</playlist>
@@ -733,9 +732,9 @@
         <filename>http://media.howcast.com/system/videos/6/37/02/237.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, lion, simhasana</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -772,9 +771,9 @@
         <filename>http://media.howcast.com/system/videos/0/38/02/238.flv</filename>
         <tags>yoga, health, mind, body, flexibility, balance, warrior, pose, technique, stretch</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
@@ -814,9 +813,9 @@
         <filename>http://media.howcast.com/system/videos/1/39/02/239.flv</filename>
         <tags>DIY, Instructional, tutorial, Do It Yourself, Tips, Essential Skills, Learn to, yoga, pose, position, body, exercise, stretch, meditation, extended, side, angle, utthita, parsvakonasana</tags>
         <category-hierarchy>
-          <category id="479">Health &amp; Nutrition</category>
-          <category parent_id="479" id="510">Exercise</category>
-          <category parent_id="510" id="515">Yoga</category>
+          <category id="479" permalink="http://www.howcast.com/categories/479-Health-and-Nutrition">Health &amp; Nutrition</category>
+          <category parent_id="479" id="510" permalink="http://www.howcast.com/categories/510-Exercise">Exercise</category>
+          <category parent_id="510" id="515" permalink="http://www.howcast.com/categories/515-Yoga">Yoga</category>
         </category-hierarchy>
         <easy-steps>true</easy-steps>
         <badges>Howcast Studios</badges>
