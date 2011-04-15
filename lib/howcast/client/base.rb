@@ -22,6 +22,7 @@
 #++
 
 require 'rubygems'
+require 'benchmark'
 require 'timeout'
 require 'hpricot'
 require 'open-uri'
@@ -89,19 +90,22 @@ class Howcast::Client
       relative_path_and_query  = '/' + relative_path_and_query unless relative_path_and_query[0] == '/'
       uri.path, uri.query      = *relative_path_and_query.split('?')
 
-      doc  = Hpricot.XML open(url = attach_api_key(uri))
-      Howcast.log.info "Established connection with: '#{url}'"
-    
+      doc  = nil
+      time = Benchmark.realtime do
+        doc = Hpricot.XML open(attach_api_key uri)
+      end
+      Howcast.log.info "Established connection with: '#{uri.to_s}' after #{time * 1000}ms"
+
       raise Howcast::ApiKeyNotFound \
         if doc.at(:err) && doc.at(:err)['msg'].match(/Invalid API Key/)
 
       doc
     rescue Timeout::Error
-      raise Howcast::ApiError, "Timeout error occured while attempting to access the API. Refer to the Howcast API for supported URL's"
+      raise Howcast::ApiError, "Timed-out after #{time * 1000}ms while attempting to access the API at #{uri.to_s}"
     rescue URI::InvalidURIError
-      raise Howcast::ApiNotFound, "Invalid URL #{url.inspect} requested. Refer to the Howcast API for supported URL's"
-    rescue OpenURI::HTTPError => boom
-      raise Howcast::ApiError, "HTTP error #{boom.message} accessing the API. Refer to the Howcast API for supported URL's"
+      raise Howcast::ApiNotFound, "Invalid URL #{uri.to_s} requested."
+    rescue OpenURI::HTTPError => e
+      raise Howcast::ApiError, "HTTP error #{e.message} accessing the API at #{uri.to_s}."
     end
   end
   
