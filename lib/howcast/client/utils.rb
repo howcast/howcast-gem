@@ -13,7 +13,7 @@ module WatchAttrAccessors
 end
 
 module XmlMethods
-  def to_doc
+  def to_doc options = { }
     doc  = Nokogiri::XML::Document.new
     node = Nokogiri::XML::Node.new(self.class.to_s.sub(/([a-z]+::)+/i, '').downcase, doc)
     root = doc.add_child node
@@ -45,7 +45,7 @@ module XmlMethods
     doc
   end
   
-  def to_xml
-    to_doc.to_xml
+  def to_xml options = { }
+    to_doc.to_xml options
   end
 end
