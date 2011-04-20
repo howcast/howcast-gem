@@ -196,3 +196,55 @@ describe Howcast::Client, "videos" do
     videos.last.permalink.should == "http://www.howcast.com/videos/866-How-To-Make-a-Water-Gun-Alarm-Clock"
   end
 end
+
+describe Howcast::Client, "XML features" do
+  before do
+    @hc = Howcast::Client.new(:key => "myapikey")
+    @hc.stub!(:open).and_return(video_xml)
+  end
+  
+  it "should have a to_doc method" do
+    @hc.video(2).should respond_to :to_doc
+  end
+
+  it "should have a to_doc method" do
+    @hc.video(2).should respond_to :to_xml
+  end
+
+  it "should return an xml document" do
+    doc = @hc.video(2).to_doc
+    doc.should be_an_instance_of Nokogiri::XML::Document
+  end
+
+  it "should map attributes to the xml document" do
+    video = @hc.video(2)
+    doc   = video.to_doc
+    doc.xpath("/video/id").text.should == video.id
+    doc.xpath("/video/title").text.should == video.title
+    doc.xpath("/video/permalink").text.should == video.permalink
+    doc.xpath("/video/thumbnail_url").text.should == video.thumbnail_url
+    doc.xpath("/video/category_id").text.should == video.category_id
+    doc.xpath("/video/views").text.should == video.views
+    doc.xpath("/video/username").text.should == video.username
+    doc.xpath("/video/duration").text.should == video.duration
+    doc.xpath("/video/created_at").text.should == video.created_at
+    doc.xpath("/video/rating").text.should == video.rating
+    doc.xpath("/video/description").text.should == video.description
+    doc.xpath("/video/width").text.should == video.width
+    doc.xpath("/video/height").text.should == video.height
+    doc.xpath("/video/badges").text.should == video.badges
+    doc.xpath("/video/easy_steps").text.should == video.easy_steps.to_s
+    doc.xpath("/video/embed/object").to_xml.should == Nokogiri::XML(video.embed).root.to_xml
+    doc.xpath("/video/category_hierarchy/category").length.should == video.category_hierarchy.length
+    doc.xpath("/video/ingredients/ingredient").length.should == video.ingredients.length
+    doc.xpath("/video/markers/marker").length.should == video.markers.length
+    doc.xpath("/video/related_videos/video").length.should == video.related_videos.length
+    doc.xpath("/video/filename").text.should == video.filename
+    doc.xpath("/video/mature_content").text.should == video.mature_content?.to_s
+    doc.xpath("/video/ads_allowed").text.should == video.ads_allowed?.to_s
+    doc.xpath("/video/playlist_memberships/playlist").length.should == video.playlist_memberships.length
+    doc.xpath("/video/type/name").text.should == video.type.name
+    doc.xpath("/video/type/kind").text.should == video.type.kind
+    doc.xpath("/video/type/status").text.should == video.type.status
+  end
+end

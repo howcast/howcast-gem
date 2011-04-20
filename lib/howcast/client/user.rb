@@ -24,6 +24,8 @@
 class Howcast::Client
   class User
     extend WatchAttrAccessors
+    include XmlMethods
+    
     attr_accessor :login, :firstname, :lastname, :thumbnail_url, :views, :count, :videos
     
     # Creates a new User object which is used to encapsulate all the attributes available

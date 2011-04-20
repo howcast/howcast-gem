@@ -45,7 +45,11 @@ module XmlFixturesHelper
   end
 
   def video_xml
-    @videos_xml ||= load_fixture 'video.233.xml'
+    @video_xml ||= load_fixture 'video.233.xml'
+  end
+  
+  def video_generated_xml
+    @video_generated_xml ||= load_fixture 'video.233.generated.xml'
   end
 
   # TODO:

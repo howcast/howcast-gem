@@ -24,6 +24,8 @@
 class Howcast::Client
   class Marker
     extend WatchAttrAccessors
+    include XmlMethods
+    
     attr_accessor :id, :position, :timemarker, :type, :thumbnail_url, :title, :textile_text, :text
     
     # Creates a new Marker object which is used to encapsulate all the attributes available

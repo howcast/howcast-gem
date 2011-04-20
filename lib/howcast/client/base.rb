@@ -25,9 +25,12 @@ require 'rubygems'
 require 'benchmark'
 require 'timeout'
 require 'hpricot'
+require 'nokogiri'
 require 'open-uri'
 require 'uri'
+
 require File.expand_path(File.join(File.dirname(__FILE__), '../hpricot/elements'))
+require File.expand_path(File.join(File.dirname(__FILE__), '../ext/string'))
 
 class Howcast::Client
   attr_accessor :key
@@ -135,7 +138,7 @@ class Howcast::Client
   # 
   # +klass+ object with initialized attributes
   def parse_single_xml(xml, klass)
-    hash = {}
+    hash = { }
     klass.attr_accessors.each do |attribute|
       node_name = attribute.to_s.gsub("_", "-") # xml schema uses hyphens for spaces, but ruby uses underscores
       if node_name == "category-hierarchy"
@@ -161,7 +164,7 @@ class Howcast::Client
         hash[attribute] = !xml.at(node_name).nil? ? xml.at(node_name).inner_text.strip : ""
       end
     end
-    hash.values.all?{|v| v==""} ? nil : klass.new(hash)
+    hash.values.all?{ |v| (v == "") or (v.respond_to?(:empty?) and v.empty?) } ? nil : klass.new(hash)
   end
     
   # Creates parameters to append to a uri

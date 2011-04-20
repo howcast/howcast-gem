@@ -22,20 +22,10 @@
 #++
 
 class Howcast::Client
-  module WatchAttrAccessors
-    def attr_accessor(*args)
-      super(*args)
-      @attr_accessors ||= []
-      @attr_accessors += args
-    end
-  
-    def attr_accessors
-      @attr_accessors || []
-    end
-  end
-  
   class Video
     extend WatchAttrAccessors
+    include XmlMethods
+    
     attr_accessor :id, :title, :permalink, :thumbnail_url, :category_id,
       :views, :username, :duration, :created_at, :rating, :description, :width, :height,
       :badges, :easy_steps, :embed, :category_hierarchy, :ingredients, :markers, :related_videos,
@@ -57,7 +47,7 @@ class Howcast::Client
         self.send("#{k}=", v) if self.respond_to?(k)
       end
     end
-    
+
     # Return true if the video contains easy step by step directions, else false
     def easy_steps?
       easy_steps == "true"
@@ -73,6 +63,16 @@ class Howcast::Client
 
     def to_param
       id
+    end
+
+    protected
+    # TODO: we should probably inflect embed attribute value to a CDATA
+    def inflect attr, value
+      if %w{ ads_allowed mature_content easy_steps }.include? "#{attr}"
+        value.empty? ? false : value
+      else
+        value
+      end
     end
   end
     
@@ -120,13 +120,13 @@ class Howcast::Client
   #   Howcast::Client.new.videos
   # Get the third page of top favorites which are featured
   #   Howcast::Client.new.videos(:page => 3, :sort => "top_favorites", :filter => "top_rated")
-	def videos(options = {})
+  def videos(options = {})
     uri = videos_url(options)
     doc = establish_connection(uri)
     (doc/:video).inject([]){ |r, i| r << parse_single_xml(i, Video) }
-	end
-	
-	private
+  end
+  
+  private
   def videos_url(options={})
     defaults = {:page => nil, :sort => "most_recent", :filter => "howcast_studios", :category_id => nil}
     options  = defaults.update(options)

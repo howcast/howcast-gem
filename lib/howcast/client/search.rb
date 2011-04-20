@@ -71,16 +71,16 @@ class Howcast::Client
   end
 
   private
-    def do_search params
-      uri = search_url params
-      (establish_connection(uri)/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}
-    end
+  def do_search params
+    uri = search_url params
+    (establish_connection(uri)/:video).inject([]){ |r, i| r << parse_single_xml(i, Video)}
+  end
 
-    def search_url params
-      uri    = "search.xml?"
-      params = params.inject({}){ |h, (k, v)| h[k] = CGI::escape(v.to_s); h }
-      uri   += hash_to_params params
-      uri   += uri_suffix(params.merge(:use_ampersand => true)) unless params[:page]
-      uri
-    end
+  def search_url params
+    uri    = "search.xml?"
+    params = params.inject({}){ |h, (k, v)| h[k] = CGI::escape(v.to_s); h }
+    uri   += hash_to_params params
+    uri   += uri_suffix(params.merge(:use_ampersand => true)) unless params[:page]
+    uri
+  end
 end

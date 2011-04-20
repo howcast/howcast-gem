@@ -24,6 +24,8 @@
 class Howcast::Client
   class Category
     extend WatchAttrAccessors
+    include XmlMethods
+
     attr_accessor :id, :name, :parent_id, :parents, :permalink
     
     # Creates a new Category object which is used to encapsulate all the attributes available

@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   
   s.add_runtime_dependency(%q<hpricot>, [">= 0"])
+  s.add_runtime_dependency(%q<nokogiri>, [">= 0"])
   
   #s.add_development_dependency(%q<jeweler>, [">= 0"])
   s.add_development_dependency(%q<rake>, [">= 0"])

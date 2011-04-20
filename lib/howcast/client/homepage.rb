@@ -24,6 +24,8 @@
 class Howcast::Client
   class Homepage
     extend WatchAttrAccessors
+    include XmlMethods
+    
     attr_accessor :videos, :playlists
     
     # Creates a new Homepage object which is used to encapsulate all the attributes available
@@ -65,12 +67,12 @@ class Howcast::Client
   end
   
   private
-    def parse_playlists(xml)
-      playlists = []
-      node = xml.at('playlists')
-      node.children_of_type('playlist').each do |child|
-        playlists << parse_single_xml(child, Playlist)
-      end unless node.nil?
-      playlists
-    end
+  def parse_playlists(xml)
+    playlists = []
+    node = xml.at('playlists')
+    node.children_of_type('playlist').each do |child|
+      playlists << parse_single_xml(child, Playlist)
+    end unless node.nil?
+    playlists
+  end
 end

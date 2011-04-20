@@ -24,6 +24,8 @@
 class Howcast::Client
   class Type
     extend WatchAttrAccessors
+    include XmlMethods
+    
     attr_accessor :kind, :status, :name
     
     # Creates a new Type object which is used to encapsulate all the attributes available
