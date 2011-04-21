@@ -46,6 +46,6 @@ module XmlMethods
   end
   
   def to_xml options = { }
-    to_doc.to_xml options
+    to_doc(options).root.to_xml
   end
 end
