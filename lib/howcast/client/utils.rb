@@ -36,14 +36,8 @@ module XmlMethods
           if v.respond_to? :to_doc
             node.add_child v.to_doc.root
           else
-            attr  = "#{attr}".singularize
-            v     = inflect(attr, v) if respond_to? :inflect
-            child = Nokogiri::XML::Node.new(attr, doc)
-            if v.instance_of? String
-              node.content = v
-            else
-              node.add_child v
-            end
+            child = Nokogiri::XML::Node.new("#{attr}".singularize, doc)
+            child.content = v.to_s
             node.add_child child
           end
         end
