@@ -247,4 +247,10 @@ describe Howcast::Client, "XML features" do
     doc.xpath("/video/type/kind").text.should == video.type.kind
     doc.xpath("/video/type/status").text.should == video.type.status
   end
+  
+  #it "should BLAH" do
+  #  video = @hc.video(2)
+  #  doc   = video.to_doc
+  #  doc.xpath("/video").to_xml.should == "XXX"
+  #end
 end
