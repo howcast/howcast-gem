@@ -46,6 +46,6 @@ module XmlMethods
   end
   
   def to_xml options = { }
-    to_doc(options).root.xpath("/video").to_xml
+    to_doc(options).to_xml
   end
 end
