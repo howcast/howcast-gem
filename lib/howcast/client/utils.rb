@@ -13,7 +13,7 @@ module WatchAttrAccessors
 end
 
 module XmlMethods
-  def to_doc options = { }
+  def to_doc
     doc  = Nokogiri::XML::Document.new
     node = Nokogiri::XML::Node.new(self.class.to_s.sub(/([a-z]+::)+/i, '').downcase, doc)
     root = doc.add_child node
@@ -22,7 +22,11 @@ module XmlMethods
       value = self.send(attr)
       if value.instance_of? String
         value = inflect(attr, value) if respond_to? :inflect
-        node.add_child value.to_s
+        if value.instance_of? String
+          node.content = value
+        else
+          node.add_child value
+        end
         root.add_child node
       elsif value.respond_to? :to_doc
         node = value.to_doc.root
@@ -35,7 +39,11 @@ module XmlMethods
             attr  = "#{attr}".singularize
             v     = inflect(attr, v) if respond_to? :inflect
             child = Nokogiri::XML::Node.new(attr, doc)
-            child.add_child v.to_s
+            if v.instance_of? String
+              node.content = v
+            else
+              node.add_child v
+            end
             node.add_child child
           end
         end
@@ -45,7 +53,7 @@ module XmlMethods
     doc
   end
   
-  def to_xml options = { }
-    to_doc(options).to_xml
+  def to_xml
+    to_doc.to_xml
   end
 end

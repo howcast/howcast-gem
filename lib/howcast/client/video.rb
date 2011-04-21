@@ -66,12 +66,13 @@ class Howcast::Client
     end
 
     protected
-    # TODO: we should probably inflect embed attribute value to a CDATA
     def inflect attr, value
       if %w{ ads_allowed mature_content easy_steps }.include? "#{attr}"
-        value.empty? ? false : value
+        (value.empty? ? false : value).to_s
+      elsif "#{attr}" == "embed"
+        Nokogiri::XML(value).root
       else
-        value
+        value.to_s
       end
     end
   end
