@@ -74,4 +74,4 @@ Copyright (c) 2008 - 2011 Howcast Media Inc.
   $ git push
 
   # create tag, build, and push howcast gem to rubygems
-  $ bundle release
+  $ bundle rake release
