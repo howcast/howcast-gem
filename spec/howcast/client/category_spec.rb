@@ -20,7 +20,7 @@ describe Howcast::Client, "category" do
   end
   
   it "should establish a connection with the correct category url" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/categories/2.xml?api_key=myapikey").and_return(category_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/categories/2.xml?api_key=myapikey").and_return(category_xml)
     @hc.category(2)
   end  
   
@@ -54,7 +54,7 @@ describe Howcast::Client, "categories" do
   end
   
   it "should establish a connection with categories.xml" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/categories.xml?api_key=myapikey").and_return(categories_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/categories.xml?api_key=myapikey").and_return(categories_xml)
     @hc.categories
   end
   

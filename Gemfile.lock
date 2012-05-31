@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    howcast (0.7.14)
+    howcast (0.7.15)
       hpricot
       nokogiri
 

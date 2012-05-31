@@ -62,7 +62,7 @@ class Howcast::Client
     end
 
     def base_uri
-      @base_uri ||= URI.parse("http://www.howcast.com")
+      @base_uri ||= URI.parse("http://api.howcast.com")
     end
   end
   

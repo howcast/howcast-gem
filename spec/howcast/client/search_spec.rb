@@ -35,22 +35,22 @@ describe Howcast::Client, "search" do
   it_should_behave_like "a search method"
 
   it "should establish a connection with search.xml?q=something&view=videos when query is 'something'" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/search.xml?q=something&view=videos&api_key=myapikey").and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/search.xml?q=something&view=videos&api_key=myapikey").and_return(videos_xml)
     @hc.search("something")
   end
 
   it "should establish a connection with search.xml?q=something&view=videos&page=2 when query is 'something' and :page => 2" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/search.xml?page=2&q=something&view=videos&api_key=myapikey").and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/search.xml?page=2&q=something&view=videos&api_key=myapikey").and_return(videos_xml)
     @hc.search("something", :page => 2)
   end
 
   it "should escape the query when esablishing the connection" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/search.xml?q=something+%26+something&view=videos&api_key=myapikey").and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/search.xml?q=something+%26+something&view=videos&api_key=myapikey").and_return(videos_xml)
     @hc.search("something & something")
   end
 
   it "should append mode=extended when passed in as an option" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/search.xml?mode=extended&q=something&view=videos&api_key=myapikey").and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/search.xml?mode=extended&q=something&view=videos&api_key=myapikey").and_return(videos_xml)
     @hc.search("something", :mode => :extended)
   end
 
@@ -68,17 +68,17 @@ describe Howcast::Client, "advanced_search" do
   it_should_behave_like "a search method"
 
   it "should establish a connection to the search path on howcast.com" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/search.xml?api_key=myapikey").and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/search.xml?api_key=myapikey").and_return(videos_xml)
     @hc.advanced_search({})
   end
 
   it "should url-encode any passed params" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/search.xml?q=something&api_key=myapikey").and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/search.xml?q=something&api_key=myapikey").and_return(videos_xml)
     @hc.advanced_search :q => "something"
   end
 
   it "should not create default params" do
-    @hc.should_receive(:open).with(URI.parse "http://www.howcast.com/search.xml?mode=foo&api_key=myapikey").and_return(videos_xml)
+    @hc.should_receive(:open).with(URI.parse "http://api.howcast.com/search.xml?mode=foo&api_key=myapikey").and_return(videos_xml)
     @hc.advanced_search :mode => "foo"
   end
 end
