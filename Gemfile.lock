@@ -13,7 +13,7 @@ GEM
     hpricot (0.8.4)
     linecache (0.43)
     nokogiri (1.4.4)
-    rake (0.8.7)
+    rake (13.0.1)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
